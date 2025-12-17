@@ -34,6 +34,10 @@ The IO-Link Connectivity Starter Kit can also be combined with additional access
       <td>
         Condition monitoring sensors – Multi physics box <a href="https://www.sick.com/ag/en/catalog/products/detection-sensors/condition-monitoring-sensors/multi-physics-box/mpb10-vs00vsiq00/p/p670770?tab=detail" target="_blank">MPB10</a> to measure additional data
       </td>
+      </tr>
+  </tbody>
+</table>
+    
 
 ## Engineering Tool SICK AppManager
 

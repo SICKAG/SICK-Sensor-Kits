@@ -10,7 +10,7 @@ Explore [SICK Knowledge Base](https://support.sick.com/knowledgebase/) for detai
 
 ---
 
-### Where can I find produt information?
+### Where can I find product information?
 Visit [sick.com](https://www.sick.com/products) to vie our portfolio and prodcut information.
 
 ---

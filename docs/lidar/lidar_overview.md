@@ -9,7 +9,7 @@ Don’t have a LiDAR Starter Kit yet? Purchase yours here!
 
 ## Key Features
 - High-precision distance measurement
-- Simple configuration with SOPAS Air
+- Simple configuration with SOPASair
 - Easy integration into various applications
 
 ## Hardware
@@ -74,12 +74,5 @@ The LiDAR Starter Kit contains the following parts:
 ![Components Vision Kit](../images/Quickstart IO-Link.png)
 
 Explore the [Getting Started Guide](./iolink_getting_started.md) and advanced sections for more details.
-
-- PicoScan  
-- Mounting Plate  
-- Power Supply  
-- Network Cable  
-- Network Adapter  
-- Transport Box  
 
 
