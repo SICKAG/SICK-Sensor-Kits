@@ -6,7 +6,6 @@ If you want to get more information about the SIG300, check out the operating in
 
 The IO-Link Connectivity Starter Kit can also be combined with additional accessories to solve even more tasks and applications. Here's a list of useful accessories:
 
-
 <table style="border-collapse: collapse; width: 100%;">
   <thead>
     <tr style="background-color: #005aff; color: white;">
@@ -35,7 +34,6 @@ The IO-Link Connectivity Starter Kit can also be combined with additional access
       <td>
         Condition monitoring sensors – Multi physics box <a href="https://www.sick.com/ag/en/catalog/products/detection-sensors/condition-monitoring-sensors/multi-physics-box/mpb10-vs00vsiq00/p/p670770?tab=detail" target="_blank">MPB10</a> to measure additional data
       </td>
-
 
 ## Engineering Tool SICK AppManager
 

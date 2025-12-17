@@ -2,7 +2,7 @@
 
 You are now ready to get started with the IO-Link Connectivity Starter Kit. Follow along the instruction below or scroll down to the tutorial video.
 
-## Setup
+## Setup Sensors
 
 1.	Connect the SIG300 with the USB-C cable and power supply.
 2.	Choose the correct plug adapter and plug the power supply into an outlet.
@@ -12,12 +12,13 @@ You are now ready to get started with the IO-Link Connectivity Starter Kit. Foll
 6.	The devices are now ready to use. Make sure to select “Keep default password”.
 7.	The sensors can be mounted onto the assembled frame (see below) with the mounting brackets (only applies with a Mounting Kit - 1154060) 
 
-![Mounting frame](../images/20251029_074934.png)
-
+![Setup_IO-Link](../images/Setup_iolink.png)
 
 ## Setup Mounting Frame (only applies with Mounting Kit)
 
-![Setup_IO-Link](../images/Setup_iolink.png)
+![Mounting frame](../images/20251029_074934.png)
+
+Scroll down to get to the tutorial video.
 
 **Required Hardware**
 
@@ -65,15 +66,21 @@ Use the two remaining countersunk screws to mount the top bar between the two ve
 
 ## Troubleshooting
 
+Check out the operating instructions of the devices for more information.
+[SIG300](https://www.sick.com/ag/en/catalog/products/network-and-connection-technology/network-devices/sig300/sig300-0a0gaa100/p/p678107?tab=downloads)
+[W10](https://www.sick.com/ag/en/catalog/products/detection-sensors/photoelectric-sensors/w10/wtm10l-241611d0a00zvzzzzzzzzz1/p/p678567?tab=downloads)
+[UC12](https://www.sick.com/ag/en/catalog/products/distance-sensors/ultrasonic-distance-sensors/uc12/uc12-1123e/p/p665119?tab=downloads)
+[IMC30](https://www.sick.com/ag/en/catalog/products/detection-sensors/inductive-proximity-sensors/imc/imc30-20nppvc0sa00/p/p483964?tab=downloads)
+ 
    1. Make sure you are disconnected from any VPN as this may block the connection to the network device.
    2. If you can't connect to the network device, check if the LED **"Ready"** is green.  
       If not, the power supply is not correctly established. Wait up to 2 minutes and check if the power supply is connected correctly.
 
    3. If you still can’t connect, look up the device IP address via **SICK AppManager**:  
-      [SICK AppManager | SICK](https://www.sick.com/ag/en/catalog/products/machine-vision-and-identification/machine-vision/inspectorp61x/c/g555810)  
+      [SICK AppManager | SICK](https://www.sick.com/ag/en/catalog/products/digital-services-and-software/engineering-tools/sick-appmanager/sick-appmanager/p/p532784)
       Go to the **Advanced section** for details.
 
-   4. Check the **FAQ section**: [FAQ Link](https://www.sick.com)
+   4. Check the **FAQ section**: [FAQ](./iolink_faq.md)
 
    5. If the device still has issues:  
       - Go to the **Support Portal**, register, and create a case to get assistance.

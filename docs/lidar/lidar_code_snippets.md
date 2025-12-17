@@ -1,4 +1,4 @@
-# LiDAR Sensor Kit Code Snippets
+# Code Snippets LiDAR
 
 Below are some example code snippets to help you get started with the LiDAR Sensor Kit:
 

@@ -26,7 +26,7 @@ You can combine the IO-Link Connectivity Starter Kit with a special Mounting Kit
 - Plug-and-play setup
 
 ## Hardware
-The IO-Link Starter Kit consists of the following parts:
+The IO-Link Connectivity Starter Kit contains the following parts:
 
 <table style="border-collapse: collapse; width: 100%;">
   <thead>
