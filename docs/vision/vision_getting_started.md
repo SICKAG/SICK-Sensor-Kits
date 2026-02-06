@@ -87,9 +87,9 @@ Check out the [Operating instructions](https://www.sick.com/ag/en/catalog/produc
       - The device has a trial license. After 2 hours, restart the device to reset the timer.  
       - Unplug and plug in again. Save configuration beforehand.
 
-   6. Check the **FAQ section**: [FAQ Link](./vision_faq.md)
+   6. Check the **FAQ section**: [FAQ](./vision_faq.md)
 
-   7. If the device still has issues:  
+   7. If you still have issues with the device:  
       - Go to the **Support Portal**, register, and create a case to get assistance.
 
 **If you want to learn more about the device or SICK Nova, check out this tutorial series**

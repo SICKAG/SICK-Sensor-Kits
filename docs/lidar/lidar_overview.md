@@ -3,7 +3,7 @@ The LiDAR Starter Kit provides an introduction to working with LiDAR sensors. It
 
 Don’t have a LiDAR Starter Kit yet? Purchase yours here!
 
-[Starter Kits](https://www.sick.com/ag/en/search?text=starter%20kit){:target="_blank".md-button}
+[Starter Kits](https://www.sick.com/ag/en/catalog/products/training/training-and-education/technology-trainings/lidar-starter-kit-basics/p/p687690?tab=detail){:target="_blank".md-button}
 
 ![LiDAR Starter Kit](../images/lidar.jpg)
 
@@ -28,27 +28,27 @@ The LiDAR Starter Kit contains the following parts:
   <tbody>
     <tr>
       <td>1</td>
-      <td>picoScan150 LiDAR sensor</td>
-      <td>1</td>
-      <td>1134610</td>
-    </tr>
-    <tr>
-      <td>2</td>
       <td>Ethernet cable</td>
       <td>1</td>
       <td>2112844</td>
     </tr>
     <tr>
-      <td>3</td>
-      <td>Mounting bracket</td>
+      <td>2</td>
+      <td>picoScan150 LiDAR sensor</td>
       <td>1</td>
-      <td>2134874</td>
+      <td>1134610</td>
     </tr>
     <tr>
-      <td>4</td>
+      <td>3</td>
       <td>Power supply</td>
       <td>1</td>
       <td>6089529</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Mounting bracket</td>
+      <td>1</td>
+      <td>2134874</td>
     </tr>
     <tr>
       <td>5</td>
@@ -71,8 +71,8 @@ The LiDAR Starter Kit contains the following parts:
   </tbody>
 </table>
 
-![Components Vision Kit](../images/Quickstart IO-Link.png)
+![Components Vision Kit](../images/Quickstart LiDAR.png)
 
-Explore the [Getting Started Guide](./iolink_getting_started.md) and advanced sections for more details.
+Explore the [Getting Started Guide](./lidar_getting_started.md) and advanced sections for more details.
 
 
