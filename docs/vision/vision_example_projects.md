@@ -4,7 +4,7 @@ Here you can find some example projects which you can follow along easily and re
 
 You will find additional information about the prerequisites, estimated duration, etc. for every project.
 
-Feel free to create your own projects and share them with us! (How?)
+Feel free to create your own projects and share them with us!
 
 
 <table style="border-collapse: collapse; width: 100%;">
@@ -21,7 +21,7 @@ Feel free to create your own projects and share them with us! (How?)
   <tbody>
     <tr>
       <td>1</td>
-      <td><a href="./classify_hex_nuts_screws.md">Classify Hex Nuts/Screws</a></td>
+      <td><a href="classify_hex_nuts_screws.html">Classify Hex Nuts/Screws</a></td>
       <td>Try out the AI Classification tool by taking images of different hex nuts and/or screws to generate your first AI algorithm.</td>
       <td>Basic</td>
       <td>30 Minutes</td>
@@ -29,7 +29,7 @@ Feel free to create your own projects and share them with us! (How?)
     </tr>
     <tr>
       <td>2</td>
-      <td><a href="./chocolate_inspection.md">Chocolate Inspection</a></td>
+      <td><a href="chocolate_inspection.html">Chocolate Inspection</a></td>
       <td>Follow along the SICK Nova Tutorials on YouTube and get to learn various AI and non-AI tools by inspecting a Chocolate Bar.</td>
       <td>Advanced</td>
       <td>2 Hours</td>
@@ -37,7 +37,7 @@ Feel free to create your own projects and share them with us! (How?)
     </tr>
     <tr>
       <td>3</td>
-      <td><a href="./sketch_demonstrator.md">Sketch Demonstrator</a></td>
+      <td><a href="sketch_demonstrator.html">Sketch Demonstrator</a></td>
       <td>Classify different hand-drawn sketches with the AI Classification tool.</td>
       <td>Advanced</td>
       <td>2 Hours</td>
@@ -53,7 +53,7 @@ Feel free to create your own projects and share them with us! (How?)
     </tr>
     <tr>
       <td>5</td>
-      <td><a href="./rock_paper_scissors.md">Rock, paper, scissors</a></td>
+      <td><a href="rock_paper_scissors.html">Rock, paper, scissors</a></td>
       <td>Use the sensor and AI tools to recognize hand signs for the game “Rock, Paper, Scissors”. A Python Flask web app running on a Raspberry Pi selects a random sign for the computer and compares it with the sensor-detected hand sign.</td>
       <td>Expert</td>
       <td>4 Hours</td>

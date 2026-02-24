@@ -21,6 +21,9 @@ nav:
     - Getting Started: lidar/lidar_getting_started.md
     - Code Snippets: lidar/lidar_code_snippets.md
     - Advanced: lidar/lidar_advanced.md
+    - Example Projects:
+      - Overview: lidar/lidar_example_projects.md
+      - Field Evaluation: lidar/lidar_field_evaluation.md
   - IO-Link Connectivity Starter Kit: 
     - Overview: iolink/iolink_overview.md
     - Getting Started: iolink/iolink_getting_started.md

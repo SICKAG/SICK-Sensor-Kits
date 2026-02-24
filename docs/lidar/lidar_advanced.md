@@ -6,3 +6,20 @@ For more detailed information and resources on working with SICK devices and the
 
 ## SICK driver sick_scan_xd
 For additional functionality and advanced integration, you can explore the [sick_scan_xd](https://github.com/SICKAG/sick_scan_xd) driver. This driver provides extended support for SICK LiDAR devices and can be a valuable resource for your projects.
+
+## SDK for LiDAR Development
+
+In the world of LiDAR, precise measurement data is only as powerful as the software that unlocks it. A C++ SDK acts as the essential digital accessory giving developers direct, high‑performance access to raw sensor data and configuration options for real‑time applications.
+
+**Features**
+
+- Receive scan, IMU, and encoder data in SICK data format Compact over UDP or TCP and perform sensor configuration via REST API
+- Thread-safe and event-driven data acquisition from multiple sensors.
+- Cross-platform build system using CMake for Linux and Windows and dependency management via Conan 2 possible.
+- Compatible with x86_64 and ARM64 architectures (e.g., Raspberry Pi).
+- Multiple ready-to-use examples for fast prototyping.
+- Built-in diagnostic and logging capabilities.
+- Comprehensive unit and CI tests with included real-world test data.
+- Designed to meet the requirements of the EU Cyber Resilience Act.
+
+You can download the SDK file here: [sick_perception_sdk-0.4.0.zip](../files/sick_perception_sdk-0.4.0.zip)

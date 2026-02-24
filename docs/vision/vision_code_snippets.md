@@ -4,7 +4,7 @@ Below are some example code snippets to help you get started with the Vision Sen
 **Open your IDE (Visual Studio Code) and run the following demo.**
 
 ```python
-import socket
+1. import socket
 
 # Function to initialize and connect the client socket
 def run_client():
@@ -37,4 +37,36 @@ def get_requests_continuously():
 # Initialize and run the client
 run_client()
 get_requests_continuously()
+
+#trigger Commands: 
+
+def trigger_img():
+    global client
+
+    client.sendall(b'\x02set job 2\x03')
+    client.sendall(b'\x02trigger\x03')
+    client.sendall(b'\x02RecordImages\x03')
+
+ 
+
+2. Read Field Evaluation Results from Lidar: 
+
+def fetch_data():
+    import socket
+
+    HOST = "192.168.0.153"
+    PORT = 2111
+
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.connect((HOST, PORT))
+
+    s.sendall(b"\x02sRN FieldEvaluationResult\x03")
+
+    data = s.recv(4048).decode('ascii')
+    dataArray = data.split("\x20")
+
+    s.close()
+    
+    return dataArray
+
 ```

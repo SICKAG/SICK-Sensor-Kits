@@ -4,7 +4,7 @@ Here you can find some example projects which you can follow along easily and re
 
 You will find additional information about the prerequisites, estimated duration, etc. for every project.
 
-Feel free to create your own projects and share them with us! (How?)
+Feel free to create your own projects and share them with us!
 
 
 <table style="border-collapse: collapse; width: 100%;">
@@ -21,7 +21,7 @@ Feel free to create your own projects and share them with us! (How?)
   <tbody>
     <tr>
       <td>1</td>
-      <td><a href="./sensor_fusion.md">SensorFusion</a></td>
+      <td><a href="sensor_fusion.html">SensorFusion</a></td>
       <td>Try out different sensors and sensing technologies to visualize digital outputs with LEDs</td>
       <td>Basic/Advanced</td>
       <td>0,5-2 hours</td>

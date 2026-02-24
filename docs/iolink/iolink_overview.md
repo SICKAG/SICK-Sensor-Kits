@@ -10,7 +10,7 @@ IO-Link is becoming increasingly important because it transforms simple sensors 
 
 Don’t have an IO-Link Starter Kit yet? Purchase yours here!
 
-[IO-Link Connectivity Starter Kit](https://www.sick.com/ag/en/edu-teq-io-link-connectivity-starter-kit/p/pn1150862?tab=detail){:target="_blank".md-button}
+[IO-Link Connectivity Starter Kit](https://www.sick.com/ag/en/catalog/products/training/training-and-education/technology-trainings/io-link-connectivity-starter-kit-basic/p/p688838){:target="_blank".md-button}
 
 You can combine the IO-Link Connectivity Starter Kit with a special Mounting Kit with suitable mounting frame and brackets.
 

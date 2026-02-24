@@ -67,22 +67,24 @@ Use the two remaining countersunk screws to mount the top bar between the two ve
 ## Troubleshooting
 
 Check out the operating instructions of the devices for more information.
-[SIG300](https://www.sick.com/ag/en/catalog/products/network-and-connection-technology/network-devices/sig300/sig300-0a0gaa100/p/p678107?tab=downloads)
-[W10](https://www.sick.com/ag/en/catalog/products/detection-sensors/photoelectric-sensors/w10/wtm10l-241611d0a00zvzzzzzzzzz1/p/p678567?tab=downloads)
-[UC12](https://www.sick.com/ag/en/catalog/products/distance-sensors/ultrasonic-distance-sensors/uc12/uc12-1123e/p/p665119?tab=downloads)
-[IMC30](https://www.sick.com/ag/en/catalog/products/detection-sensors/inductive-proximity-sensors/imc/imc30-20nppvc0sa00/p/p483964?tab=downloads)
- 
-   1. Make sure you are disconnected from any VPN as this may block the connection to the network device.
-   2. If you can't connect to the network device, check if the LED **"Ready"** is green.  
+
+* [SIG300](https://www.sick.com/ag/en/catalog/products/network-and-connection-technology/network-devices/sig300/sig300-0a0gaa100/p/p678107?tab=downloads)
+* [W10](https://www.sick.com/ag/en/catalog/products/detection-sensors/photoelectric-sensors/w10/wtm10l-241611d0a00zvzzzzzzzzz1/p/p678567?tab=downloads)
+* [UC12](https://www.sick.com/ag/en/catalog/products/distance-sensors/ultrasonic-distance-sensors/uc12/uc12-1123e/p/p665119?tab=downloads)
+* [IMC30](https://www.sick.com/ag/en/catalog/products/detection-sensors/inductive-proximity-sensors/imc/imc30-20nppvc0sa00/p/p483964?tab=downloads)
+
+Make sure to follow these steps:
+
+1. Make sure you are disconnected from any VPN as this may block the connection to the network device.
+2. If you can't connect to the network device, check if the LED **"Ready"** is green.  
       If not, the power supply is not correctly established. Wait up to 2 minutes and check if the power supply is connected correctly.
 
-   3. If you still can’t connect, look up the device IP address via **SICK AppManager**:  
+3. If you still can’t connect, look up the device IP address via **SICK AppManager**:  
       [SICK AppManager | SICK](https://www.sick.com/ag/en/catalog/products/digital-services-and-software/engineering-tools/sick-appmanager/sick-appmanager/p/p532784)
       Go to the **Advanced section** for details.
+4. Check the **FAQ section**: [FAQ](./iolink_faq.md)
 
-   4. Check the **FAQ section**: [FAQ](./iolink_faq.md)
-
-   5. If the device still has issues:  
+5. If the device still has issues:  
       - Go to the **Support Portal**, register, and create a case to get assistance.
 
 

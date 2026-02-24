@@ -52,7 +52,11 @@ With the engineering tool "SICK AppManager", you can find out the IP address of 
 6. You can edit the IP address of the device if useful
 7. Click on device to see the installed apps. Per default, the tools of SICK Nova should be pre-installed as individual apps
 
-**Firmware Update:**
+## Firmware Update 
+
+**Device:**
+
+If you want to upgrade to a newer Firmware version, follow these steps:
 
 1. Go to [V2D611P-CMWBI4 - InspectorP61x | SICK](https://www.sick.com/in/en/catalog/products/machine-vision-and-identification/machine-vision/inspectorp61x/v2d611p-cmwbi4/p/p685672?category=g569793&tab=downloads) (product page > Downloads > Software) and download the latest firmware
 2. Extract the .zip file to access the .spk firmware file
@@ -62,3 +66,27 @@ With the engineering tool "SICK AppManager", you can find out the IP address of 
 6. Make sure the device you want to update is selected and click on install in the bottom right corner
 ![SICK AppManager3](../images/SICK AppManager3.png)
 
+**SICK Nova:**
+
+If you want to upgrade to a newer SICK Nova version, you have two options:
+
+1. Go to [Nova Inspector in SICK AppPool](https://apppool.cloud.sick.com/publications/b027d4a7-9952-4651-acac-291a3929d3ad)
+2. Go to "Versions" and Download the latest version.
+3. In the upper right corner of AppManager, select "Local packages"
+4. Click on the "+"
+5. Choose the .sapk file
+6. Make sure the device you want to update is selected and click on install in the bottom right corner
+![SICK AppManager3](../images/SICK AppManager3.png)
+
+## Custom Image Processing
+- Use Nova to create custom image processing tasks.
+- Export configurations for use in other projects.
+
+## Integration with External Systems
+- Connect the Vision Starter Kit to a PLC or other control systems.
+- Use the provided API for advanced automation tasks.
+
+## Custom tool generator
+- You can adapt existing tools by using the custom tool generator, e.g. if you want to count a big amount of Blobs.
+Download this zip file and open the search.html file.
+[Nova-API-2.9.0-.zip](../files/Nova API 2.9.0.zip)
