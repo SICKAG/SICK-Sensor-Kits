@@ -353,6 +353,42 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#firmware-update" class="md-nav__link">
+    <span class="md-ellipsis">
+      Firmware Update
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-image-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom Image Processing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-with-external-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integration with External Systems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-tool-generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom tool generator
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -701,6 +737,98 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Example Projects
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Example Projects
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lidar/lidar_example_projects.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lidar/lidar_field_evaluation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Field Evaluation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1067,6 +1195,42 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#firmware-update" class="md-nav__link">
+    <span class="md-ellipsis">
+      Firmware Update
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-image-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom Image Processing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-with-external-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integration with External Systems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-tool-generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom tool generator
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1132,7 +1296,9 @@
 <li>You can edit the IP address of the device if useful</li>
 <li>Click on device to see the installed apps. Per default, the tools of SICK Nova should be pre-installed as individual apps</li>
 </ol>
-<p><strong>Firmware Update:</strong></p>
+<h2 id="firmware-update">Firmware Update</h2>
+<p><strong>Device:</strong></p>
+<p>If you want to upgrade to a newer Firmware version, follow these steps:</p>
 <ol>
 <li>Go to <a href="https://www.sick.com/in/en/catalog/products/machine-vision-and-identification/machine-vision/inspectorp61x/v2d611p-cmwbi4/p/p685672?category=g569793&amp;tab=downloads">V2D611P-CMWBI4 - InspectorP61x | SICK</a> (product page &gt; Downloads &gt; Software) and download the latest firmware</li>
 <li>Extract the .zip file to access the .spk firmware file</li>
@@ -1141,7 +1307,34 @@
 <li>Choose the .spk file</li>
 <li>Make sure the device you want to update is selected and click on install in the bottom right corner
 <img alt="SICK AppManager3" src="../images/SICK%20AppManager3.png"></li>
-</ol></div>
+</ol>
+<p><strong>SICK Nova:</strong></p>
+<p>If you want to upgrade to a newer SICK Nova version, you have two options:</p>
+<ol>
+<li>Go to <a href="https://apppool.cloud.sick.com/publications/b027d4a7-9952-4651-acac-291a3929d3ad">Nova Inspector in SICK AppPool</a></li>
+<li>Go to "Versions" and Download the latest version.</li>
+<li>In the upper right corner of AppManager, select "Local packages"</li>
+<li>Click on the "+"</li>
+<li>Choose the .sapk file</li>
+<li>Make sure the device you want to update is selected and click on install in the bottom right corner
+<img alt="SICK AppManager3" src="../images/SICK%20AppManager3.png"></li>
+</ol>
+<h2 id="custom-image-processing">Custom Image Processing</h2>
+<ul>
+<li>Use Nova to create custom image processing tasks.</li>
+<li>Export configurations for use in other projects.</li>
+</ul>
+<h2 id="integration-with-external-systems">Integration with External Systems</h2>
+<ul>
+<li>Connect the Vision Starter Kit to a PLC or other control systems.</li>
+<li>Use the provided API for advanced automation tasks.</li>
+</ul>
+<h2 id="custom-tool-generator">Custom tool generator</h2>
+<ul>
+<li>You can adapt existing tools by using the custom tool generator, e.g. if you want to count a big amount of Blobs.
+Download this zip file and open the search.html file.
+<a href="../files/Nova%20API%202.9.0.zip">Nova-API-2.9.0-.zip</a></li>
+</ul></div>
 
 
 
