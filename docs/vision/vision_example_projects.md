@@ -67,6 +67,30 @@ Feel free to create your own projects and share them with us!
       <td>4 Hours</td>
       <td>LEGO skeletons<br>Optional: Conveyor belt, Trigger sensor, Cables, Signal light</td>
     </tr>
+    <tr>
+      <td>7</td>
+      <td><a href="recycling.html">Recycling</td>
+      <td>Use the AI Classification tool to sort different kinds of waste for recycling tasks.</td>
+      <td>Basic/Advanced</td>
+      <td>1-4 Hours</td>
+      <td>Waste (e.g. paper, plastics, packaging, ...)<br>if possible conveyor belt<br>if possible pusher/rejector to sort/reject objects - alternative: LED our sound feedback</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td><a href="blackjack.html">Black Jack</td>
+      <td>Detect and classify playing cards and develop a logic to play Black Jack against the computer</td>
+      <td>Advanced/Expert</td>
+      <td>4-8 Hours</td>
+      <td>Playing cards
+    </tr>
+    <tr>
+      <td>9</td>
+      <td><a href="uno.html">UNO Card Game</td>
+      <td>Detect and classify UNO playing cards and develop a logic to play against the computer</td>
+      <td>Advanced/Expert</td>
+      <td>4-8 Hours</td>
+      <td>UNO Playing cards
+    </tr>
   </tbody>
 </table>
 

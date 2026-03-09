@@ -14,6 +14,9 @@ nav:
       - Sketch Demonstrator: vision/sketch_demonstrator.md
       - Chocolate Inspection: vision/chocolate_inspection.md
       - Rock, Paper, Scissors: vision/rock_paper_scissors.md
+      - Recycling: vision/recycling.md
+      - Black Jack: vision/blackjack.md
+      - UNO Card Game: vision/uno.md
     - Training Material: vision/vision_training_material.md
     - FAQ: vision/vision_faq.md
   - LiDAR Starter Kit: 
