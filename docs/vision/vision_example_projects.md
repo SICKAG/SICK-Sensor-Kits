@@ -91,6 +91,22 @@ Feel free to create your own projects and share them with us!
       <td>4-8 Hours</td>
       <td>UNO Playing cards
     </tr>
+    <tr>
+      <td>10</td>
+      <td><a href="tic_tac_toe.html">Tic Tac Toe</td>
+      <td>Analyze a Tic Tac Toe board and play against the computer.</td>
+      <td>Advanced</td>
+      <td>4 Hours</td>
+      <td>Paper, Pen, Scissors
+    </tr>
+    <tr>
+      <td>11</td>
+      <td><a href="tic_tac_toe.html">Tic Tac Toe</td>
+      <td>Analyze thrown darts on a board and create a logic for different games.</td>
+      <td>Advanced</td>
+      <td>4 Hours</td>
+      <td>Velcro Dart Board with velcro balls
+    </tr>
   </tbody>
 </table>
 

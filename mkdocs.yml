@@ -17,6 +17,8 @@ nav:
       - Recycling: vision/recycling.md
       - Black Jack: vision/blackjack.md
       - UNO Card Game: vision/uno.md
+      - Tic Tac Toe: vision/tic_tac_toe.md
+      - Darts: vision/darts.md
     - Training Material: vision/vision_training_material.md
     - FAQ: vision/vision_faq.md
   - LiDAR Starter Kit: 
@@ -27,6 +29,8 @@ nav:
     - Example Projects:
       - Overview: lidar/lidar_example_projects.md
       - Field Evaluation: lidar/lidar_field_evaluation.md
+      - Darts: vision/darts.md
+      - Distance Estimation: lidar/distance_estimation.md
   - IO-Link Connectivity Starter Kit: 
     - Overview: iolink/iolink_overview.md
     - Getting Started: iolink/iolink_getting_started.md
