@@ -10,6 +10,7 @@ nav:
     - Advanced: vision/vision_advanced.md
     - Example Projects: 
       - Overview: vision/vision_example_projects.md
+      - Vision Starter Project: vision/vision_starter_project.md
       - Classify Hex Nuts/Screws: vision/classify_hex_nuts_screws.md
       - Sketch Demonstrator: vision/sketch_demonstrator.md
       - Chocolate Inspection: vision/chocolate_inspection.md
@@ -31,6 +32,8 @@ nav:
       - Field Evaluation: lidar/lidar_field_evaluation.md
       - Darts: vision/darts.md
       - Distance Estimation: lidar/distance_estimation.md
+      - The floor is lava: lidar/lidar_floor_is_lava.md
+      - Human Piano / Air Piano: lidar/lidar_human_piano_air_piano.md
   - IO-Link Connectivity Starter Kit: 
     - Overview: iolink/iolink_overview.md
     - Getting Started: iolink/iolink_getting_started.md
