@@ -2,134 +2,146 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/index.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/faq.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/iolink/iolink_advanced.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/iolink/iolink_code_snippets.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/iolink/iolink_example_projects.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/iolink/iolink_faq.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/iolink/iolink_getting_started.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/iolink/iolink_overview.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/iolink/iolink_training_material.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/iolink/sensor_fusion.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/lidar/distance_estimation.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/lidar/lidar_advanced.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/lidar/lidar_code_snippets.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/lidar/lidar_example_projects.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/lidar/lidar_field_evaluation.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
+    </url>
+    <url>
+         <loc>https://sickag.github.io/SICK-Sensor-Kits/lidar/lidar_floor_is_lava.html</loc>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/lidar/lidar_getting_started.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
+    </url>
+    <url>
+         <loc>https://sickag.github.io/SICK-Sensor-Kits/lidar/lidar_human_piano_air_piano.html</loc>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/lidar/lidar_overview.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/vision/blackjack.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/vision/chocolate_inspection.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/vision/classify_hex_nuts_screws.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/vision/darts.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/vision/recycling.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/vision/rock_paper_scissors.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/vision/sketch_demonstrator.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/vision/tic_tac_toe.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/vision/uno.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/vision/vision_advanced.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/vision/vision_code_snippets.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/vision/vision_example_projects.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/vision/vision_faq.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/vision/vision_getting_started.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/vision/vision_overview.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
+    </url>
+    <url>
+         <loc>https://sickag.github.io/SICK-Sensor-Kits/vision/vision_starter_project.html</loc>
+         <lastmod>2026-04-29</lastmod>
     </url>
     <url>
          <loc>https://sickag.github.io/SICK-Sensor-Kits/vision/vision_training_material.html</loc>
-         <lastmod>2026-03-09</lastmod>
+         <lastmod>2026-04-29</lastmod>
     </url>
 </urlset>

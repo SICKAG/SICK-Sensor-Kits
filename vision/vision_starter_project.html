@@ -1,0 +1,1664 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://sickag.github.io/SICK-Sensor-Kits/vision/vision_starter_project.html">
+      
+      
+        <link rel="prev" href="vision_example_projects.html">
+      
+      
+        <link rel="next" href="classify_hex_nuts_screws.html">
+      
+      
+      <link rel="icon" href="../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+    
+    
+      
+        <title>Vision Starter Project - SICK Sensor Starter Kits</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#vision-starter-project" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="SICK Sensor Starter Kits" class="md-header__button md-logo" aria-label="SICK Sensor Starter Kits" data-md-component="logo">
+      
+  <img src="../images/sick_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SICK Sensor Starter Kits
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Vision Starter Project
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="SICK Sensor Starter Kits" class="md-nav__button md-logo" aria-label="SICK Sensor Starter Kits" data-md-component="logo">
+      
+  <img src="../images/sick_logo.png" alt="logo">
+
+    </a>
+    SICK Sensor Starter Kits
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Vision Sensor Kit
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Vision Sensor Kit
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="vision_overview.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="vision_getting_started.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="vision_code_snippets.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Code Snippets
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="vision_advanced.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Example Projects
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Example Projects
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="vision_example_projects.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Vision Starter Project
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="vision_starter_project.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Vision Starter Project
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instructions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#image-acquisition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image acquisition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-classification" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Classification
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#object-locator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Object Locator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reset
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classify_hex_nuts_screws.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Classify Hex Nuts/Screws
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sketch_demonstrator.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sketch Demonstrator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="chocolate_inspection.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chocolate Inspection
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="rock_paper_scissors.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Rock, Paper, Scissors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="recycling.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Recycling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="blackjack.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Black Jack
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="uno.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UNO Card Game
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tic_tac_toe.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tic Tac Toe
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="darts.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Darts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="vision_training_material.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Training Material
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="vision_faq.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FAQ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    LiDAR Starter Kit
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            LiDAR Starter Kit
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lidar/lidar_overview.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lidar/lidar_getting_started.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lidar/lidar_code_snippets.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Code Snippets
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lidar/lidar_advanced.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Example Projects
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Example Projects
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lidar/lidar_example_projects.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lidar/lidar_field_evaluation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Field Evaluation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="darts.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Darts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lidar/distance_estimation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Distance Estimation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lidar/lidar_floor_is_lava.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The floor is lava
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lidar/lidar_human_piano_air_piano.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Human Piano / Air Piano
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    IO-Link Connectivity Starter Kit
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            IO-Link Connectivity Starter Kit
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../iolink/iolink_overview.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../iolink/iolink_getting_started.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../iolink/iolink_code_snippets.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Code Snippets
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../iolink/iolink_advanced.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Example Projects
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            Example Projects
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../iolink/iolink_example_projects.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../iolink/sensor_fusion.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SensorFusion
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../iolink/iolink_training_material.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Training Material
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../iolink/iolink_faq.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FAQ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FAQ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.sick.com/de/de/s/imprint" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Imprint
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instructions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#image-acquisition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image acquisition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-classification" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Classification
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#object-locator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Object Locator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reset
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<div><h1 id="vision-starter-project">Vision Starter Project</h1>
+<table style="border-collapse: collapse; width: 100%;">
+  <thead>
+    <tr style="background-color: #005aff; color: white;">
+      <th style="padding: 8px; text-align: left;">Short description</th>
+      <th style="padding: 8px; text-align: left;">Required knowledge level</th>
+      <th style="padding: 8px; text-align: left;">Estimated duration</th>
+      <th style="padding: 8px; text-align: left;">Additional hardware and software requirements</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Get started with first image acquisition settings and an easy AI Classification and Anomaly Detection task.</td>
+      <td>Basic</td>
+      <td>20 Minutes</td>
+      <td>none – everything included in the Starter Kit</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img alt="Vision_2" src="../images/Vision_2.png"></p>
+<h2 id="instructions">Instructions</h2>
+<h3 id="image-acquisition">Image acquisition</h3>
+<ul>
+<li>Set up the Inspector as described in <a href="vision_getting_started.html">Getting started</a>.</li>
+<li>Select <strong>Live</strong> on top and press the <strong>Play</strong> button at the bottom to take images continuously.</li>
+<li>Place the GitHub info card in the camera's field of view</li>
+<li>Select <strong>Jobs</strong> &gt; <strong>Acquisition</strong> and play around with the <strong>Settings</strong> to get a well-lit image. Alternatively, press <strong>Run auto setup</strong> directly.</li>
+</ul>
+<p><img alt="Vision_2" src="../images/Vision_2.png"></p>
+<ul>
+<li>If necessary, adjust the focus of the camera manually using the focus adjustment tool </li>
+</ul>
+<h3 id="ai-classification">AI Classification</h3>
+<ul>
+<li>Choose <strong>Analysis</strong> &gt; <strong>Add tool</strong> &gt; <strong>Classify</strong> &gt; <strong>AI Classification</strong> (without dStudio)</li>
+</ul>
+<p><img alt="Vision_3" src="../images/Vision_3.png"></p>
+<ul>
+<li>Adjust the size of the box, so that it encompasses the entire object plus a buffer to account for variations or different positions.</li>
+</ul>
+<p><img alt="Vision_4" src="../images/Vision_4.png"></p>
+<ul>
+<li>Create classes under <strong>Dataset</strong> on the right</li>
+<li>Click the play icon at the bottom center to take continuous photos</li>
+<li>Expand the first class and capture images using <strong>Add active image</strong></li>
+<li>Try out different variations (position / rotation)</li>
+</ul>
+<p><img alt="Vision_5" src="../images/Vision_5.png"></p>
+<ul>
+<li>Repeat for the second class, take at least 5 images each and click on <strong>Train</strong></li>
+</ul>
+<p><img alt="Vision_6" src="../images/Vision_6.png"></p>
+<ul>
+<li>After a few seconds, the training is finished an you can test the results.</li>
+</ul>
+<p><img alt="Vision_7" src="../images/Vision_7.png"></p>
+<ul>
+<li>If useful, add more images or include additional classes (e.g., "Empty") to optimize the results</li>
+</ul>
+<h3 id="object-locator">Object Locator</h3>
+<p>The Object Locator is designed to detect the position of an object and perform analyses relative to that position (e.g., detect anomalies).</p>
+<ul>
+<li>On the left, choose <strong>Jobs</strong> &gt; <strong>Analysis</strong> &gt; <strong>Add tool</strong> &gt; <strong>Locate</strong> &gt; <strong>Object Locator</strong></li>
+<li>Place an object in the image</li>
+<li>At the bottom center, click <strong>Update reference</strong> and jump to the <strong>Reference</strong> tab</li>
+<li>Drag the box over a distinctive part of the object</li>
+</ul>
+<p><img alt="Vision_8" src="../images/Vision_8.png"></p>
+<ul>
+<li>If necessary, adjust the parameters on the right:</li>
+<li>Edge strength for contrast edges</li>
+<li>Rotation for possible rotation of the object</li>
+<li>Scaling, Match score and Angle for sensitivity</li>
+<li>Click <strong>Live</strong> and <strong>Play</strong> at the center to test whether the part of the object is being tracked when the object is moved</li>
+</ul>
+<p><img alt="Vision_9" src="../images/Vision_9.png"></p>
+<p><strong>Important</strong>: The Object Locator must work reliably before any other tools are used.
+Add any additional tools directly below the Object Locator.</p>
+<p><img alt="Vision_10" src="../images/Vision_10.png"></p>
+<p>*** Anomaly Detection</p>
+<ul>
+<li>On the left, choose <strong>Jobs</strong> &gt; <strong>Analysis</strong> &gt; <strong>Add tool</strong> &gt; <strong>Verify</strong> &gt; <strong>AI Anomaly Detection</strong> (if necessary, below Object Locator)</li>
+</ul>
+<p><img alt="Vision_11" src="../images/Vision_11.png"></p>
+<ul>
+<li>At the top center, select the <strong>Reference</strong> tab and drag a box over the object (make it only slightly larger, since the Object Locator is tracked along with it)</li>
+</ul>
+<p><img alt="Vision_12" src="../images/Vision_12.png"></p>
+<ul>
+<li>Go back to <strong>Live</strong> and <strong>Play</strong> and find <strong>Dataset</strong> at the bottom right. Add Good images with various variations. Start with just a few Good images for now.</li>
+<li>Click <strong>Train</strong></li>
+</ul>
+<p><img alt="Vision_13" src="../images/Vision_13.png"></p>
+<ul>
+<li>Adjust training parameters if necessary</li>
+<li>Number of training images (the rest is for evaluation)</li>
+<li>Fast vs. precise depending on the number of images and time</li>
+<li>Keep strict matching active if object variation is very low / only one object</li>
+</ul>
+<p><img alt="Vision_14" src="../images/Vision_14.png"></p>
+<ul>
+<li>Set to <strong>Live</strong> and <strong>Play</strong> and test</li>
+<li><strong>Note</strong>: Anomaly Detection always depends on the Object Locator. If it fails, Anomaly Detection will also fail
+At the bottom right under <strong>Results</strong>, adjust <strong>Anomaly Score</strong> and <strong>Visualization range</strong> if necessary</li>
+</ul>
+<p><img alt="Vision_15" src="../images/Vision_15.png"></p>
+<p>If necessary, capture additional images and also add Bad images to optimize results</p>
+<h3 id="reset">Reset</h3>
+<p>At the op right, click on the <strong>3 dots</strong> &gt; <strong>Application defaults</strong></p>
+<p><img alt="Vision_16" src="../images/Vision_16.png"></p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © SICK AG 2025
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

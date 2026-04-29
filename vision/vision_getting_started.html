@@ -448,6 +448,29 @@
   
   
     <li class="md-nav__item">
+      <a href="vision_starter_project.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Vision Starter Project
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="classify_hex_nuts_screws.html" class="md-nav__link">
         
   
@@ -969,6 +992,52 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lidar/lidar_floor_is_lava.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The floor is lava
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lidar/lidar_human_piano_air_piano.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Human Piano / Air Piano
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1376,12 +1445,57 @@
 <p>You are now ready to get started with the Vision Starter Kit. Follow along the instruction below to setup the sensor.</p>
 <h2 id="setup-vision-sensor">Setup Vision Sensor</h2>
 <ol>
+<li>Mount the Inspector to the mounting frame (instructions see below). Tilt the top bar about 10–15 degrees to avoid reflections.</li>
 <li>Connect the Inspector with the network cable and power supply.</li>
 <li>Connect the network cable to the USB network adapter.</li>
 <li>Choose the correct plug adapter and plug the power supply into an outlet.</li>
 <li>Connect the USB network adapter to the PC.</li>
-<li>Open a browser and enter the default IP address 192.168.0.1.</li>
+<li>Configure the IP address of the adapter.</li>
 </ol>
+<details class="sickinfo">
+<summary>Detailed instructions</summary>
+<ul>
+<li>Shortcut in Windows: "Win + R": "ncpa.cpl"</li>
+</ul>
+<p><img alt="Win + R: ncpa.cpl" src="../images/Network_adapter_1.png"></p>
+<ul>
+<li>
+<p>Alternative: Open your operating system's network settings (e.g., <strong>Control Panel &gt; Network &amp; Internet</strong> in Windows 10/11, or the equivalent in your OS).<br>
+  Choose <strong>Advanced network settings</strong>  </p>
+</li>
+<li>
+<p>Identify the USB Ethernet adapter (might be listed as <strong>ASIX USB to Gigabit Ethernet Family Adapter</strong>).</p>
+</li>
+</ul>
+<p><img alt="Win + R: ncpa.cpl" src="../images/Network_adapter_2.png"> </p>
+<ul>
+<li>
+<p>Click on the adapter and select <strong>Properties / Edit</strong>.  </p>
+</li>
+<li>
+<p>Enter administrator credentials if necessary.  </p>
+</li>
+<li>
+<p>Locate <strong>Internet Protocol Version 4 (TCP/IPv4)</strong> and select <strong>Properties</strong> or right-click.</p>
+</li>
+</ul>
+<p><img alt="Win + R: ncpa.cpl" src="../images/Network_adapter_3.png">  </p>
+<ul>
+<li>Change from DHCP to manual IP settings:<br>
+  Use the following IP address: <code>192.168.0.xxx</code><br>
+  Subnet mask: <code>255.255.0.0</code></li>
+</ul>
+<p><img alt="Win + R: ncpa.cpl" src="../images/Network_adapter_4.png">  </p>
+<ul>
+<li>Save changes by clicking <strong>Ok</strong> in both windows.</li>
+</ul>
+</details>
+<ol>
+<li>Open a browser and enter the default IP address 192.168.0.1.
+You should now see the below UI. Create an Empty Job.</li>
+</ol>
+<p><img alt="Win + R: ncpa.cpl" src="../images/Vision_1.png"></p>
+<p><strong>Get started with your first project</strong>: <a href="vision_starter_project.html">Vision Starter Project</a></p>
 <h2 id="setup-mounting-frame">Setup Mounting Frame</h2>
 <p><img alt="Mounting frame" src="../images/20251029_074934.png"></p>
 <p><strong>Required Hardware</strong></p>
@@ -1431,26 +1545,8 @@ Use the two remaining countersunk screws to mount the top bar between the two ve
 <p>Check out the <a href="https://www.sick.com/ag/en/catalog/products/machine-vision-and-identification/machine-vision/inspectorp61x/v2d611p-cmwbi4/p/p685672?tab=downloads">Operating instructions</a> of the device for more information.</p>
 <ol>
 <li>Make sure you are disconnected from any VPN as this may block the connection to the network device. </li>
-<li>
-<p>If you can't connect to the sensor, check if the LED <strong>"Ready"</strong> is green.<br>
-      If not, the power supply is not correctly established. Wait up to 2 minutes and check if the power supply is connected correctly.</p>
-</li>
-<li>
-<p>If you still can’t connect to the device, try changing the IP address of the adapter:  </p>
-<ul>
-<li>Open your operating system's network settings (e.g., <strong>Control Panel &gt; Network &amp; Internet</strong> in Windows 10/11, or the equivalent in your OS).  </li>
-<li>Choose <strong>Advanced network settings</strong>  </li>
-<li>Identify the USB Ethernet adapter (might be listed as <strong>ASIX USB to Gigabit Ethernet Family Adapter</strong>).  </li>
-<li>Click on the adapter and select <strong>Properties / Edit</strong>.  </li>
-<li>Enter administrator credentials if necessary.  </li>
-<li>Configure IP Settings:  </li>
-<li>Locate <strong>Internet Protocol Version 4 (TCP/IPv4)</strong> and select <strong>Properties</strong>.  </li>
-<li>Change from DHCP to manual IP settings.  </li>
-<li>Use the following IP address: <code>192.168.0.xxx</code>  </li>
-<li>Subnet mask: <code>255.255.0.0</code>  </li>
-<li>Save changes and restart your computer or adapter if needed.</li>
-</ul>
-</li>
+<li>If you can't connect to the sensor, check if the LED <strong>"Ready"</strong> is green.<br>
+      If not, the power supply is not correctly established. Wait up to 2 minutes and check if the power supply is connected correctly.</li>
 <li>
 <p>If you still can’t connect, look up the device IP address via <strong>SICK AppManager</strong>:<br>
 <a href="https://www.sick.com/ag/en/catalog/products/digital-services-and-software/engineering-tools/sick-appmanager/sick-appmanager/p/p532784">SICK AppManager | SICK</a><br>
