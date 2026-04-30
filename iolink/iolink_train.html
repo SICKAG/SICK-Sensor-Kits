@@ -1275,6 +1275,57 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#iodd-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      IODD Files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#port-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Port Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Port Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sensors-eg-w10-at-s1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sensors (e.g., W10 at S1):
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lamps-eg-led-at-s5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lamps (e.g., LED at S5)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logic-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logic Editor
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1439,6 +1490,57 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#iodd-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      IODD Files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#port-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Port Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Port Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sensors-eg-w10-at-s1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sensors (e.g., W10 at S1):
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lamps-eg-led-at-s5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lamps (e.g., LED at S5)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logic-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logic Editor
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1494,7 +1596,7 @@
 <li>S1: W10</li>
 <li>S2: UC12</li>
 <li>S3: IMC30</li>
-<li>S4: SLT</li>
+<li>S4: SLT or LED yellow</li>
 <li>S5: LED green (initial status: blinking - as it's set to IO-Link)</li>
 <li>S6: LED red (initial status: blinking - as it's set to IO-Link)</li>
 </ul>
@@ -1516,13 +1618,99 @@
 <ul>
 <li>Connect to the UI of the SIG300 as mentioned in <a href="iolink_getting_started.html">Getting Started</a>.</li>
 <li>Log in as <strong>Service</strong>, password: servicelevel and press <strong>Keep Default Password</strong></li>
-<li>Select <strong>Application</strong> &gt; <strong>IODD File Management</strong> and xxx</li>
 </ul>
-<p>xxx</p>
+<h3 id="iodd-files">IODD Files</h3>
+<ul>
+<li>Select <strong>Application</strong> &gt; <strong>IODD File Management</strong> and check if the IODDs for all sensors are uploaded.</li>
+</ul>
+<p><img alt="IODD" src="../images/iodd_1.png"></p>
+<ul>
+<li>If the IODDs are missing, you can download them via the SICK website of the product in the <strong>Downloads</strong> &gt; <strong>Software</strong> tab or on <a href="https://ioddfinder.io-link.com/">IODDfinder.com</a> by entering the article number (W10: 1133547, UC12: 6077702, IMC30: 1079301, SLT060: 6075938)</li>
+<li>Assign the IODDs to the ports if it hasn't worked automatically yet</li>
+</ul>
+<p><img alt="IODD" src="../images/iodd_2.png"></p>
+<h3 id="port-configuration">Port Configuration</h3>
+<h4 id="sensors-eg-w10-at-s1">Sensors (e.g., W10 at S1):</h4>
+<p>You can use the sensors either as Digital Input, e.g. to trigger a Digital Output such as an LED, OR use the sensor as IO-Link device to communicate with other IO-Link devices such as the SLT.</p>
+<ul>
+<li>Go to <strong>Ports</strong> &gt; <strong>Port 1</strong>, choose the <strong>Access rights</strong> tab and set the check marks as in the picture (<strong>Read process and service data</strong> and <strong>Sensor port configuration</strong> are relevant)</li>
+</ul>
+<p><img alt="Port Configuraton 1" src="../images/iolink_1.png"></p>
+<ul>
+<li>
+<p>Switch to the tab <strong>Port 1</strong> for the configuration as in the image described below (Assigned IODD, IO-Link, Device Identification Check Yes, Version V1.1 is relevant)
+<strong>Note:</strong> Pin 4 is relevant for SLT (IO-Link); Pin 2 can be used for Digital Outputs only, e.g. LEDs (set sensor to Digital In)</p>
+</li>
+<li>
+<p>Switch to the <strong>IODD Viewer</strong> tab and select the measurement type at the top center. You can already read the measurement value at the very bottom center. </p>
+</li>
+<li>To set a trigger at a specific measurement value, you can adjust the parameters. E.g. if you want the W10 to be triggered if the measurement value is bigger than 180 mm, find the <strong>Detection settings</strong> and set the <strong>Qint.1 SP1 sensing range</strong> to 180 mm and <strong>High active</strong>.</li>
+</ul>
+<p><img alt="Qint.1" src="../images/iolink_6.png"></p>
+<ul>
+<li>Repeat these steps for all sensors. 
+<strong>Note:</strong> every sensor looks a bit different in the IODD Viewer tab depending on functional principle and integrated functions/parameters.</li>
+</ul>
+<h4 id="lamps-eg-led-at-s5">Lamps (e.g., LED at S5)</h4>
+<p><strong>Note:</strong> the SLOT works same as a sensor in terms of Port configuration. For simple Digital Outputs (e.g. LEDs), please follow the instructions below.</p>
+<ul>
+<li>Go to <strong>Ports</strong> &gt; <strong>Port 1</strong>, choose the <strong>Access rights</strong> tab and set the check marks as in the picture (<strong>Write process data</strong> is relevant).</li>
+</ul>
+<p><img alt="Access rights" src="../images/iolink_4.png"></p>
+<ul>
+<li>Switch to the tab <strong>Port 5</strong> for the configuration. Set <strong>Pin 4</strong> to <strong>Digital In</strong>. Depending on the Sensor port configuration in the access rights, you can toggle HI/LO to see if the LED is working. </li>
+</ul>
+<p><img alt="LED" src="../images/iolink_5.png"></p>
+<ul>
+<li>Repeat for all LEDs.</li>
+</ul>
+<h3 id="logic-editor">Logic Editor</h3>
+<p>To combine the measurement data from the sensors (digital in) and the LEDs (digital out), we use the Logic Editor.
+<strong>Note:</strong> You always need to click on <strong>Apply</strong> so that your changes in the Logic Editor take effect.</p>
+<ul>
+<li>Go to <strong>Application</strong> &gt; <strong>Logic editor</strong>. Now create the logic for all sensors and LEDs according to the setup you defined in the beginning (e.g. make the green LED light up if a waggon is loaded).
+In the following steps, there are some examples you can follow.</li>
+</ul>
 <details class="sickinfo">
-<summary>Sample solution</summary>
-<p>xxx</p>
-</details></div>
+<summary>Light up green LED if waggon is loaded</summary>
+<p>First, try out a direct connection between SIDI2 (Pin 2 of W10) and S5DO4 (Pin 4 of LED) by dragging the arrow from the block on the left to the one on the right side. Depending on the measurement value of the W10, the LED should now light up.
+You can use logic blocks to negate the result, e.g. <strong>Digital Logic</strong> &gt; <strong>Gate</strong> &gt; <strong>NOT</strong> in between the two blocks</p>
+</details>
+<p><img alt="Logic editor" src="../images/iolink_7.png"></p>
+<details class="sickinfo">
+<summary>Light up red LED if train is detected</summary>
+<ul>
+<li>The UC12 can be used to detect any object in a specific area.</li>
+<li>Mount the UC12 according to the measuring range and the height of the train that should be detected. Use the <strong>IODD Viewer</strong> to see the measurement result and test a good position for the UC12.</li>
+<li>Adjust the trigger value by changing the value in <strong>IODD Viewer</strong> &gt; <strong>SSC1: switch signal channel 1</strong> &gt; <strong>SP1</strong> value and logic <strong>Low active</strong>
+<strong>Note</strong>: the value is not a milimeter value.</li>
+</ul>
+<p><img alt="UC12 config" src="../images/uc12_1.png"></p>
+<ul>
+<li>Go the the <strong>Logic editor</strong> and connect S2I2 (Port 2 of UC12) and S6DO4 (Pin 4 of LED red). A NOT gate is not necessary as the logic is low active.</li>
+</ul>
+<p><img alt="UC12 logic" src="../images/uc12_2.png"></p>
+<ul>
+<li>Click on <strong>Apply</strong> and test if it works.</li>
+</ul>
+</details>
+<details class="sickinfo">
+<summary>Light up yellow LED if a metal object is detected</summary>
+<ul>
+<li>The IMC30 can be used to detect metal objects in a specific area.</li>
+<li>Mount the IMC30 according to the measuring range and the distance of the loaded metal objects to the gate. Use the <strong>IODD Viewer</strong> to see the measurement result and test a good position for the IMC30. There's no need to set a parameter.</li>
+<li>Go the the <strong>Logic editor</strong> and connect S3I2 (Port 2 of UC12) and S4DO4 (Pin 4 of LED yellow).</li>
+</ul>
+<p><img alt="IMC30 logic" src="../images/imc30_1.png"></p>
+<ul>
+<li>Click on <strong>Apply</strong> and test if it works.</li>
+</ul>
+</details>
+<p>??? Make any LED light up for 3 seconds after the trigger.
+    - Add a <strong>Delay</strong> block in the logic editor and set the <strong>OffDelay</strong> to 3000 (ms) to delay the lamp going out for 3 seconds</p>
+<div class="language-text highlight"><pre><span></span><code>![Delay](../images/delay.png)
+</code></pre></div>
+<p>SLT configuration coming soon</p></div>
 
 
 
