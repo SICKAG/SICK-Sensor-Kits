@@ -27,5 +27,13 @@ Feel free to create your own projects and share them with us!
       <td>0,5-2 hours</td>
       <td>Test objects<br>Glass of Water<br>Flat materials (e.g. pieces of paper)</td>
     </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="iolink_train.html">Smart Train Loop</a></td>
+      <td>Build a smart gate with different sensors that detect train waggons and load.</td>
+      <td>Advanced</td>
+      <td>1-2 Hours</td>
+      <td>Mounting Kit<br>Battery-powered train with tracks<br>(Metallic) objects for train waggons<br>optional: SLT</td>
+    </tr>
   </tbody>
 </table>

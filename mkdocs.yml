@@ -42,6 +42,7 @@ nav:
     - Example Projects:
       - Overview: iolink/iolink_example_projects.md
       - SensorFusion: iolink/sensor_fusion.md
+      - Smart Train Loop: iolink/iolink_train.md
     - Training Material: iolink/iolink_training_material.md
     - FAQ: iolink/iolink_faq.md
   - FAQ: faq.md
