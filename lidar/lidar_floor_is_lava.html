@@ -1275,6 +1275,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../iolink/iolink_train.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Smart Train Loop
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1475,16 +1498,18 @@
   </tbody>
 </table>
 
-<p><img alt="Piano" src="../images/piano.jpg"></p>
+<p><img alt="Lava" src="../images/lava.jpg"></p>
+<p>In this project, the aim is to create a setup for the game "The floor is lava" with a LiDAR sensor. The LiDAR can distinguish static objects and moving objects moving through a parcours. A basic Python script reads out the sensor data and plays a sound once a person touching the floor is detected.</p>
 <h2 id="instruction">Instruction</h2>
+<p><strong>Note:</strong> The mentioned code snippets are just examples. Feel free to use your own code to run the project.</p>
 <h3 id="field-evaluation">Field evaluation</h3>
 <ul>
 <li>Connect your device as mentioned in <a href="lidar_getting_started.html">Getting Started</a>. The UI should now look something like this:</li>
 </ul>
 <p><img alt="LiDAR 1" src="../images/LiDAR_1.png"></p>
 <ul>
-<li>Log in as <strong>Service</strong>, password:servicelevel and press Keep Default Password</li>
-<li>Select <strong>Appliation</strong> &gt; <strong>Field evaluation</strong> and draw a field in a suitable size.</li>
+<li>Log in as <strong>Service</strong>, password: servicelevel and press <strong>Keep Default Password</strong></li>
+<li>Select <strong>Application</strong> &gt; <strong>Field evaluation</strong> and draw a field in a suitable size.</li>
 </ul>
 <p><img alt="LiDAR 3" src="../images/LiDAR_3.png"></p>
 <ul>
@@ -1493,7 +1518,7 @@
 <p><img alt="LiDAR 2" src="../images/LiDAR_2.png"></p>
 <ul>
 <li>
-<p>Define the field parameters, e.g. the max. blankng size which corresponds to the minimal oject size the infringes the field</p>
+<p>Define the field parameters, e.g. the max. blanking size which corresponds to the minimal oject size the infringes the field</p>
 </li>
 <li>
 <p>Draw a field in a suitable size.</p>
@@ -1534,7 +1559,7 @@
 </ul>
 <p><img alt="LiDAR 5" src="../images/LiDAR_5.png"></p>
 <ul>
-<li><strong>2</strong> = Field not infringed, <strong>4</strong> = Field not infringed</li>
+<li><strong>2</strong> = Field not infringed, <strong>4</strong> = Field infringed</li>
 <li>Read value (e.g., to play a sound or turn on a light)</li>
 </ul>
 <details class="sickinfo">
@@ -1560,39 +1585,41 @@
 </details>
 <ul>
 <li>Read continuously: Include in 'while True'</li>
-<li>Complete code</li>
+<li><strong>Complete code:</strong></li>
 </ul>
 <details class="sickinfo">
 <summary>Code</summary>
-<p>```python
-import socket</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">socket</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">winsound</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">HOST</span> <span class="o">=</span> <span class="s2">"192.168.0.1"</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">PORT</span> <span class="o">=</span> <span class="mi">2111</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="k">def</span><span class="w"> </span><span class="nf">sopas</span><span class="p">(</span><span class="n">cmd</span><span class="p">):</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="k">with</span> <span class="n">socket</span><span class="o">.</span><span class="n">socket</span><span class="p">(</span><span class="n">socket</span><span class="o">.</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">socket</span><span class="o">.</span><span class="n">SOCK_STREAM</span><span class="p">)</span> <span class="k">as</span> <span class="n">s</span><span class="p">:</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    <span class="n">s</span><span class="o">.</span><span class="n">settimeout</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    <span class="n">s</span><span class="o">.</span><span class="n">connect</span><span class="p">((</span><span class="n">HOST</span><span class="p">,</span> <span class="n">PORT</span><span class="p">))</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    <span class="n">telegram</span> <span class="o">=</span> <span class="sa">b</span><span class="s2">"</span><span class="se">\x02</span><span class="s2">"</span> <span class="o">+</span> <span class="n">cmd</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">"ascii"</span><span class="p">)</span> <span class="o">+</span> <span class="sa">b</span><span class="s2">"</span><span class="se">\x03</span><span class="s2">"</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>    <span class="n">s</span><span class="o">.</span><span class="n">sendall</span><span class="p">(</span><span class="n">telegram</span><span class="p">)</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>    <span class="k">return</span> <span class="n">s</span><span class="o">.</span><span class="n">recv</span><span class="p">(</span><span class="mi">1024</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">"ascii"</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">"</span><span class="se">\x02\x03</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="c1"># Enable measurement</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="nb">print</span><span class="p">(</span><span class="n">sopas</span><span class="p">(</span><span class="s2">"sMN SetAccessMode 03 F4724744"</span><span class="p">))</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="nb">print</span><span class="p">(</span><span class="n">sopas</span><span class="p">(</span><span class="s2">"sMN LMCstartmeas"</span><span class="p">))</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="c1"># Read field evaluation</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="n">response</span> <span class="o">=</span> <span class="n">sopas</span><span class="p">(</span><span class="s2">"sRN FieldEvaluationResult"</span><span class="p">)</span>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Field evaluation:"</span><span class="p">,</span> <span class="n">response</span><span class="p">)</span>
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>
+</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="n">output</span><span class="o">=</span> <span class="n">response</span><span class="p">[</span><span class="mi">38</span><span class="p">:</span><span class="mi">39</span><span class="p">]</span>
+</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="c1">#print(output)</span>
+</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>
+</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="k">if</span> <span class="n">output</span> <span class="o">==</span> <span class="s1">'4'</span><span class="p">:</span>
+</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>    <span class="n">winsound</span><span class="o">.</span><span class="n">Beep</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a><span class="k">else</span><span class="p">:</span>  <span class="nb">print</span><span class="p">(</span><span class="s1">'error'</span><span class="p">)</span>
+</span></code></pre></div>
 </details>
-<p>import winsound</p>
-<p>HOST = "192.168.0.1"
-PORT = 2111</p>
-<p>def sopas(cmd):
-    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        s.settimeout(2)
-        s.connect((HOST, PORT))
-        telegram = b"\x02" + cmd.encode("ascii") + b"\x03"
-        s.sendall(telegram)
-        return s.recv(1024).decode("ascii").strip("\x02\x03")</p>
-<h1 id="enable-measurement">Enable measurement</h1>
-<p>print(sopas("sMN SetAccessMode 03 F4724744"))
-print(sopas("sMN LMCstartmeas"))</p>
-<p>while True:
-    # Read field evaluation
-    response = sopas("sRN FieldEvaluationResult")
-    print("Field evaluation:", response)</p>
-<div class="language-text highlight"><pre><span></span><code>output= response[38:39]
-#print(output)
-
-
-if output == '4':
-    winsound.Beep(200, 1000)
-else:  print('error')
-```
-</code></pre></div>
 <ul>
 <li>Run through the sequence or use other sounds or variations</li>
 </ul></div>
