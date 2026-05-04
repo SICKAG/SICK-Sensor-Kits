@@ -24,7 +24,7 @@ Feel free to create your own projects and share them with us!
       <td><a href="vision_starter_project.html">Vision Starter Project</a></td>
       <td>Get started with first image acquisition settings and an easy AI Classification and Anomaly Detection task.</td>
       <td>Basic</td>
-      <td>20 Minutes</td>
+      <td>90 Minutes</td>
       <td>none – everything included in the Starter Kit</td>
     </tr>
     <tr>

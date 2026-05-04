@@ -8,8 +8,8 @@ You are now ready to get started with the IO-Link Connectivity Starter Kit. Foll
 2.	Choose the correct plug adapter and plug the power supply into an outlet.
 3.	Connect the USB-C cable to the PC.
 4.	Open a browser and enter the default IP address 169.254.0.1
-5.	Connect the sensors W10, UC12 and IM30 with the IO-Link cables to the SIG300
-6.	The devices are now ready to use. Make sure to select “Keep default password”.
+5.	Connect the sensors W10, UC12 and IM30 with the IO-Link cables to the SIG300 (e.g. to port S1-S3)
+6.	The devices are now ready to use
 7.	The sensors can be mounted onto the assembled frame (see below) with the mounting brackets (only applies with a Mounting Kit - 1154060) 
 
 ![Setup_IO-Link](../images/Setup_iolink.png)
@@ -88,7 +88,7 @@ Make sure to follow these steps:
       - Go to the **Support Portal**, register, and create a case to get assistance.
 
 
-**If you want to learn more about the network device or Nova, check out this tutorial series**
+**If you want to learn more about the network device, the ports, or the Logic editor, check out this tutorial series**
 
 
 ## Tutorial

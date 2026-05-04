@@ -3,7 +3,7 @@ site_url: https://sickag.github.io/SICK-Sensor-Kits
 use_directory_urls: false
 nav:
   - Home: index.md
-  - Vision Sensor Kit: 
+  - Vision Starter Kit: 
     - Overview: vision/vision_overview.md
     - Getting Started: vision/vision_getting_started.md
     - Code Snippets: vision/vision_code_snippets.md
@@ -32,7 +32,7 @@ nav:
       - Field Evaluation: lidar/lidar_field_evaluation.md
       - Darts: vision/darts.md
       - Distance Estimation: lidar/distance_estimation.md
-      - The floor is lava: lidar/lidar_floor_is_lava.md
+      - The Floor is Lava: lidar/lidar_floor_is_lava.md
       - Human Piano / Air Piano: lidar/lidar_human_piano_air_piano.md
   - IO-Link Connectivity Starter Kit: 
     - Overview: iolink/iolink_overview.md

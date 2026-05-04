@@ -36,6 +36,8 @@ Follow these steps to set up and start using your LiDAR Starter Kit:
 
       - Save changes by clicking **Ok** in both windows.
 
+4. Open a browser and enter the default IP address 192.168.0.1. You should now see the Sensor UI
+
 ![LiDAR Connection Diagram](../images/lidarconnection.JPG)  
 *Figure 1: Connection setup for the LiDAR Starter Kit.*
 
