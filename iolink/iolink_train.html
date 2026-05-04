@@ -1326,6 +1326,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#reset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reset
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1541,6 +1550,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#reset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reset
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1583,7 +1601,7 @@
 </table>
 
 <p><img alt="Train" src="../images/Train_1.jpg"></p>
-<p>In this project, the aim is to analyze a train running on a track loop. This is done with deifferent sensor for presence detection, distance measurement and detection of metal objects. The results can be visualized with LEDs. The logic is created in the logic editor of the SIG300 network device.</p>
+<p>In this project, the aim is to analyze a train running on a track loop. This is done with different sensors for presence detection, distance measurement and detection of metal objects. The results can be visualized with LEDs. The logic is created in the logic editor of the SIG300 network device.</p>
 <h2 id="instruction">Instruction</h2>
 <h3 id="setup">Setup</h3>
 <ul>
@@ -1615,7 +1633,7 @@
 <details class="sickinfo">
 <summary>Example setup and tasks</summary>
 <ul>
-<li><strong>UC12</strong> : On top of frame to detect the train (optionally tilted to detect the train before passing the gate) - keep in mind the max. measuring range</li>
+<li><strong>UC12</strong> : On top of frame to detect the train - keep in mind the max. measuring range</li>
 <li><strong>W10</strong>: At the bottom of the other vertical bar to check if a waggon is loaded or not - keep in mind the minmum height of the objects on the waggon</li>
 <li><strong>IMC30</strong>: At the bottom of one vertical bar to detect metallic objects on the waggon - keep in mind the maximum measuring distance</li>
 </ul>
@@ -1633,7 +1651,7 @@
 </ul>
 <p><img alt="IODD" src="../images/iodd_1.png"></p>
 <ul>
-<li>If the IODDs are missing, you can download them via the SICK website of the product in the <strong>Downloads</strong> &gt; <strong>Software</strong> tab or on <a href="https://ioddfinder.io-link.com/">IODDfinder.com</a> by entering the article number (W10: 1133547, UC12: 6077702, IMC30: 1079301, SLT060: 6075938).</li>
+<li>If the IODDs are missing, you can download them via the SICK website of the product in the <strong>Downloads</strong> &gt; <strong>Software</strong> tab or on <a href="https://ioddfinder.io-link.com/">IODDfinder.com</a> by entering the article number (W10: WTM10x-xx1611xxA00xVxxxxxxxxxx, UC12: 6077702, IMC30: 1079301, SLT060: 6075938).</li>
 <li>Assign the IODDs to the ports if it hasn't worked automatically yet.</li>
 </ul>
 <p><img alt="IODD" src="../images/iodd_2.png"></p>
@@ -1723,7 +1741,9 @@ You can use logic blocks to negate the result, e.g. <strong>Digital Logic</stron
 <li>Add a <strong>Delay</strong> block in the logic editor and set the <strong>OffDelay</strong> to 3000 (ms) to delay the lamp going out for 3 seconds</li>
 </ul>
 <p><img alt="Delay" src="../images/delay.png"></p>
-</details></div>
+</details>
+<h3 id="reset">Reset</h3>
+<p>When you are finished with your project, you can press <strong>Clear</strong> in the Logic Editor to remove all blocks and connections. Please note that a <strong>Reset to factory settings</strong> will also delete the uploaded IODD files.</p></div>
 
 
 
