@@ -202,7 +202,7 @@
   
   
   <span class="md-ellipsis">
-    Vision Sensor Kit
+    Vision Starter Kit
     
   </span>
   
@@ -213,7 +213,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Vision Sensor Kit
+            Vision Starter Kit
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -937,7 +937,7 @@
   
   
   <span class="md-ellipsis">
-    The floor is lava
+    The Floor is Lava
     
   </span>
   
@@ -1499,7 +1499,7 @@
 </table>
 
 <p><img alt="Piano" src="../images/piano.jpg"></p>
-<p>In this project, the aim is to imulate keys of a piano by drawing fields that play different sounds when being infringed by objects. A basic python script runs the logic of the different notes.</p>
+<p>In this project, the aim is to simulate keys of a piano by drawing fields that play different sounds when being infringed by objects. A basic python script runs the logic of the different notes.</p>
 <h2 id="instruction">Instruction</h2>
 <p><strong>Note:</strong> The mentioned code snippets are just examples. Feel free to use your own code to run the project.</p>
 <h3 id="field-evaluation">Field evaluation</h3>
@@ -1508,16 +1508,16 @@
 </ul>
 <p><img alt="LiDAR 1" src="../images/LiDAR_1.png"></p>
 <ul>
-<li>Log in as <strong>Service</strong>, password: servicelevel and press <strong>Keep Default Password</strong></li>
+<li>Log in as <strong>Service</strong>, password: <strong>servicelevel</strong> and press <strong>Keep Default Password</strong></li>
 <li>Select <strong>Application</strong> &gt; <strong>Field evaluation</strong> and draw a field in a suitable size.</li>
 </ul>
 <p><img alt="LiDAR 3" src="../images/LiDAR_3.png"></p>
 <ul>
-<li>If useful, perform a Teach-in to ignore all static objects. Stop the teach-in after around 10 seconds.</li>
+<li>If useful, perform a <strong>Teach-in</strong> to ignore all static objects. Stop the teach-in after around 10 seconds.</li>
 </ul>
 <p><img alt="LiDAR 2" src="../images/LiDAR_2.png"></p>
 <ul>
-<li>Define the field parameters, e.g. the max. blanking size which corresponds to the minimal oject size the infringes the field</li>
+<li>Define the field parameters, e.g. the max. blanking size which corresponds to the minimal oject size the infringes the field.</li>
 </ul>
 <p><img alt="LiDAR 4" src="../images/LiDAR_4.png"></p>
 <ul>
@@ -1559,7 +1559,7 @@
 <p><img alt="LiDAR 5" src="../images/LiDAR_5.png"></p>
 <ul>
 <li><strong>2</strong> = Field not infringed, <strong>4</strong> = Field infringed</li>
-<li>Read value (e.g., to play a sound or turn on a light)</li>
+<li>Now, read out a specific value (field infringed or not infringed, e.g. to play a sound or turn on a light).</li>
 </ul>
 <details class="sickinfo">
 <summary>Code</summary>
@@ -1569,7 +1569,7 @@
 </details>
 <ul>
 <li><strong>38:39</strong> refers to the position in the result (first digit 2 or 4)</li>
-<li>Check if the result is 2 for "not infringed" and 4 for "infringed"</li>
+<li>Check if the result is giving out the right position (either 2 for "not infringed" or 4 for "infringed").</li>
 <li>Play a sound if the field is infringed; otherwise, display the text "error". Important: Type "import winsound" on the second line of the code (below the previous "import socket")</li>
 </ul>
 <details class="sickinfo">
@@ -1583,7 +1583,7 @@
 </span></code></pre></div>
 </details>
 <ul>
-<li>Read continuously: Include in 'while True'</li>
+<li>To read out sensor data continuously, include the code in 'while True'</li>
 </ul>
 <details class="sickinfo">
 <summary>Code</summary>
