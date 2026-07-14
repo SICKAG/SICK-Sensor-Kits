@@ -4,6 +4,7 @@ Welcome to the GitHub for the SICK Sensor Starter Kits!
 
 The Kits provide a comprehensive set of sensors, accessories and examples to help you quickly get started with SICK sensors. These kits include everything you need to explore, prototype, and integrate sensor solutions into your projects.
 
+
 <style>
   .slideshow-container {
     position: relative;
@@ -80,16 +81,44 @@ The Kits provide a comprehensive set of sensors, accessories and examples to hel
   setInterval(nextImage, 5000);
 </script>
 
-<br>
+
+## Choose your Starter Kit
+
+Select the Starter Kit you are working with to open the setup guide, first demo and example projects.
+
+<div class="grid cards kit-card-grid" markdown>
+
+-    ![Vision Starter Kit](images\vision.jpg)
+
+    **Vision Starter Kit**
+
+    Get started with image-based sensor applications and AI-based vision examples.
+
+     [Vision](vision/vision_overview.md){.md-button}
+
+-   ![LiDAR Starter Kit](images/lidar.jpg)
+
+    **LiDAR Starter Kit**
+
+    Explore distance measurement, field evaluation and interactive LiDAR demonstrations.
+
+     [LiDAR](lidar/lidar_overview.md){.md-button}
+
+-   ![IO-Link](images/iolink.jpg)
+
+    **IO-Link Connectivity Starter Kit**
+
+    Connect IO-Link devices and read process data.
+
+    [IO-Link](iolink/iolink_overview.md){.md-button}
+
+</div>
+
+## Need a Starter Kit?
+
 Don’t have a Starter Kit yet? Find out more and purchase yours here!
 
 [Starter Kits](https://www.sick.com/s/sensor-starter-kits){:target="_blank".md-button}
 
-
-Please note that the starter kits are intended for educational purposes only and must not be used in production environments.
-
-Got your Starter Kit(s)? Start exploring now!
-
-- [LIDAR Starter Kit](lidar/lidar_overview.md)
-- [Vision Starter Kit](vision/vision_overview.md)
-- [IO Link Connectivity Starter Kit](iolink/iolink_overview.md)
+!!! note "Educational use"
+    Please note that the Starter Kits are intended for educational purposes only and must not be used in production environments.
