@@ -1,10 +1,19 @@
 site_name: SICK Sensor Starter Kits
 site_url: https://sickag.github.io/SICK-Sensor-Kits
 use_directory_urls: false
+extra:
+  alternate:
+    - name: English
+      link: /SICK-Sensor-Kits/index.html
+      lang: en
+    - name: Deutsch
+      link: /SICK-Sensor-Kits/de/index.html
+      lang: de
 nav:
   - Home: index.md
   - Vision Starter Kit: 
     - Overview: vision/vision_overview.md
+    - Übersicht: de/vision/vision_overview_test.md
     - Getting Started: vision/vision_getting_started.md
     - Code Snippets: vision/vision_code_snippets.md
     - Advanced: vision/vision_advanced.md
@@ -65,6 +74,7 @@ extra_css:
 copyright: "© SICK AG 2025"
 plugins:
   - mkdocs-video
+
 
 markdown_extensions:
   - pymdownx.highlight:

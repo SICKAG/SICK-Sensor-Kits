@@ -41,3 +41,11 @@ blockquote {
   -webkit-text-fill-color: rgb(0, 0, 0);
   background-color: #fafafa;
 }
+
+.center-text {
+  text-align: center;
+}
+
+.kit-card-grid {
+  justify-content: center;
+}
