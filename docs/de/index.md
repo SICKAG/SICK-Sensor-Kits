@@ -79,7 +79,7 @@ Die Kits enthalten eine umfassende Auswahl an Sensoren, Zubehör und Anwendungsb
     updateSlide();
   }
 
-  // Alle 3 Sekunden automatisch weiterblättern
+  // Auto-slide every 3 seconds
   setInterval(nextImage, 5000);
 </script>
 

@@ -8,9 +8,9 @@ Sie können nun mit dem IO-Link-Konnektivitäts-Starter-Kit loslegen. Befolgen S
 2.	Wählen Sie den passenden Steckeradapter aus und schließen Sie das Netzteil an eine Steckdose an.
 3.	Schließen Sie das USB-C-Kabel an den PC an.
 4.	Öffnen Sie einen Browser und geben Sie die Standard-IP-Adresse 169.254.0.1 ein.
-5.	Schließen Sie die Sensoren W10, UC12 und IM30 über die IO-Link-Kabel an das SIG300 an (z. B. an die Anschlüsse S1–S3).
+5.	Schließen Sie die Sensoren W10, UC12 und IM30 mit den IO-Link-Kabeln an das SIG300 an (z. B. an die Anschlüsse S1–S3).
 6.	Die Geräte sind nun einsatzbereit
-7.	Die Sensoren können mit den Befestigungswinkeln am zusammengebauten Rahmen (siehe unten) montiert werden (gilt nur bei Verwendung eines Montagesatzes – 1154060). 
+7.	Die Sensoren können mit den Befestigungswinkeln am zusammengebauten Rahmen (siehe unten) montiert werden (gilt nur bei Verwendung des Montagesatzes – 1154060). 
 
 ![Einrichtung_IO-Link](../images/Setup_iolink.png)
 
@@ -37,7 +37,7 @@ Scrollen Sie nach unten, um zum Tutorial-Video zu gelangen.
 * Setzen Sie zwei M5-T-Nut-Muttern in die untere Nut ein (auf der der M4-Mutter gegenüberliegenden Seite).
 * Befestigen Sie zwei Winkelhalterungen mit Senkschrauben und ziehen Sie diese mit einem Inbusschlüssel in den M5-T-Nut-Muttern fest.
 * Setzen Sie an beiden Enden des Profils Endkappen auf.
-* Schieben Sie die Winkelhalterungen an beide Enden des Profils und ziehen Sie die Schrauben so fest, dass die Winkelhalterungen und die Endkappen fluchten.
+* Schieben Sie die Winkelhalterungen an beide Enden des Profils und ziehen Sie die Schrauben so fest, dass die Winkelhalterungen und die Endkappen bündig abschließen.
 
 **Untere Leisten (2 Stück)**
 
@@ -46,7 +46,7 @@ Scrollen Sie nach unten, um zum Tutorial-Video zu gelangen.
 * Setzen Sie an beiden Enden die Endkappen auf.
 * Legen Sie beide Profile parallel vor sich hin, längs ausgerichtet, sodass die Enden zu Ihnen hin und von Ihnen weg zeigen – nicht seitlich über den Tisch hinweg.
 
-**Vertikale Balken (2x)**
+**Vertikale Balken (2 Stück)**
 
 * Setzen Sie am unteren Ende jeder Stange eine M5-T-Nut-Mutter ein.
 * Befestigen Sie jede vertikale Stange im 90°-Winkel an einer unteren Stange mit einer Senkkopfschraube und einem 3-mm-Inbusschlüssel.
@@ -85,7 +85,7 @@ Befolgen Sie unbedingt die folgenden Schritte:
 4. Schauen Sie im **FAQ-Bereich** nach: [FAQ](./iolink_faq.md)
 
 5. Falls das Gerät weiterhin Probleme aufweist:  
-      - Rufen Sie das **Support-Portal** auf, registrieren Sie sich und erstellen Sie einen Fall, um Unterstützung zu erhalten.
+      - Rufen Sie das **Support-Portal** auf, registrieren Sie sich und erstellen Sie einen Support-Fall, um Hilfe zu erhalten.
 
 
 **Wenn Sie mehr über das Netzwerkgerät, die Anschlüsse oder den Logic-Editor erfahren möchten, sehen Sie sich diese Tutorial-Reihe an**

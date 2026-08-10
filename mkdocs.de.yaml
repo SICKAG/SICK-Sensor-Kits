@@ -8,7 +8,7 @@ docs_dir: docs/de
 site_dir: site/de
 
 theme:
-  language: en
+  language: de
   name: material
   palette:
     primary: custom
@@ -45,12 +45,12 @@ markdown_extensions:
 extra:
   alternate:
     - name: English
-      link: http://127.0.0.1:8000/
+      link: /SICK-Sensor-Starter-Kits/en/
       lang: en
     - name: Deutsch
-      link: http://127.0.0.1:8001/
+      link: /SICK-Sensor-Starter-Kits/de/ 
       lang: de
-  
+
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/SICKAG
@@ -64,55 +64,52 @@ extra:
       link: https://www.linkedin.com/company/sicksensorintelligence/
       name: SICK on LinkedIn
 
-
-nav:
-  - Startseite: index.md
-  - Vision Starter Kit: 
-    - Übersicht: vision/vision_overview.md
-    - Erste Schritte: vision/vision_getting_started.md
-    - Codebeispiele: vision/vision_code_snippets.md
-    - Fortgeschrittene Themen: vision/vision_advanced.md
-    - Beispielprojekte: 
-      - Übersicht: vision/vision_example_projects.md
-      - Vision Starter Projekt: vision/vision_starter_project.md
-      - Sechskantmuttern/Schrauben klassifizieren: vision/classify_hex_nuts_screws.md
-      - Sketch Demonstrator: vision/sketch_demonstrator.md
-      - Schokoladenprüfung: vision/chocolate_inspection.md
-      - Schere, Stein, Papier: vision/rock_paper_scissors.md
-      - Recycling: vision/recycling.md
-      - Black Jack: vision/blackjack.md
-      - UNO-Kartenspiel: vision/uno.md
-      - Tic Tac Toe: vision/tic_tac_toe.md
-      - Darts: vision/darts.md
-    - Trainingsmaterial: vision/vision_training_material.md
-    - FAQ: vision/vision_faq.md
-
-  - LiDAR Starter Kit:
-    - Übersicht: lidar/lidar_overview.md
-    - Erste Schritte: lidar/lidar_getting_started.md
-    - Erste Demo: lidar/lidar_field_evaluation.md
-    - Beispielprojekte:
-        - Übersicht: lidar/lidar_example_projects.md
-        - Feldauswertung: lidar/lidar_field_evaluation.md
-        - Entfernungsschätzung: lidar/distance_estimation.md
-        - The Floor is Lava: lidar/lidar_floor_is_lava.md
-        - Human Piano / Air Piano: lidar/lidar_human_piano_air_piano.md
-    - Grundlegende Codebeispiele: lidar/lidar_code_snippets.md
-    - Fortgeschrittene Themen: lidar/lidar_advanced.md
-    - Trainingsmaterial: lidar/lidar_training_material.md
-    - FAQ: lidar/lidar_faq.md
-
-  - IO-Link Connectivity Starter Kit: 
-    - Übersicht: iolink/iolink_overview.md
-    - Erste Schritte: iolink/iolink_getting_started.md
-    - Codebeispiele: iolink/iolink_code_snippets.md
-    - Fortgeschrittene Themen: iolink/iolink_advanced.md
-    - Beispielprojekte:
-      - Übersicht: iolink/iolink_example_projects.md
-      - SensorFusion: iolink/sensor_fusion.md
-      - Smart Train Loop: iolink/iolink_train.md
-    - Trainingsmaterial: iolink/iolink_training_material.md
-    - FAQ: iolink/iolink_faq.md
-
-  - FAQ: faq.md
-  - Impressum: https://www.sick.com/de/de/s/imprint
+nav:  
+    - Startseite: index.md  
+    - Vision Starter Kit:  
+        - Übersicht: vision/vision_overview.md  
+        - Erste Schritte: vision/vision_getting_started.md  
+        - Vision Starter-Projekt: vision/vision_starter_project.md  
+        - Beispielprojekte:  
+                - Übersicht: vision/vision_example_projects.md  
+                - Sechskantmuttern/Schrauben klassifizieren: vision/classify_hex_nuts_screws.md  
+                - Schokoladen-Inspektion: vision/chocolate_inspection.md  
+                - Skizzen-Demonstrator: vision/sketch_demonstrator.md  
+                - Schere, Stein, Papier: vision/rock_paper_scissors.md  
+                - Recycling: vision/recycling.md  
+                - Black Jack: vision/blackjack.md  
+                - UNO Kartenspiel: vision/uno.md  
+                - Tic Tac Toe: vision/tic_tac_toe.md  
+                - Darts: vision/darts.md  
+        - Vision Code-Beispiele: vision/vision_code_snippets.md  
+        - Weiterführende Themen: vision/vision_advanced.md  
+        - Schulungsmaterial:  
+                - Übersicht: vision/vision_training_material.md  
+                - Montagerahmen einrichten: mounting_frame.md  
+        - FAQ - Vision: vision/vision_faq.md  
+    - LiDAR Starter Kit:  
+        - Übersicht: lidar/lidar_overview.md  
+        - Erste Schritte: lidar/lidar_getting_started.md  
+        - LiDAR Starter-Projekt: lidar/lidar_field_evaluation.md  
+        - Beispielprojekte:  
+                - Übersicht: lidar/lidar_example_projects.md  
+                - Distanzschätzung: lidar/distance_estimation.md  
+                - Der Boden ist Lava: lidar/lidar_floor_is_lava.md  
+                - Luft-Klavier: lidar/lidar_human_piano_air_piano.md  
+        - LiDAR Code-Beispiele: lidar/lidar_code_snippets.md  
+        - Weiterführende Themen: lidar/lidar_advanced.md  
+        - Schulungsmaterial: lidar/lidar_training_material.md  
+        - FAQ - LiDAR: lidar/lidar_faq.md  
+    - IO-Link Connectivity Starter Kit:  
+        - Übersicht: iolink/iolink_overview.md  
+        - Erste Schritte: iolink/iolink_getting_started.md  
+        - Code-Beispiele: iolink/iolink_code_snippets.md  
+        - Weiterführende Themen: iolink/iolink_advanced.md  
+        - Beispielprojekte:  
+            - Übersicht: iolink/iolink_example_projects.md  
+            - SensorFusion: iolink/sensor_fusion.md  
+            - Smarte Zugfahrt: iolink/iolink_train.md  
+        - Schulungsmaterial: iolink/iolink_training_material.md  
+        - FAQ: iolink/iolink_faq.md  
+    - FAQ: faq.md  
+    - Impressum: https://www.sick.com/de/de/s/imprint  

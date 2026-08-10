@@ -18,7 +18,7 @@ Das IO-Link-Konnektivitäts-Starter-Kit lässt sich zudem mit zusätzlichem Zube
     <tr>
       <td>1</td>
       <td>
-        Signalturm <a href="https://www.sick.com/ag/en/catalog/products/accessories/signal-transmitters/optical-signal-transmitters/slt060-0b010j700/p/p663661?tab=detail" target="_blank">SLT</a> – optischer Signalsender zur Visualisierung von z. B. Füllstand oder Entfernung
+        Signalturm <a href="https://www.sick.com/ag/en/catalog/products/accessories/signal-transmitters/optical-signal-transmitters/slt060-0b010j700/p/p663661?tab=detail" target="_blank">SLT</a> – optischer Signalsender zur Anzeige von z. B. Füllstand oder Entfernung
       </td>
       <td>6075938</td>
     </tr>

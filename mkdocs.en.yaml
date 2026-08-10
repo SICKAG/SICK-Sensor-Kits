@@ -45,10 +45,10 @@ markdown_extensions:
 extra:
   alternate:
     - name: English
-      link: http://127.0.0.1:8000/
+      link: /SICK-Sensor-Starter-Kits/en/ 
       lang: en
     - name: Deutsch
-      link: http://127.0.0.1:8001/
+      link: /SICK-Sensor-Starter-Kits/de/
       lang: de
 
   social:

@@ -1,2 +1,20 @@
-/site
-auth_key.json
+# Zuerst alles ignorieren  
+/*
+
+# Dann gezielt wieder erlauben (! = Ausnahme)  
+!docs/  
+!mkdocs.en.yaml  
+!mkdocs.de.yaml  
+!.gitignore
+
+# Innerhalb von docs/ nur en/, de/ und scripts/ behalten  
+docs/*  
+!docs/en/  
+!docs/de/  
+!docs/scripts/
+
+# Secrets & Build immer ignorieren  
+auth_key.json  
+.env  
+site/  
+__pycache__/  

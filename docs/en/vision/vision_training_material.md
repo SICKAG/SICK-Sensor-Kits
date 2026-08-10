@@ -104,24 +104,6 @@ allowfullscreen></iframe>
 
 ---
 
-## Related Starter Kit Pages
-
-The following pages are useful if you want to continue learning with the Vision Starter Kit.
-
-<div class="next-step-buttons" markdown>
-
-[Getting Started](./vision_getting_started.md){ .md-button }
-
-[Starter Project](./vision_starter_project.md){ .md-button }
-
-[Example Projects](./vision_example_projects.md){ .md-button }
-
-[Mounting Frame](../mounting_frame.md){ .md-button }
-
-</div>
-
----
-
 ## Practice-Oriented Learning
 
 The best way to learn the Vision Starter Kit is to work through example projects.

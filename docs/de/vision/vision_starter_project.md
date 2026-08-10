@@ -1,9 +1,14 @@
 # Projekt „Vision Starter“
 
+## Kurzbeschreibung
+
+Dieses angeleitete Projekt bietet eine Einführung in den grundlegenden Arbeitsablauf des Vision Starter Kits.  
+Sie werden die ersten Einstellungen für die Bilderfassung vornehmen, eine einfache KI-Klassifizierungsaufgabe erstellen und ein Beispiel für die Anomalieerkennung einrichten.
+
 <table style="border-collapse: collapse; width: 100%;">
   <thead>
     <tr style="background-color: #005aff; color: white;">
-      <th style="padding: 8px; text-align: left;">Kurzbeschreibung</th>
+      <th style="padding: 8px; text-align: left;">Projektart</th>
       <th style="padding: 8px; text-align: left;">Erforderliches Wissensniveau</th>
       <th style="padding: 8px; text-align: left;">Voraussichtliche Dauer</th>
       <th style="padding: 8px; text-align: left;">Zusätzliche Hardware- und Softwareanforderungen</th>
@@ -11,7 +16,7 @@
   </thead>
   <tbody>
     <tr>
-      <td>Machen Sie sich mit den ersten Einstellungen zur Bilderfassung und einer einfachen Aufgabe zur KI-Klassifizierung und Anomalieerkennung vertraut.</td>
+      <td><span class="project-badge guided">Betreutes Projekt</span></td>
       <td>Grundlagen</td>
       <td>90 Minuten</td>
       <td>keine – alles ist im Starter-Kit enthalten</td>
@@ -21,7 +26,26 @@
 
 ![Vision_2](../images/Vision_2.png)
 
+## Ziel
+
+Ziel dieses Projekts ist es, sich mit dem grundlegenden Arbeitsablauf des Vision Starter Kits und von SICK Nova vertraut zu machen.
+
+Nach Abschluss dieses Projekts sollten Sie in der Lage sein:
+
+- Bilder mit dem InspectorP61x erfassen
+- Grundeinstellungen für die Bildaufnahme anpassen
+- Eine einfache KI-Klassifizierungsaufgabe erstellen
+- Verwenden Sie den Object Locator
+- Eine einfache KI-Anomalieerkennungsaufgabe konfigurieren
+- Die Anwendung auf die Standardeinstellungen zurücksetzen
+
+---
+
 ## Anleitung
+
+Befolgen Sie die folgenden Schritte, um das „Vision Starter“-Projekt abzuschließen.
+
+---
 
 ### 1. Bildaufnahme
 
@@ -34,9 +58,11 @@
 
 - Passen Sie den Fokus der Kamera bei Bedarf manuell mit dem Fokus-Einstellwerkzeug (im Lieferumfang enthalten) an.
 
+---
+
 ### 2. KI-Klassifizierung
 
-- Wählen Sie **Analyse** > **Tool hinzufügen** > **Klassifizieren** > **KI-Klassifizierung** (ohne dStudio)
+- Wählen Sie **Analyse** > **Werkzeug hinzufügen** > **Klassifizieren** > **KI-Klassifizierung** (ohne dStudio)
 
 ![Vision_3](../images/Vision_3.png)
 
@@ -61,6 +87,8 @@
 
 - Fügen Sie gegebenenfalls weitere Bilder hinzu oder nehmen Sie zusätzliche Klassen (z. B. „Leer“) auf, um die Ergebnisse zu optimieren.
 
+---
+
 ### 3. Objekt-Locator
 
 Der Object Locator dient dazu, die Position eines Objekts zu ermitteln und Analysen in Bezug auf diese Position durchzuführen (z. B. zur Erkennung von Anomalien).
@@ -80,14 +108,17 @@ Der Object Locator dient dazu, die Position eines Objekts zu ermitteln und Analy
 
 ![Vision_9](../images/Vision_9.png)
 
-**Wichtig**: Der Object Locator muss zuverlässig funktionieren, bevor andere Tools verwendet werden.
-Fügen Sie weitere Werkzeuge direkt unterhalb des Objekt-Locators hinzu.
+!!! warning "Wichtig"
+    Der Object Locator muss zuverlässig funktionieren, bevor weitere Tools zum Einsatz kommen.  
+    Fügen Sie weitere Werkzeuge direkt unterhalb des Objekt-Locators hinzu.
 
 ![Vision_10](../images/Vision_10.png)
 
+---
+
 ### 4. Erkennung von Anomalien
 
-- Wählen Sie links **Jobs** > **Analyse** > **Tool hinzufügen** > **Überprüfen** > **KI-Anomalieerkennung** (ggf. unter „Object Locator“)
+- Wählen Sie links **Jobs** > **Analyse** > **Tool hinzufügen** > **Überprüfen** > **KI-Anomalieerkennung** (ggf. unter „Objektlokalisierer“)
 
 ![Vision_11](../images/Vision_11.png)
 
@@ -96,7 +127,7 @@ Fügen Sie weitere Werkzeuge direkt unterhalb des Objekt-Locators hinzu.
 ![Vision_12](../images/Vision_12.png)
 
 
-- Gehen Sie zurück zu **Live** und **Play** und suchen Sie unten rechts nach **Dataset**. Fügen Sie „gute“ Bilder mit verschiedenen Variationen hinzu. Beginnen Sie vorerst mit nur wenigen „guten“ Bildern.
+- Gehen Sie zurück zu **Live** und **Play** und suchen Sie unten rechts nach **Dataset**. Fügen Sie „Gute“ Bilder mit verschiedenen Variationen hinzu. Beginnen Sie vorerst mit nur wenigen „Guten“ Bildern.
 - Klicken Sie auf **Zug**.
 
 ![Vision_13](../images/Vision_13.png)
@@ -110,12 +141,16 @@ Passen Sie die Trainingsparameter bei Bedarf an:
 ![Vision_14](../images/Vision_14.png)
 
 - Stellen Sie die Optionen auf **Live** und **Play** ein und probieren Sie verschiedene Positionen und Fremdkörper aus.
-- **Hinweis**: Die Anomalieerkennung hängt immer vom Objekt-Locator ab. Wenn dieser fehlschlägt, schlägt auch die Anomalieerkennung fehl.
-- Passen Sie unten rechts unter **Ergebnisse** bei Bedarf den **Anomalie-Score** und den **Visualisierungsbereich** an. Dies beeinflusst die Empfindlichkeit bei der Erkennung von Anomalien und deren Darstellung in einer Heatmap.
+- Passen Sie unten rechts unter **Ergebnisse** bei Bedarf den **Anomaliewert** und den **Darstellungsbereich** an. Dies beeinflusst die Empfindlichkeit bei der Erkennung von Anomalien und deren Darstellung mittels einer Heatmap.
+!!! note "Abhängigkeit vom Objekt-Locator"
+    Die Anomalieerkennung hängt vom Objekt-Locator ab.  
+    Wenn der Object Locator fehlschlägt, schlägt auch die Anomalieerkennung fehl.
 
 ![Vision_15](../images/Vision_15.png)
 
 Falls erforderlich, nehmen Sie weitere Bilder auf und fügen Sie auch schlechte Bilder hinzu, um die Ergebnisse zu optimieren.
+
+---
 
 ### 5. Zurücksetzen
 
@@ -123,4 +158,37 @@ Klicken Sie oben rechts auf die **3 Punkte** > **Anwendungsstandards**
 
 ![Vision_16](../images/Vision_16.png)
 
+---
 
+## Erwartetes Ergebnis
+
+Nach Abschluss dieses Projekts sollte das Vision Starter Kit wie folgt konfiguriert sein:
+
+- Bildaufnahme
+- Einfache KI-Klassifizierung
+- Objektlokalisierung
+- Grundlegende KI-Anomalieerkennung
+
+Sie sollten nun den grundlegenden Arbeitsablauf von SICK Nova verstehen und wissen, wie sich verschiedene Analysewerkzeuge kombinieren lassen.
+
+---
+
+## Zusammenfassung
+
+In diesem angeleiteten Projekt haben Sie gelernt, wie Sie mit dem Vision Starter Kit Bilder erfassen, Objekte klassifizieren, Objekte lokalisieren und Anomalien erkennen können.
+
+Dieses Projekt ist als erste praktische Übung nach Abschluss des Einführungsleitfadens gedacht.
+
+---
+
+## Nächste Schritte
+
+Fahren Sie mit einem weiteren Vision-Beispielprojekt fort oder öffnen Sie die vollständigen Projektdateien auf GitHub.com.
+
+<div class="next-step-buttons" markdown>
+
+[Beispielprojekte](./vision_example_projects.md){ .md-button }
+
+[GitHub](https://github.com/SICKAG/SICK-Sensor-Starter-Kits){:target="_blank" .md-button }
+
+</div>

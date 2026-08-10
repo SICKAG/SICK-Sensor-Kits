@@ -36,7 +36,7 @@ Ziel dieses Projekts ist es, einen Zug zu analysieren, der auf einer Gleisschlei
     - S3: IMC30
     - S4: SLT oder gelbe LED
     - S5: LED grün (Ausgangszustand: blinkt – da auf IO-Link eingestellt)
-    - S6: Rote LED (Anfangsstatus: blinkt – da auf IO-Link eingestellt)
+    - S6: Rote LED (Ausgangszustand: blinkt – da auf IO-Link eingestellt)
 
 - Überlegen Sie sich für jeden Sensor eine sinnvolle Aufgabe und nehmen Sie die Installation vor, indem Sie die Sensoren mithilfe der mitgelieferten Halterungen und Werkzeuge am Befestigungsrahmen des Montagesets befestigen.
 
@@ -60,7 +60,7 @@ Ziel dieses Projekts ist es, einen Zug zu analysieren, der auf einer Gleisschlei
 
 ### IODD-Dateien
 
-- Wählen Sie **Anwendung** > **IODD-Dateiverwaltung** und überprüfen Sie, ob die IODDs für alle Sensoren hochgeladen wurden.
+- Wählen Sie **Anwendung** > **IODD-Dateiverwaltung** und überprüfen Sie, ob die IODD-Dateien für alle Sensoren hochgeladen wurden.
 
 ![IODD](../images/iodd_1.png)
 
@@ -140,7 +140,7 @@ In den folgenden Schritten finden Sie einige Beispiele, an denen Sie sich orient
 
     - Mit dem IMC30 lassen sich Metallgegenstände in einem bestimmten Bereich aufspüren.
     - Montieren Sie den IMC30 entsprechend dem Messbereich und dem Abstand der zu messenden Metallobjekte zum Tor. Verwenden Sie den **IODD Viewer**, um das Messergebnis anzuzeigen und eine geeignete Position für den IMC30 zu ermitteln. Es müssen keine Parameter eingestellt werden.
-    - Gehen Sie zum **Logik-Editor** und verbinden Sie S3I2 (Port 2 von UC12) mit S4DO4 (Pin 4 der gelben LED). 
+    - Gehen Sie zum **Logik-Editor** und verbinden Sie S3I2 (Port 2 des UC12) mit S4DO4 (Pin 4 der gelben LED). 
 
     ![IMC30-Logik](../images/imc30_1.png)
 

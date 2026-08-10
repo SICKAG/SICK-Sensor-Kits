@@ -214,6 +214,16 @@ For larger software projects, the SDK may be a better starting point.
 
 ---
 
+## Raw Sensor Data
+
+If you want to access the raw data of the sensor, have a look at the following page:
+
+[ScanSegmentAPI](https://github.com/SICKAG/ScanSegmentAPI/blob/public/README.md){ .md-button .button-small }
+
+It describes how to receive and decode the raw scan segment data streamed by the sensor.  
+
+---
+
 ## Summary
 
 This page introduced advanced usage options for the LiDAR Starter Kit.

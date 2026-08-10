@@ -139,7 +139,7 @@ Entdecken Sie unsere weiteren Schulungsangebote: [Lernpaket „Künstliche Intel
 
 Willkommen bei der Dokumentation zum **Vision Starter Kit**.
 
-Das Vision Starter Kit hilft Ihnen beim Einstieg in bildbasierte Sensoranwendungen und KI-gestützte Bildverarbeitungsbeispiele. Es umfasst einen industriellen Bildverarbeitungssensor, Beispielcode, Konfigurationen und Dokumentation für Ausbildungs- und Demonstrationszwecke.
+Das Vision Starter Kit hilft Ihnen beim Einstieg in bildbasierte Sensoranwendungen und KI-gestützte Bildverarbeitungsbeispiele. Es enthält einen industriellen Bildverarbeitungssensor, Beispielcode, Konfigurationen und Dokumentation für Ausbildungs- und Demonstrationszwecke.
 
 
 ![Vision-Starter-Kit](../images/vision.jpg){ width="650" }
@@ -163,7 +163,7 @@ Mit dem Vision Starter Kit können Sie typische Bildverarbeitungsanwendungen erk
 
 ## Was ist im Lieferumfang enthalten?
 
-Das Vision-Starter-Kit enthält folgende Komponenten:
+Das Vision Starter Kit enthält folgende Komponenten:
 
 <table style="border-collapse: collapse; width: 100%;">
   <thead>
@@ -277,7 +277,9 @@ Das Vision-Starter-Kit enthält folgende Komponenten:
 
 Beginnen Sie mit der Einrichtungsanleitung, um die Hardware anzuschließen und Ihre erste Demo auszuführen.
 
-[Erste Schritte](../vision/vision_getting_started.md){.md-button}
+
+[Erste Schritte](../vision/vision_getting_started.md){.md-button .button-small}
+
 
 !!! note "Nutzung zu Bildungszwecken"
     Die Starter-Kits sind ausschließlich für Schulungs- und Demonstrationszwecke bestimmt und dürfen nicht in Produktionsumgebungen eingesetzt werden.
