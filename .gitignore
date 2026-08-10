@@ -6,6 +6,7 @@
 !mkdocs.en.yaml  
 !mkdocs.de.yaml  
 !.gitignore
+!.github
 
 # Innerhalb von docs/ nur en/, de/ und scripts/ behalten  
 docs/*  
