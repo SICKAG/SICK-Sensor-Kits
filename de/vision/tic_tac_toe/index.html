@@ -2174,7 +2174,7 @@
 <h2 id="ziel-der-herausforderung">Ziel der Herausforderung</h2>
 <p>Das Ziel dieses Projekts ist es, eine „Vision Starter Kit“-Anwendung zu entwickeln, die ein physisches Tic-Tac-Toe-Spielfeld beobachten und den aktuellen Spielstand erkennen kann.</p>
 <p>Das System sollte erkennen, ob Felder leer oder belegt sind, und die von den Spielern platzierten Symbole identifizieren.</p>
-<p>Im Gegensatz zu einem angeleiteten Projekt wird bei dieser Aufgabe keine vollständige Schritt-für-Schritt-Lösung bereitgestellt. Nutze dein Wissen aus früheren Vision Starter Kit-Projekten, um deinen eigenen Ansatz zu entwickeln.</p>
+<p>Im Gegensatz zu einem angeleiteten Projekt wird bei dieser Aufgabe keine vollständige Schritt-für-Schritt-Lösung bereitgestellt. Nutzen Sie Ihr Wissen aus früheren Vision Starter Kit-Projekten, um Ihren eigenen Ansatz zu entwickeln.</p>
 <hr>
 <h2 id="problemstellung">Problemstellung</h2>
 <p>Ein physisches Spielbrett oder ein „Tic Tac Toe“-Spielfeld auf einem Blatt Papier sollte mit dem Vision Starter Kit betrachtet werden.</p>
@@ -2205,31 +2205,31 @@
 <h2 id="anforderungen">Anforderungen</h2>
 <div class="requirement-box">
 
-<h3>Core Requirements</h3>
+<h3>Grundlegende Anforderungen</h3>
 
 <ul>
-  <li>Use the Vision Starter Kit to observe the game board.</li>
-  <li>Detect the individual fields of the Tic Tac Toe board.</li>
-  <li>Identify whether a field is empty or occupied.</li>
-  <li>Distinguish between the two player symbols.</li>
-  <li>Evaluate the current board state.</li>
-  <li>Provide useful feedback for the next move or game result.</li>
+  <li>Verwenden Sie das Vision Starter Kit, um das Spielfeld zu betrachten.</li>
+  <li>Erkennen Sie die einzelnen Felder des Tic-Tac-Toe-Spielbretts.</li>
+  <li>Stellen Sie fest, ob ein Feld leer oder besetzt ist.</li>
+  <li>Unterscheiden Sie zwischen den beiden Spielersymbolen.</li>
+  <li>Den aktuellen Spielstand bewerten.</li>
+  <li>Geben Sie nützliches Feedback für den nächsten Zug oder das Spielergebnis.</li>
 </ul>
 
 </div>
 
 <div class="requirement-box optional">
 
-<h3>Optional Extensions</h3>
+<h3>Optionale Erweiterungen</h3>
 
 <ul>
-  <li>Add a computer opponent with different difficulty levels.</li>
-  <li>Add a move suggestion or coaching mode.</li>
-  <li>Create a dashboard for visualization.</li>
-  <li>Detect invalid moves.</li>
-  <li>Add automatic win detection.</li>
-  <li>Use a robot arm to draw symbols.</li>
-  <li>Use color-based symbol detection instead of shape-based detection.</li>
+  <li>Fügen Sie einen Computergegner mit verschiedenen Schwierigkeitsstufen hinzu.</li>
+  <li>Fügen Sie einen Zugvorschlag oder einen Coaching-Modus hinzu.</li>
+  <li>Erstellen Sie ein Dashboard zur Visualisierung.</li>
+  <li>Erkennen Sie ungültige Züge.</li>
+  <li>Fügen Sie eine automatische Gewinnerkennung hinzu.</li>
+  <li>Verwenden Sie einen Roboterarm zum Zeichnen von Symbolen.</li>
+  <li>Verwenden Sie eine farbbasierte Symbolerkennung anstelle einer formbasierten Erkennung.</li>
 </ul>
 
 </div>
@@ -2239,7 +2239,7 @@
 <p>Orientieren Sie sich an folgendem allgemeinen Ansatz:</p>
 <ol>
 <li>Richten Sie das Vision Starter Kit ein.</li>
-<li>Bereite ein Tic-Tac-Toe-Spielfeld auf Papier vor.</li>
+<li>Bereite ein Tic-Tac-Toe-Spielfeld aus Papier vor.</li>
 <li>Bringen Sie die Platine in das Sichtfeld des Sensors.</li>
 <li>Bildaufnahme konfigurieren.</li>
 <li>Legen Sie fest, wie die einzelnen Felder auf der Platine erkannt werden sollen.</li>
@@ -2255,24 +2255,24 @@
 <div class="strategy-grid">
 
   <div class="strategy-card">
-    <h3>Symbol Classification</h3>
-    <p>Classify the symbols in each field of the Tic Tac Toe board.</p>
-    <p>Possible classes could be empty field, circle and cross.</p>
-    <p>This approach is useful if the symbols are clearly visible and placed consistently inside the board fields.</p>
+    <h3>Symbolklassifizierung</h3>
+    <p>Ordne die Symbole in jedem Feld des Tic-Tac-Toe-Spielfelds zu.</p>
+    <p>Mögliche Klassen könnten „leeres Feld“, „Kreis“ und „Kreuz“ sein.</p>
+    <p>Dieser Ansatz ist sinnvoll, wenn die Symbole deutlich sichtbar sind und einheitlich innerhalb der Felder des Spielbretts platziert sind.</p>
   </div>
 
   <div class="strategy-card">
-    <h3>Color Detection</h3>
-    <p>Use different colors for the two players and detect the color inside each field.</p>
-    <p>Possible classes could be empty field, player 1 color and player 2 color.</p>
-    <p>This can simplify the first version of the project, especially if symbol recognition is difficult.</p>
+    <h3>Farberkennung</h3>
+    <p>Verwenden Sie unterschiedliche Farben für die beiden Spieler und erkennen Sie die Farbe in jedem Feld.</p>
+    <p>Mögliche Klassen könnten „leeres Feld“, „Farbe von Spieler 1“ und „Farbe von Spieler 2“ sein.</p>
+    <p>Dies kann die erste Version des Projekts vereinfachen, insbesondere wenn die Symbolerkennung schwierig ist.</p>
   </div>
 
   <div class="strategy-card">
-    <h3>Fixed Field Analysis</h3>
-    <p>Divide the camera image into nine fixed board areas and evaluate each area separately.</p>
-    <p>This can be helpful if the board position is stable and does not move during the game.</p>
-    <p>It also makes it easier to connect the detected field states with the Tic Tac Toe game logic.</p>
+    <h3>Analyse fester Felder</h3>
+    <p>Teilen Sie das Kamerabild in neun feste Spielfeldbereiche auf und werten Sie jeden Bereich separat aus.</p>
+    <p>Dies kann hilfreich sein, wenn die Position des Spielfelds stabil ist und sich während des Spiels nicht verändert.</p>
+    <p>Außerdem lässt sich so der erkannte Feldzustand leichter mit der Spielelogik von Tic Tac Toe verknüpfen.</p>
   </div>
 
 </div>
@@ -2306,7 +2306,7 @@ Eine stabile Lage der Platine erleichtert die Erkennung von Feldern erheblich.</
 </details>
 <details class="tip">
 <summary>Tipp 2: Beginnen Sie mit der Farberkennung</summary>
-<p>Wenn das Erkennen von Symbolen Schwierigkeiten bereitet, beginnen Sie mit farbigen Symbolen oder farbigen Papierstücken.<br>
+<p>Wenn das Erkennen von Symbolen Schwierigkeiten bereitet, beginnen Sie mit farbigen Symbolen oder farbigen Papierstückchen.<br>
 Dies kann die erste Version des Projekts vereinfachen.</p>
 </details>
 <details class="tip">
@@ -2321,7 +2321,7 @@ Füge anschließend die Spiellogik für „Tic Tac Toe“ hinzu.</p>
 </details>
 <details class="tip">
 <summary>Tipp 5: Nutzen Sie frühere Projekte als Vorlage</summary>
-<p>Wenn Sie sich nicht sicher sind, wie Sie Objekte oder Symbole klassifizieren sollen, schauen Sie sich noch einmal das Projekt <a href="../classify_hex_nuts_screws/">Geführte Klassifizierung</a> an.</p>
+<p>Wenn Sie sich nicht sicher sind, wie Sie Objekte oder Symbole klassifizieren sollen, schauen Sie sich das Projekt <a href="../classify_hex_nuts_screws/">Geführte Klassifizierung</a> noch einmal an.</p>
 </details>
 <hr>
 <h2 id="beispiel-projektdatei">Beispiel-Projektdatei</h2>

@@ -2073,11 +2073,11 @@
 <li>S3: IMC30</li>
 <li>S4: SLT oder gelbe LED</li>
 <li>S5: LED grün (Ausgangszustand: blinkt – da auf IO-Link eingestellt)</li>
-<li>S6: Rote LED (Ausgangszustand: blinkt – da auf IO-Link eingestellt)</li>
+<li>S6: Rote LED (Anfangsstatus: blinkt – da auf IO-Link eingestellt)</li>
 </ul>
 </details>
 <ul>
-<li>Überlegen Sie sich für jeden Sensor eine sinnvolle Aufgabe und nehmen Sie die Installation vor, indem Sie die Sensoren mithilfe der mitgelieferten Halterungen und Werkzeuge am Befestigungsrahmen des Montagesets befestigen.</li>
+<li>Überlegen Sie sich für jeden Sensor eine sinnvolle Aufgabe und richten Sie das System ein, indem Sie die Sensoren mit den mitgelieferten Halterungen und Werkzeugen am Befestigungsrahmen des Montagesets anbringen.</li>
 </ul>
 <details class="sickinfo">
 <summary>Sensorinformationen</summary>
@@ -2140,7 +2140,7 @@
 <h4 id="lampen-z-b-led-an-s5">Lampen (z. B. LED an S5)</h4>
 <p><strong>Hinweis:</strong> Was die Portkonfiguration angeht, verhält sich das SLT genauso wie ein Sensor. Für einfache digitale Ausgänge (z. B. LEDs) befolgen Sie bitte die nachstehenden Anweisungen.</p>
 <ul>
-<li>Gehen Sie zu <strong>Ports</strong> &gt; <strong>Port 1</strong>, wählen Sie die Registerkarte <strong>Zugriffsrechte</strong> und setzen Sie die Häkchen wie in der Abbildung gezeigt (relevant ist <strong>Prozessdaten schreiben</strong>).</li>
+<li>Gehen Sie zu <strong>Ports</strong> &gt; <strong>Port 1</strong>, wählen Sie die Registerkarte <strong>Zugriffsrechte</strong> und setzen Sie die Häkchen wie in der Abbildung gezeigt (<strong>Prozessdaten schreiben</strong> ist relevant).</li>
 </ul>
 <p><img alt="Zugriffsrechte" src="../../images/iolink_4.png"></p>
 <ul>
@@ -2152,7 +2152,7 @@
 </ul>
 <h3 id="logik-editor">Logik-Editor</h3>
 <p>Um die Messdaten der Sensoren (digitale Eingänge) und der LEDs (digitale Ausgänge) zu kombinieren, verwenden wir den Logik-Editor.
-<strong>Hinweis:</strong> Sie müssen immer auf <strong>„Übernehmen“</strong> klicken, damit Ihre Änderungen im Logik-Editor wirksam werden.</p>
+<strong>Hinweis:</strong> Sie müssen immer auf <strong>Übernehmen</strong> klicken, damit Ihre Änderungen im Logik-Editor wirksam werden.</p>
 <ul>
 <li>Gehen Sie zu <strong>Anwendung</strong> &gt; <strong>Logik-Editor</strong>. Erstellen Sie nun die Logik für alle Sensoren und LEDs entsprechend der zu Beginn festgelegten Konfiguration (z. B. soll die grüne LED aufleuchten, wenn ein Waggon beladen ist).
 In den folgenden Schritten finden Sie einige Beispiele, an denen Sie sich orientieren können.</li>
@@ -2184,8 +2184,8 @@ Sie können Logikblöcke verwenden, um das Ergebnis zu verneinen, z. B. <strong>
 <summary>Die gelbe LED leuchtet auf, wenn ein Metallgegenstand erkannt wird</summary>
 <ul>
 <li>Mit dem IMC30 lassen sich Metallgegenstände in einem bestimmten Bereich aufspüren.</li>
-<li>Montieren Sie den IMC30 entsprechend dem Messbereich und dem Abstand der zu messenden Metallobjekte zum Tor. Verwenden Sie den <strong>IODD Viewer</strong>, um das Messergebnis anzuzeigen und eine geeignete Position für den IMC30 zu ermitteln. Es müssen keine Parameter eingestellt werden.</li>
-<li>Gehen Sie zum <strong>Logik-Editor</strong> und verbinden Sie S3I2 (Port 2 des UC12) mit S4DO4 (Pin 4 der gelben LED). </li>
+<li>Montieren Sie den IMC30 entsprechend dem Messbereich und dem Abstand der beladenen Metallobjekte zum Tor. Verwenden Sie den <strong>IODD Viewer</strong>, um das Messergebnis anzuzeigen und eine geeignete Position für den IMC30 zu ermitteln. Es müssen keine Parameter eingestellt werden.</li>
+<li>Gehen Sie zum <strong>Logik-Editor</strong> und verbinden Sie S3I2 (Port 2 von UC12) mit S4DO4 (Pin 4 der gelben LED). </li>
 </ul>
 <p><img alt="IMC30-Logik" src="../../images/imc30_1.png"></p>
 <ul>

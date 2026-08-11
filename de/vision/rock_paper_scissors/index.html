@@ -2255,7 +2255,7 @@
 <p><img alt="Stein, Papier, Schere" class="image-medium" src="../../images/rockpaperscissors.png"></p>
 <h2 id="ziel">Ziel</h2>
 <p>Das Ziel dieses Projekts ist es, ein webbasiertes „Stein, Papier, Schere“-Spiel zu entwickeln, das mithilfe des Vision Starter Kits Handzeichen erkennt.</p>
-<p>Nach Abschluss dieses Projekts sollten Sie wissen, wie Sie:</p>
+<p>Nach Abschluss dieses Projekts sollten Sie wissen, wie man:</p>
 <ul>
 <li>ein KI-Klassifikationsmodell für Handzeichen trainieren</li>
 <li>Schließen Sie den InspectorP61x an einen Raspberry Pi an</li>
@@ -2331,7 +2331,7 @@ Genug Platz, damit die gesamte Hand ins Bild passt. </p>
 </ol>
 <p><img alt="Allgemeines" src="../../images/allgemein.PNG"></p>
 <p><img alt="Dienstleistungen" src="../../images/dienste.PNG"></p>
-<p>Wir speichern die Einstellungen, kehren zum vorherigen Menü zurück und übernehmen die Einstellungen. Wenn eine Meldung erscheint, dass alle Daten auf der SD-Karte gelöscht werden, bestätigen wir dies. Der Installationsvorgang auf der SD-Karte sollte nun automatisch fortgesetzt werden. </p>
+<p>Wir speichern die Einstellungen, kehren zum vorherigen Menü zurück und übernehmen die Einstellungen. Sollte eine Meldung erscheinen, dass alle Daten auf der SD-Karte gelöscht werden, bestätigen wir dies. Der Installationsvorgang auf der SD-Karte sollte nun automatisch fortgesetzt werden. </p>
 <blockquote>
 <p><strong>Hinweis:</strong>
 Sollten Sie aus irgendeinem Grund die vorherigen Schritte wiederholen müssen, bleiben die Einstellungen weiterhin gespeichert. Das WLAN-Passwort ist dann jedoch der Hash und nicht mehr das Passwort selbst. Sie sollten dies daher noch einmal überprüfen!</p>
@@ -2348,7 +2348,7 @@ Sollten Sie aus irgendeinem Grund die vorherigen Schritte wiederholen müssen, b
 </ol>
 <p><img alt="Offenes WLAN" src="../../images/openWlantab.png"></p>
 <ol>
-<li>Klicken Sie anschließend im soeben geöffneten Menü auf „Kabelverbindung 1“.  Es sollte etwa so aussehen.</li>
+<li>Klicken Sie anschließend im soeben geöffneten Menü auf „Kabelverbindung 1“.  Es sollte nun so aussehen.</li>
 </ol>
 <p><img alt="Offene Kabelverbindung" src="../../images/openwiredcon.png"></p>
 <ol>
@@ -2369,7 +2369,7 @@ Sollten Sie aus irgendeinem Grund die vorherigen Schritte wiederholen müssen, b
 </ol>
 <p><img alt="Desktop" src="../../images/desktop.png"></p>
 <ol>
-<li>In der sich nun öffnenden Befehlszeile geben wir den Befehl „ifconfig“ ein. Dadurch erhalten wir alle Informationen zu den derzeit verwendeten Netzwerkadaptern und deren IP-Adressen usw.</li>
+<li>In der sich nun öffnenden Befehlszeile geben wir den Befehl „ifconfig“ ein. Dadurch erhalten wir alle Informationen zu den derzeit verwendeten Netzwerkadaptern, deren IP-Adressen usw.</li>
 </ol>
 <p>Uns interessiert jedoch nur die unter „wlan0“ angegebene IP-Adresse. Im Beispiel wäre dies „192.168.0.179“, sie kann aber auch anders lauten. Es ist wichtig, dass wir uns diese IP-Adresse notieren.</p>
 <p><img alt="ifconf" src="../../images/ifconf.png"></p>
@@ -2387,7 +2387,7 @@ Sollten Sie aus irgendeinem Grund die vorherigen Schritte wiederholen müssen, b
 <blockquote>
 <p>„ping 192.168.2.20“</p>
 </blockquote>
-<p>Wenn wir bis hierhin alles richtig gemacht haben, sollte die folgende Ausgabe angezeigt werden.</p>
+<p>Wenn wir bis zu diesem Punkt alles richtig gemacht haben, sollte die folgende Ausgabe angezeigt werden.</p>
 <p><img alt="pingtim" src="../../images/pingtim.PNG"></p>
 <p>Der Raspberry Pi sendet nun ständig Pings an den Sensor. Um dies zu unterbrechen, können wir STRG + C drücken.</p>
 <blockquote>
@@ -2395,9 +2395,9 @@ Sollten Sie aus irgendeinem Grund die vorherigen Schritte wiederholen müssen, b
 Falls Ihre Anzeige von der hier gezeigten abweicht, sollten Sie die IP-Adresse und die physische Verbindung Ihres Sensors noch einmal überprüfen. </p>
 </blockquote>
 <p><strong>Python</strong></p>
-<p>Da wir zur Umsetzung des Projekts nicht standardmäßige Python-Module benötigen, müssen wir diese zunächst installieren. Dazu können wir den in Raspbian integrierten Paketmanager verwenden. </p>
+<p>Da wir zur Umsetzung des Projekts nicht standardmäßige Python-Module benötigen, müssen wir diese zunächst installieren. Dazu können wir den in Raspbian integrierten Paketmanager nutzen. </p>
 <ol>
-<li>Zunächst sollten wir sicherstellen, dass unsere Systempakete auf dem neuesten Stand sind. Öffnen Sie dazu die Befehlszeile und geben Sie folgenden Befehl ein:</li>
+<li>Zunächst sollten wir sicherstellen, dass unsere Systempakete auf dem neuesten Stand sind. Öffnen Sie dazu die Befehlszeile und geben Sie den folgenden Befehl ein:</li>
 </ol>
 <blockquote>
 <p>„sudo apt update“ </p>
@@ -2453,7 +2453,7 @@ Falls Ihre Anzeige von der hier gezeigten abweicht, sollten Sie die IP-Adresse u
 <ol>
 <li>Falls Sie für den Sensor eine andere IP-Adresse als die in der Dokumentation angegebene festgelegt haben, müssen Sie diese in der Datei „client.py“ ändern. Das Gleiche gilt für den Port. </li>
 </ol>
-<p>Nun sollte alles bereit sein, damit du das Spiel starten kannst.</p>
+<p>Nun sollte alles bereit sein, damit Sie das Spiel starten können.</p>
 <h2 id="demo">Demo</h2>
 <p>Hier findest du alle wichtigen Dateien, die du zum Starten des Spiels benötigst:</p>
 <p>Im Python-Ordner findest du die Datei „start.sh“, mit der du das Spiel starten kannst. 
@@ -2483,7 +2483,7 @@ Viel Spaß!</p>
 <p>In diesem Projekt für Fortgeschrittene hast du Bildverarbeitung, KI-Klassifizierung, Raspberry-Pi-Netzwerkfunktionen und eine Python-Flask-Webanwendung miteinander kombiniert.</p>
 <p>Sie haben gelernt, wie man:</p>
 <ul>
-<li>Handzeichenerkennung in SICK Nova konfigurieren</li>
+<li>Handzeichen-Erkennung in SICK Nova konfigurieren</li>
 <li>Einen Raspberry Pi für die Kommunikation mit Sensoren einrichten</li>
 <li>Netzwerkeinstellungen für WLAN und Ethernet konfigurieren</li>
 <li>Erforderliche Python-Pakete installieren</li>
