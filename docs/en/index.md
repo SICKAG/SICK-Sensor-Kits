@@ -6,7 +6,6 @@ Welcome to the GitHub for the SICK Sensor Starter Kits!
 The Kits provide a comprehensive set of sensors, accessories and examples to help you quickly get started with SICK sensors. These kits include everything you need to explore, prototype, and integrate sensor solutions into your projects.
 
 
-
 <style>
   .slideshow-container {
     position: relative;
@@ -102,7 +101,7 @@ Select the Starter Kit you are working with to open the setup guide, first demo 
 
     **LiDAR Starter Kit**
 
-    Explore distance measurement, field evaluation and interactive LiDAR demonstrations
+    Explore distance measurement, field evaluation and interactive LiDAR demonstrations.
 
      [LiDAR](lidar/lidar_overview.md){.md-button}
 
