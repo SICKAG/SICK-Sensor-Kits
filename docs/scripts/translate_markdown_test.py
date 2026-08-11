@@ -89,6 +89,39 @@ def translate_with_deepl(text):
     return result["translations"][0]["text"]
 
 
+def translate_html_with_deepl(html):  
+    if not html.strip():  
+        return html
+
+    if not DEEPL_API_KEY:  
+        raise RuntimeError("DEEPL_API_KEY is not set.")
+
+    data = json.dumps({  
+        "text": [html],  
+        "source_lang": "EN",  
+        "target_lang": "DE",  
+        "preserve_formatting": True,  
+        "tag_handling": "html",         # ← neu [[2]](6a7acedcfebb606cb1177635)  
+        "ignore_tags": ["code", "pre"], # ← neu [[1]](6a7acedcfebb606cb1177631)  
+    }).encode("utf-8")
+
+    request = urllib.request.Request(  
+        DEEPL_API_URL,  
+        data=data,  
+        headers={  
+            "Authorization": f"DeepL-Auth-Key {DEEPL_API_KEY}",  
+            "Content-Type": "application/json",  
+        },  
+        method="POST",  
+    )
+
+    with urllib.request.urlopen(request) as response:  
+        result = json.loads(response.read().decode("utf-8"))
+
+    return result["translations"][0]["text"]  
+
+
+
 # ------------------------------------------------------------
 # INLINE PROTECTION
 # ------------------------------------------------------------
@@ -502,11 +535,47 @@ output = []
 inside_code_block = False
 inside_style_block = False
 inside_script_block = False
+inside_strategy_block = False
+strategy_lines = []
+strategy_depth = 0 
+
+HTML_BLOCK_CLASSES = ("strategy-grid", "requirement-box") 
 
 for index, line in enumerate(lines, start=1):
     print(f"\rProcessed {index}/{len(lines)} lines...", end="", flush=True)
 
     stripped = line.strip()
+
+    # --- strategy-grid Block mit Tiefenzählung (NEU, ganz oben) ---  
+    # --- benutzerdefinierte HTML-Blöcke (strategy-grid, requirement-box, ...) ---  
+    if not inside_strategy_block and stripped.startswith("<div class="):  
+        # Prüfen, ob eine der bekannten Block-Klassen vorkommt  
+        if any(f'"{cls}' in stripped or f' {cls}' in stripped for cls in HTML_BLOCK_CLASSES):  
+            inside_strategy_block = True  
+            strategy_lines = [line]  
+            strategy_depth = line.count("<div") - line.count("</div>")  
+            if strategy_depth <= 0:  
+                output.append(translate_html_with_deepl("\n".join(strategy_lines)))  
+                inside_strategy_block = False  
+                strategy_lines = []  
+                strategy_depth = 0  
+            continue  
+
+
+    if inside_strategy_block:  
+        strategy_lines.append(line)  
+        # Tiefe aktualisieren: jede öffnende erhöht, jede schließende senkt  
+        strategy_depth += line.count("<div")  
+        strategy_depth -= line.count("</div>")
+
+        # Block ist erst geschlossen, wenn die Tiefe wieder 0 (oder darunter) ist  
+        if strategy_depth <= 0:  
+            block_html = "\n".join(strategy_lines)  
+            output.append(translate_html_with_deepl(block_html))  
+            inside_strategy_block = False  
+            strategy_lines = []  
+            strategy_depth = 0  
+        continue
 
     if stripped.lower().startswith("<style"):
         inside_style_block = True

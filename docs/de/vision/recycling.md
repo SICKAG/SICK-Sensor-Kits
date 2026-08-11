@@ -1,47 +1,3 @@
-<!-- # Recycling
-
-<table style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr style="background-color: #005aff; color: white;">
-      <th style="padding: 8px; text-align: left;">Kurzbeschreibung</th>
-      <th style="padding: 8px; text-align: left;">Erforderliches Wissensniveau</th>
-      <th style="padding: 8px; text-align: left;">Voraussichtliche Dauer</th>
-      <th style="padding: 8px; text-align: left;">Zusätzliche Hardware- und Softwareanforderungen</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Verwenden Sie das KI-Klassifizierungstool, um verschiedene Abfallarten für das Recycling zu sortieren.</td>
-      <td>Grundlagen/Fortgeschrittene</td>
-      <td>1–4 Stunden</td>
-      <td>Abfälle (z. B. Papier, Kunststoffe, Verpackungen, …)<br>wenn möglich: Förderband<br>wenn möglich: Schieber/Aussortierer zum Sortieren/Aussortieren von Objekten – Alternative: LED- oder akustische Rückmeldung
-    </tr>
-  </tbody>
-</table>
-
-![Recycling](../images/recycling.jpg)
-
-## Welches Problem muss gelöst werden?
-Falsch sortierte Abfallgegenstände sollen automatisch erkannt werden, um die Recycling- und Abfalltrennungsprozesse zu unterstützen.
-ODER: Fremdkörper in einem Abfallbehälter erkennen (z. B. Kunststoffe in einem Karton mit Papier).
-
-Projektideen:
-
-* Sofortige Anzeige eines Fremdkörpers
-* Optische Anzeige des Prüfergebnisses (grünes/rotes Licht)
-* Das System mit anspruchsvolleren Inhalten und Formen herausfordern
-
-## Was muss geklärt und vorbereitet werden, um diesen Anwendungsfall anbieten zu können?
-Definition von Objektklassen
-
-## Beispiel-Projektdatei
-
-[RecyclingBinProject.zip](../files/RecyclingBinProject.zip)
-
-
-
--->
-
 # Recycling
 
 ## Kurzbeschreibung
@@ -86,7 +42,7 @@ Ziel dieses Projekts ist es, mit dem Vision Starter Kit eine KI-basierte Recycli
 
 Das System soll verschiedene Abfallgegenstände klassifizieren oder Fremdkörper in einem Abfallbehälter erkennen. So könnte die Anwendung beispielsweise Kunststoffgegenstände in einem Karton mit Papier erkennen oder Gegenstände in Kategorien wie Papier, Kunststoff und Verpackungen einordnen.
 
-Im Gegensatz zu einem angeleiteten Projekt wird bei dieser Aufgabe keine vollständige Schritt-für-Schritt-Lösung bereitgestellt. Nutzen Sie Ihr Wissen aus früheren Vision Starter Kit-Projekten, um Ihren eigenen Ansatz zu entwickeln.
+Im Gegensatz zu einem angeleiteten Projekt wird bei dieser Aufgabe keine vollständige Schritt-für-Schritt-Lösung bereitgestellt. Nutze dein Wissen aus früheren Vision Starter Kit-Projekten, um deinen eigenen Ansatz zu entwickeln.
 
 ---
 
@@ -133,30 +89,30 @@ Sie können auch eigene Klassen definieren, je nachdem, welche Objekte verfügba
 
 <div class="requirement-box">
 
-<h3>Core Requirements</h3>
+<h3>Grundlegende Anforderungen</h3>
 
 <ul>
-  <li>Use the <strong>AI Classification</strong> tool in SICK Nova.</li>
-  <li>Define at least two object or material classes.</li>
-  <li>Capture multiple training images for each class.</li>
-  <li>Train the classification model.</li>
-  <li>Test the model with new waste objects.</li>
-  <li>Evaluate whether the classification result is reliable.</li>
+  <li>Verwenden Sie das <strong>KI</strong>-Klassifizierungstool in SICK Nova.</li>
+  <li>Definieren Sie mindestens zwei Objekt- oder Materialklassen.</li>
+  <li>Erfassen Sie für jede Klasse mehrere Trainingsbilder.</li>
+  <li>Trainieren Sie das Klassifizierungsmodell.</li>
+  <li>Testen Sie das Modell mit neuen Abfallobjekten.</li>
+  <li>Beurteilen Sie, ob das Klassifizierungsergebnis zuverlässig ist.</li>
 </ul>
 
 </div>
 
 <div class="requirement-box optional">
 
-<h3>Optional Extensions</h3>
+<h3>Optionale Erweiterungen</h3>
 
 <ul>
-  <li>Add LED or sound feedback.</li>
-  <li>Use a conveyor belt.</li>
-  <li>Trigger image acquisition automatically.</li>
-  <li>Add a pusher or rejector mechanism.</li>
-  <li>Compare easy and difficult object shapes.</li>
-  <li>Test different lighting conditions.</li>
+  <li>Fügen Sie eine LED- oder akustische Rückmeldung hinzu.</li>
+  <li>Verwenden Sie ein Förderband.</li>
+  <li>Lösen Sie die Bildaufnahme automatisch aus.</li>
+  <li>Fügen Sie einen Schieber- oder Aussortiermechanismus hinzu.</li>
+  <li>Vergleichen Sie einfache und schwierige Objektformen.</li>
+  <li>Testen Sie verschiedene Lichtverhältnisse.</li>
 </ul>
 
 </div>
@@ -188,28 +144,28 @@ Je nach verfügbarer Hardware können Sie die Aufgabe auf unterschiedliche Weise
 <div class="strategy-grid">
 
   <div class="strategy-card">
-    <h3>Simple Classification</h3>
-    <p>Classify individual waste objects placed under the sensor.</p>
-    <p>Possible classes could be paper, plastic or packaging.</p>
-    <p>This is the easiest version of the project and can be implemented with the Starter Kit only.</p>
+    <h3>Einfache Klassifizierung</h3>
+    <p>Klassifizieren Sie einzelne Abfallgegenstände, die unter den Sensor gelegt werden.</p>
+    <p>Mögliche Klassen könnten Papier, Kunststoff oder Verpackungen sein.</p>
+    <p>Dies ist die einfachste Variante des Projekts und kann ausschließlich mit dem Starter-Kit umgesetzt werden.</p>
   </div>
 
   <div class="strategy-card">
-    <h3>Foreign Object Detection</h3>
-    <p>Detect whether a waste bin contains an object that does not belong to the expected category.</p>
-    <p>Example: Detect a plastic object inside a paper bin.</p>
+    <h3>Fremdkörpererkennung</h3>
+    <p>Erkennen Sie, ob ein Abfallbehälter einen Gegenstand enthält, der nicht zur erwarteten Kategorie gehört.</p>
+    <p>Beispiel: Erkennen eines Kunststoffgegenstands in einem Papierbehälter.</p>
   </div>
 
   <div class="strategy-card">
-    <h3>Visual Feedback</h3>
-    <p>Display the inspection result using simple feedback.</p>
-    <p>Examples include a green light for correct objects, a red light for incorrect objects, sound feedback or a message on a connected device.</p>
+    <h3>Visuelle Rückmeldung</h3>
+    <p>Zeigen Sie das Prüfergebnis mithilfe einfacher Rückmeldungen an.</p>
+    <p>Beispiele hierfür sind ein grünes Licht für korrekte Objekte, ein rotes Licht für falsche Objekte, akustisches Feedback oder eine Meldung auf einem angeschlossenen Gerät.</p>
   </div>
 
   <div class="strategy-card">
-    <h3>Automated Sorting</h3>
-    <p>Extend the project with additional hardware.</p>
-    <p>Possible extensions include a conveyor belt, trigger sensor, pusher, rejector or signal light.</p>
+    <h3>Automatisierte Sortierung</h3>
+    <p>Erweitern Sie das Projekt mit zusätzlicher Hardware.</p>
+    <p>Mögliche Erweiterungen sind ein Förderband, ein Auslösesensor, ein Schieber, ein Aussortierer oder eine Signalleuchte.</p>
   </div>
 
 </div>

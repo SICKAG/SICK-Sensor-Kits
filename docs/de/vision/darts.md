@@ -1,39 +1,3 @@
-<!-- # Darts
-
-<table style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr style="background-color: #005aff; color: white;">
-      <th style="padding: 8px; text-align: left;">Kurzbeschreibung</th>
-      <th style="padding: 8px; text-align: left;">Erforderliches Wissensniveau</th>
-      <th style="padding: 8px; text-align: left;">Voraussichtliche Dauer</th>
-      <th style="padding: 8px; text-align: left;">Zusätzliche Hardware- und Softwareanforderungen</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Analysiere die auf eine Dartscheibe geworfenen Darts und entwickle eine Logik für verschiedene Spiele.</td>
-      <td>Fortgeschritten</td>
-      <td>4 Stunden</td>
-      <td>Klett-Dartscheibe mit Klettbällen</td>
-    </tr>
-  </tbody>
-</table>
-
-![Darts](../images/darts.jpg)
-
-## Welches Problem muss gelöst werden?
-Die Treffposition der „Darts“ (Klettbälle) auf der Dartscheibe muss automatisch erkannt werden, um die Punktestände zu berechnen und den Spielverlauf anzuzeigen.
-
-Projektideen:
-
-* Erkennung der Trefferposition des Darts
-* Punkteberechnung nach den Regeln des Dartspiels
-* Verschiedene Spielmodi
-* Rundungs- und Beinarbeit
-* Mehrspieler
-
--->
-
 # Darts
 
 ## Kurzbeschreibung
@@ -69,11 +33,11 @@ Das Ziel besteht darin, das Bild der Dartscheibe zu analysieren, festzustellen, 
 
 ## Ziel der Herausforderung
 
-Das Ziel dieses Projekts ist die Entwicklung einer „Vision Starter Kit“-Anwendung, die automatisch die Trefferposition von Klettbällen auf einer Dartscheibe erkennt.
+Das Ziel dieses Projekts ist die Entwicklung einer „Vision Starter Kit“-Anwendung, die automatisch die Treffposition von Klettbällen auf einer Dartscheibe erkennt.
 
 Die ermittelte Position sollte dann zur Berechnung der Punktestände und zur Anzeige des Spielverlaufs eines Dartspiels verwendet werden.
 
-Im Gegensatz zu einem angeleiteten Projekt wird bei dieser Aufgabe keine vollständige Schritt-für-Schritt-Lösung bereitgestellt. Nutzen Sie Ihr Wissen aus früheren Vision Starter Kit-Projekten, um Ihren eigenen Ansatz zu entwickeln.
+Im Gegensatz zu einem angeleiteten Projekt wird bei dieser Aufgabe keine vollständige Schritt-für-Schritt-Lösung bereitgestellt. Nutze dein Wissen aus früheren Vision Starter Kit-Projekten, um deinen eigenen Ansatz zu entwickeln.
 
 ---
 
@@ -86,7 +50,7 @@ Auf der Grundlage der ermittelten Position sollte das System die entsprechende P
 
 Mögliche Ziele:
 
-- Erkennen, ob ein Dart die Dartscheibe getroffen hat
+- Erkennen, ob ein Dart die Scheibe getroffen hat
 - die Treffposition ermitteln
 - die Trefferposition einem Punktfeld zuweisen
 - die aktuelle Punktzahl berechnen
@@ -115,31 +79,31 @@ Ihre Lösung sollte Folgendes umfassen:
 
 <div class="requirement-box">
 
-<h3>Core Requirements</h3>
+<h3>Grundlegende Anforderungen</h3>
 
 <ul>
-  <li>Use the Vision Starter Kit to observe the dartboard.</li>
-  <li>Detect the Velcro ball reliably.</li>
-  <li>Identify the approximate hit position.</li>
-  <li>Map the hit position to a score area.</li>
-  <li>Calculate the score based on the dartboard logic.</li>
-  <li>Provide feedback about the current score or game state.</li>
+  <li>Verwenden Sie das Vision Starter Kit, um die Dartscheibe zu beobachten.</li>
+  <li>Erkennen Sie den Klettball zuverlässig.</li>
+  <li>Ermitteln Sie die ungefähre Trefferposition.</li>
+  <li>Ordnen Sie die Trefferposition einem Punktebereich zu.</li>
+  <li>Berechnen Sie die Punktzahl anhand der Logik der Dartscheibe.</li>
+  <li>Geben Sie Feedback zur aktuellen Punktzahl oder zum Spielstand.</li>
 </ul>
 
 </div>
 
 <div class="requirement-box optional">
 
-<h3>Optional Extensions</h3>
+<h3>Optionale Erweiterungen</h3>
 
 <ul>
-  <li>Different game modes</li>
-  <li>Round and leg calculation</li>
-  <li>Multiplayer mode</li>
-  <li>Score history</li>
-  <li>Dashboard for visualization</li>
-  <li>Automatic reset after each throw</li>
-  <li>Difficulty levels or training mode</li>
+  <li>Verschiedene Spielmodi</li>
+  <li>Runden- und Leg-Berechnung</li>
+  <li>Mehrspieler-Modus</li>
+  <li>Punktestand-Verlauf</li>
+  <li>Dashboard zur Visualisierung</li>
+  <li>Automatischer Reset nach jedem Wurf</li>
+  <li>Schwierigkeitsstufen oder Trainingsmodus</li>
 </ul>
 
 </div>
@@ -170,21 +134,21 @@ Es gibt verschiedene Möglichkeiten, diese Herausforderung zu meistern.
 <div class="strategy-grid">
 
   <div class="strategy-card">
-    <h3>Object Detection</h3>
-    <p>Detect the Velcro ball as an object in the camera image.</p>
-    <p>Best suited if the ball has a clearly visible color or texture compared to the dartboard.</p>
+    <h3>Objekterkennung</h3>
+    <p>Erkennen Sie den Klettball als Objekt im Kamerabild.</p>
+    <p>Am besten geeignet, wenn der Ball im Vergleich zur Dartscheibe eine deutlich erkennbare Farbe oder Struktur aufweist.</p>
   </div>
 
   <div class="strategy-card">
-    <h3>Color-Based Detection</h3>
-    <p>Use color differences between the Velcro ball and the dartboard.</p>
-    <p>Useful if the ball has strong contrast and stable lighting.</p>
+    <h3>Farbbasierte Erkennung</h3>
+    <p>Nutzen Sie Farbunterschiede zwischen dem Klettball und der Dartscheibe.</p>
+    <p>Nützlich, wenn der Ball einen starken Kontrast aufweist und die Beleuchtung stabil ist.</p>
   </div>
 
   <div class="strategy-card">
-    <h3>Position Mapping</h3>
-    <p>Define fixed regions on the dartboard image and map the detected hit position to these regions.</p>
-    <p>Works best if the dartboard remains in a fixed position.</p>
+    <h3>Positionszuordnung</h3>
+    <p>Definieren Sie feste Bereiche auf dem Bild der Dartscheibe und ordnen Sie die erkannte Trefferposition diesen Bereichen zu.</p>
+    <p>Funktioniert am besten, wenn die Dartscheibe an einer festen Position bleibt.</p>
   </div>
 
 </div>
@@ -200,7 +164,7 @@ Mögliche Logikelemente:
 - Punkte aus mehreren Würfen zusammenzählen
 - Laufbahn-Spieler dreht sich
 - Runden oder Etappen berechnen
-- Ungültige Ausnahmen erkennen
+- Ungültige Auswürfe erkennen
 - verschiedene Spielmodi unterstützen
 
 Mögliche Rückmeldungen:

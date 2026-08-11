@@ -1,35 +1,3 @@
-<!-- # FAQ - LiDAR Starter Kit
-
-## Short Description
-
-This FAQ answers common questions related to the LiDAR Starter Kit, field evaluation and sensor communication.
-
-For general questions about the Starter Kits, please visit the general FAQ section.
-
-../faq.md{ .md-button .button-small }
-
----
-
-??? question "The LiDAR sensor is not reachable. What should I check?"
-
-    Check the power supply, Ethernet connection and IP address of the sensor.
-
----
-
-??? question "Field Evaluation does not return the expected result. What can I do?"
-
-    Check whether the detection fields are configured correctly and whether the object is inside the defined area.
-
----
-
-??? question "Where can I find example projects for the LiDAR Starter Kit?"
-
-    The LiDAR example projects are listed on the Example Projects page.
-
-    ./lidar_example_projects.md{ .md-button .button-small }
-
--->
-
 <div class="faq-page" markdown>
 
 # FAQ - LiDAR Starter Kit

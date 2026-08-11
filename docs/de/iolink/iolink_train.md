@@ -36,9 +36,9 @@ Ziel dieses Projekts ist es, einen Zug zu analysieren, der auf einer Gleisschlei
     - S3: IMC30
     - S4: SLT oder gelbe LED
     - S5: LED grün (Ausgangszustand: blinkt – da auf IO-Link eingestellt)
-    - S6: Rote LED (Ausgangszustand: blinkt – da auf IO-Link eingestellt)
+    - S6: Rote LED (Anfangsstatus: blinkt – da auf IO-Link eingestellt)
 
-- Überlegen Sie sich für jeden Sensor eine sinnvolle Aufgabe und nehmen Sie die Installation vor, indem Sie die Sensoren mithilfe der mitgelieferten Halterungen und Werkzeuge am Befestigungsrahmen des Montagesets befestigen.
+- Überlegen Sie sich für jeden Sensor eine sinnvolle Aufgabe und richten Sie das System ein, indem Sie die Sensoren mit den mitgelieferten Halterungen und Werkzeugen am Befestigungsrahmen des Montagesets anbringen.
 
 ??? sickinfo "Sensorinformationen"
     - [**W10**](https://www.sick.com/ag/en/catalog/products/detection-sensors/photoelectric-sensors/w10/wtm10l-241611d0a00zvzzzzzzzzz1/p/p678567): Fotoelektrischer Sensor, misst den Abstand nach einem optischen Funktionsprinzip, Messbereich: 25–700 mm (je nach Modus)
@@ -98,7 +98,7 @@ Sie können die Sensoren entweder als digitalen Eingang verwenden, z. B. um eine
 
 **Hinweis:** Was die Portkonfiguration angeht, verhält sich das SLT genauso wie ein Sensor. Für einfache digitale Ausgänge (z. B. LEDs) befolgen Sie bitte die nachstehenden Anweisungen.
 
-- Gehen Sie zu **Ports** > **Port 1**, wählen Sie die Registerkarte **Zugriffsrechte** und setzen Sie die Häkchen wie in der Abbildung gezeigt (relevant ist **Prozessdaten schreiben**).
+- Gehen Sie zu **Ports** > **Port 1**, wählen Sie die Registerkarte **Zugriffsrechte** und setzen Sie die Häkchen wie in der Abbildung gezeigt (**Prozessdaten schreiben** ist relevant).
 
 ![Zugriffsrechte](../images/iolink_4.png)
 
@@ -111,7 +111,7 @@ Sie können die Sensoren entweder als digitalen Eingang verwenden, z. B. um eine
 ### Logik-Editor
 
 Um die Messdaten der Sensoren (digitale Eingänge) und der LEDs (digitale Ausgänge) zu kombinieren, verwenden wir den Logik-Editor.
-**Hinweis:** Sie müssen immer auf **„Übernehmen“** klicken, damit Ihre Änderungen im Logik-Editor wirksam werden.
+**Hinweis:** Sie müssen immer auf **Übernehmen** klicken, damit Ihre Änderungen im Logik-Editor wirksam werden.
 
 - Gehen Sie zu **Anwendung** > **Logik-Editor**. Erstellen Sie nun die Logik für alle Sensoren und LEDs entsprechend der zu Beginn festgelegten Konfiguration (z. B. soll die grüne LED aufleuchten, wenn ein Waggon beladen ist).
 In den folgenden Schritten finden Sie einige Beispiele, an denen Sie sich orientieren können.
@@ -139,8 +139,8 @@ In den folgenden Schritten finden Sie einige Beispiele, an denen Sie sich orient
 ??? sickinfo "Die gelbe LED leuchtet auf, wenn ein Metallgegenstand erkannt wird"
 
     - Mit dem IMC30 lassen sich Metallgegenstände in einem bestimmten Bereich aufspüren.
-    - Montieren Sie den IMC30 entsprechend dem Messbereich und dem Abstand der zu messenden Metallobjekte zum Tor. Verwenden Sie den **IODD Viewer**, um das Messergebnis anzuzeigen und eine geeignete Position für den IMC30 zu ermitteln. Es müssen keine Parameter eingestellt werden.
-    - Gehen Sie zum **Logik-Editor** und verbinden Sie S3I2 (Port 2 des UC12) mit S4DO4 (Pin 4 der gelben LED). 
+    - Montieren Sie den IMC30 entsprechend dem Messbereich und dem Abstand der beladenen Metallobjekte zum Tor. Verwenden Sie den **IODD Viewer**, um das Messergebnis anzuzeigen und eine geeignete Position für den IMC30 zu ermitteln. Es müssen keine Parameter eingestellt werden.
+    - Gehen Sie zum **Logik-Editor** und verbinden Sie S3I2 (Port 2 von UC12) mit S4DO4 (Pin 4 der gelben LED). 
 
     ![IMC30-Logik](../images/imc30_1.png)
 

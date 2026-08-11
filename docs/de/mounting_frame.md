@@ -68,10 +68,10 @@ Verwenden Sie ein Aluminiumprofil als obere Leiste des Befestigungsrahmens.
 1. Nehmen Sie ein Aluminiumprofil aus dem Karton.
 2. Setzen Sie eine **M4-T-Nut-Mutter** in die obere Nut ein.
 3. Setzen Sie zwei **M5-T-Nut-Muttern** in die untere Nut auf der gegenüberliegenden Seite der M4-Mutter ein.
-4. Befestigen Sie zwei Winkelhalterungen mit Senkkopfschrauben.
+4. Befestigen Sie zwei Winkelhalterungen mit Senkschrauben.
 5. Ziehen Sie die Schrauben mit dem 3-mm-Inbusschlüssel in den M5-T-Nut-Muttern fest.
 6. Setzen Sie an beiden Enden des Profils Endkappen auf.
-7. Schieben Sie die Winkelhalterungen an beide Enden des Profils und ziehen Sie die Schrauben so fest, dass die Winkelhalterungen und die Endkappen fluchten.
+7. Schieben Sie die Winkelhalterungen an beide Enden des Profils und ziehen Sie die Schrauben so fest, dass die Winkelhalterungen und die Endkappen bündig abschließen.
 
 !!! tip "Montagehinweis"
     Stellen Sie sicher, dass die M4-T-Nut-Mutter an der Oberseite zugänglich bleibt. Sie wird später zur Befestigung der Sensorhalterung benötigt.
