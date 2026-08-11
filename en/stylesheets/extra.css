@@ -1,0 +1,344 @@
+:root  > * {
+  --md-primary-fg-color:        #005aff;
+  --md-primary-fg-color--light: #000a37;
+
+
+  --md-primary-fg-color--dark:  #000a37;
+  --md-accent-fg-color:          #005aff;
+ 
+  --md-primary-bg-color: white;
+  --md-footer-bg-color:  #000a37;
+  
+  --md-footer-fg-color--light:     white;
+  --md-footer-fg-color--lighter:  white;
+  --md-footer-fg-color--dark:      #000a37;
+
+
+  
+}
+
+
+.md-typeset .admonition.sickinfo,
+.md-typeset details.sickinfo {
+  border-width: 0;
+  border-left-width: 4px;
+  border-color: rgb(0,90,255);
+
+
+}
+.md-typeset .sickinfo > .admonition-title, 
+.md-typeset .sickinfo > summary {
+  background-color: rgba(0,90,255,0.1);
+}
+.md-typeset .sickinfo > .admonition-title::before,
+.md-typeset .sickinfo > summary::before{
+  background-color: rgb(0,90,255);
+}
+
+
+blockquote {
+  margin-left: 2em;
+  -webkit-text-fill-color: rgb(0, 0, 0);
+  background-color: #fafafa;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.kit-card-grid {
+  justify-content: center;
+}
+
+
+.next-step-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.next-step-buttons .md-button {
+  margin: 0;
+  padding: 0.45rem 0.8rem;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  min-width: auto;
+}
+
+.button-small {
+  padding: 0.4rem 0.75rem !important;
+  font-size: 0.75rem !important;
+  line-height: 1.2 !important;
+}
+
+.project-card-grid {
+  margin-top: 1rem;
+}
+
+.project-card-grid .md-typeset__table {
+  display: none;
+}
+
+/* Card styling */
+.project-card-grid > ul > li {
+  border-radius: 0.5rem;
+  border: 1px solid #dce3ef;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  overflow: hidden;
+}
+
+.project-card-grid > ul > li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 90, 255, 0.15);
+}
+
+/* Card images */
+.project-card-grid img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Compact text spacing */
+.project-card-grid p {
+  margin-top: 0.35rem;
+  margin-bottom: 0.35rem;
+}
+
+/* Smaller card buttons */
+.project-card-grid .md-button {
+  margin-top: 0.6rem;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1.2;
+}
+
+/*Every project has its own color*/
+.project-badge {
+  display: inline;
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+.project-badge.guided {
+  color: #0046c7;
+}
+
+.project-badge.challenge {
+  color: #b85f00;
+}
+
+.project-badge.showcase {
+  color: #007a58;
+}
+
+.project-badge.advanced {
+  color: #5d22cc;
+}
+
+.project-badge.community {
+  color: #455a64;
+}
+
+
+/* Make every project card a vertical flex container */
+.md-typeset .project-card-grid > ul > li {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* Push the paragraph containing the button to the bottom */
+.md-typeset .project-card-grid > ul > li > p:has(.md-button) {
+  margin-top: auto !important;
+  padding-top: 0.8rem;
+}
+
+/* Keep buttons compact */
+.md-typeset .project-card-grid .md-button {
+  padding: 0.4rem 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1.2;
+}
+
+.image-medium {
+  max-width: 650px !important;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem 0;
+}
+
+.image-small {
+  max-width: 420px !important;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem 0;
+}
+
+.strategy-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 0;
+}
+
+.strategy-card {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dce3ef;
+  border-radius: 0.45rem;
+  padding: 0.9rem 1rem;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.strategy-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  color: #005aff;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.strategy-card p {
+  margin-top: 0.35rem;
+  margin-bottom: 0.35rem;
+}
+
+.two-column-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.two-column-list > p,
+.two-column-list > ul {
+  margin-top: 0.3rem;
+}
+
+.requirement-box {
+  border: 1px solid #dce3ef;
+  border-left: 4px solid #005aff;
+  border-radius: 0.45rem;
+  padding: 0.9rem 1rem;
+  margin-top: 0.9rem;
+  margin-bottom: 1rem;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.requirement-box.optional {
+  border-left-color: #0059ffc5;
+}
+
+.requirement-box h3 {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #005aff;
+}
+
+.requirement-box.optional h3 {
+  color: #0059ffc5;
+}
+
+.requirement-box ul {
+  margin-top: 0.4rem;
+  margin-bottom: 0;
+}
+
+.requirement-box li {
+  margin-bottom: 0.35rem;
+}
+
+/* FAQ accordion styling */
+.faq-page details.question {
+  border: 1px solid #dce3ef;
+  border-radius: 0.45rem;
+  box-shadow: none;
+  background-color: #ffffff;
+  margin: 0.75rem 0;
+}
+
+/* FAQ question header */
+.faq-page details.question > summary {
+  background-color: #f6f8fc;
+  color: #1f1f1f;
+  border-radius: 0.45rem;
+  font-weight: 600;
+}
+
+/* Remove strong green default feeling */
+.faq-page details.question > summary::before {
+  background-color: #005aff;
+}
+
+/* Open state */
+.faq-page details.question[open] > summary {
+  border-bottom: 1px solid #dce3ef;
+  border-radius: 0.45rem 0.45rem 0 0;
+}
+
+/* FAQ content */
+.faq-page details.question > div {
+  background-color: #ffffff;
+}
+
+/* Arrow color */
+.faq-page details.question > summary::after {
+  color: #005aff;
+}
+
+
+.code-example-box {
+  border: 1px solid #dce3ef;
+  border-left: 4px solid #005aff;
+  border-radius: 0.45rem;
+  padding: 1rem;
+  margin-top: 0.8rem;
+  margin-bottom: 1.5rem;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.example-label {
+  display: block;
+  margin-top: 0.9rem;
+  margin-bottom: 0.35rem;
+  font-weight: 700;
+  color: #005aff;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.code-example-box .example-label:first-child {
+  margin-top: 0;
+}
+
+.code-example-box p {
+  margin-top: 0.35rem;
+  margin-bottom: 0.55rem;
+}
+
+.code-example-box pre {
+  margin-top: 0.4rem;
+  margin-bottom: 0.8rem;
+}

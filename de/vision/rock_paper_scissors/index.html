@@ -1,0 +1,2596 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://sickag.github.io/SICK-Sensor-Kits/en/vision/rock_paper_scissors/">
+      
+      
+        <link rel="prev" href="../sketch_demonstrator/">
+      
+      
+        <link rel="next" href="../recycling/">
+      
+      
+        
+          <link rel="alternate" href="/SICK-Sensor-Starter-Kits/en/" hreflang="en">
+        
+          <link rel="alternate" href="/SICK-Sensor-Starter-Kits/de/" hreflang="de">
+        
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Schere, Stein, Papier - SICK Sensor Starter Kits</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#stein-papier-schere" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
+    <a href="../.." title="SICK Sensor Starter Kits" class="md-header__button md-logo" aria-label="SICK Sensor Starter Kits" data-md-component="logo">
+      
+  <img src="../../images/sick_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SICK Sensor Starter Kits
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Schere, Stein, Papier
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Sprache wechseln">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/SICK-Sensor-Starter-Kits/en/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/SICK-Sensor-Starter-Kits/de/" hreflang="de" class="md-select__link">
+              Deutsch
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/SICKAG/SICK-Sensor-Starter-Kits" title="Zum Repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SICKAG/SICK-Sensor-Starter-Kits
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="SICK Sensor Starter Kits" class="md-nav__button md-logo" aria-label="SICK Sensor Starter Kits" data-md-component="logo">
+      
+  <img src="../../images/sick_logo.png" alt="logo">
+
+    </a>
+    SICK Sensor Starter Kits
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/SICKAG/SICK-Sensor-Starter-Kits" title="Zum Repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SICKAG/SICK-Sensor-Starter-Kits
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Startseite
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vision Starter Kit
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Vision Starter Kit
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vision_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Übersicht
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vision_getting_started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Erste Schritte
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vision_starter_project/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vision Starter-Projekt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Beispielprojekte
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Beispielprojekte
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vision_example_projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Übersicht
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../classify_hex_nuts_screws/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sechskantmuttern/Schrauben klassifizieren
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chocolate_inspection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Schokoladen-Inspektion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sketch_demonstrator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Skizzen-Demonstrator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Schere, Stein, Papier
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Schere, Stein, Papier
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#kurzbeschreibung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kurzbeschreibung
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#projektinformationen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Projektinformationen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ziel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ziel
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#projektkonzept" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Projektkonzept
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bevor-sie-beginnen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bevor Sie beginnen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#projektvorbereitung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Projektvorbereitung
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Projektvorbereitung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hardware-einrichtung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hardware-Einrichtung
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-einrichtung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software-Einrichtung
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Start
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Start">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sick-web-benutzeroberflache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SICK-Web-Benutzeroberfläche
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web-benutzeroberflache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Web-Benutzeroberfläche
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#demo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Demo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#erwartetes-ergebnis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erwartetes Ergebnis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zusammenfassung
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#weitere-ressourcen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Weitere Ressourcen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nachste-schritte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nächste Schritte
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recycling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recycling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blackjack/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Black Jack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../uno/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UNO Kartenspiel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tic_tac_toe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tic Tac Toe
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../darts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Darts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vision_code_snippets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vision Code-Beispiele
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vision_advanced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Weiterführende Themen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Schulungsmaterial
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Schulungsmaterial
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vision_training_material/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Übersicht
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mounting_frame/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Montagerahmen einrichten
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vision_faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ - Vision
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LiDAR Starter Kit
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    LiDAR Starter Kit
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lidar/lidar_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Übersicht
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lidar/lidar_getting_started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Erste Schritte
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lidar/lidar_field_evaluation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LiDAR Starter-Projekt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Beispielprojekte
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Beispielprojekte
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lidar/lidar_example_projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Übersicht
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lidar/distance_estimation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Distanzschätzung
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lidar/lidar_floor_is_lava/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Der Boden ist Lava
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lidar/lidar_human_piano_air_piano/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Luft-Klavier
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lidar/lidar_code_snippets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LiDAR Code-Beispiele
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lidar/lidar_advanced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Weiterführende Themen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lidar/lidar_training_material/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Schulungsmaterial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lidar/lidar_faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ - LiDAR
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IO-Link Connectivity Starter Kit
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    IO-Link Connectivity Starter Kit
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iolink/iolink_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Übersicht
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iolink/iolink_getting_started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Erste Schritte
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iolink/iolink_code_snippets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code-Beispiele
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iolink/iolink_advanced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Weiterführende Themen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Beispielprojekte
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Beispielprojekte
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iolink/iolink_example_projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Übersicht
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iolink/sensor_fusion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SensorFusion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iolink/iolink_train/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Smarte Zugfahrt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iolink/iolink_training_material/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Schulungsmaterial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iolink/iolink_faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.sick.com/de/de/s/imprint" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Impressum
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#kurzbeschreibung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kurzbeschreibung
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#projektinformationen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Projektinformationen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ziel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ziel
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#projektkonzept" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Projektkonzept
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bevor-sie-beginnen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bevor Sie beginnen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#projektvorbereitung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Projektvorbereitung
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Projektvorbereitung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hardware-einrichtung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hardware-Einrichtung
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-einrichtung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software-Einrichtung
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Start
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Start">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sick-web-benutzeroberflache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SICK-Web-Benutzeroberfläche
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web-benutzeroberflache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Web-Benutzeroberfläche
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#demo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Demo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#erwartetes-ergebnis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erwartetes Ergebnis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zusammenfassung
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#weitere-ressourcen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Weitere Ressourcen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nachste-schritte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nächste Schritte
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<div><h1 id="stein-papier-schere">Stein, Papier, Schere</h1>
+<h2 id="kurzbeschreibung">Kurzbeschreibung</h2>
+<p>Dieses fortgeschrittene Projekt kombiniert das <strong>Vision Starter Kit</strong>, <strong>KI-Klassifizierung</strong>, einen <strong>Raspberry Pi</strong> und eine <strong>Python-Flask-Webanwendung</strong>, um gegen den Computer „Stein, Papier, Schere“ zu spielen.</p>
+<p>Der InspectorP61x erkennt das Handzeichen mithilfe einer KI-Klassifizierung. Der Raspberry Pi empfängt das Ergebnis über Ethernet, führt die Spielelogik aus und zeigt die webbasierte Spieloberfläche an.</p>
+<h2 id="projektinformationen">Projektinformationen</h2>
+<table style="border-collapse: collapse; width: 100%;">
+  <thead>
+    <tr style="background-color: #005aff; color: white;">
+      <th style="padding: 8px; text-align: left;">Projektart</th>
+      <th style="padding: 8px; text-align: left;">Erforderliches Wissensniveau</th>
+      <th style="padding: 8px; text-align: left;">Voraussichtliche Dauer</th>
+      <th style="padding: 8px; text-align: left;">Zusätzliche Hardware- und Softwareanforderungen</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="project-badge advanced">Fortgeschrittenes Projekt</span></td>
+      <td>Experte</td>
+      <td>4 Stunden</td>
+      <td>
+        <strong>Hardware</strong>
+        <ul>
+          <li>Raspberry Pi 5</li>
+          <li>Micro HDMI cable or adapter</li>
+          <li>Display, keyboard and mouse</li>
+        </ul>
+        <strong>Software</strong>
+        <ul>
+          <li>Visual Studio Code</li>
+          <li>Raspberry Pi Imager</li>
+          <li>Python</li>
+          <li>Flask</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br></p>
+<p><img alt="Stein, Papier, Schere" class="image-medium" src="../../images/rockpaperscissors.png"></p>
+<h2 id="ziel">Ziel</h2>
+<p>Das Ziel dieses Projekts ist es, ein webbasiertes „Stein, Papier, Schere“-Spiel zu entwickeln, das mithilfe des Vision Starter Kits Handzeichen erkennt.</p>
+<p>Nach Abschluss dieses Projekts sollten Sie wissen, wie Sie:</p>
+<ul>
+<li>ein KI-Klassifikationsmodell für Handzeichen trainieren</li>
+<li>Schließen Sie den InspectorP61x an einen Raspberry Pi an</li>
+<li>Die Netzwerkeinstellungen des Raspberry Pi konfigurieren</li>
+<li>Sensordaten über Ethernet empfangen</li>
+<li>Eine Python-Flask-Webanwendung ausführen</li>
+<li>Sensorwerte mit einfacher Spielelogik kombinieren</li>
+</ul>
+<hr>
+<h2 id="projektkonzept">Projektkonzept</h2>
+<p>Das Projekt besteht aus zwei Hauptkomponenten:</p>
+<table>
+<thead>
+<tr>
+<th>Komponente</th>
+<th>Funktion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vision Starter Kit</td>
+<td>Erkennt Handzeichen mithilfe von KI-Klassifizierung</td>
+</tr>
+<tr>
+<td>Raspberry Pi 5</td>
+<td>Empfängt Sensordaten, führt die Python-Spielelogik aus und hostet die Webanwendung</td>
+</tr>
+</tbody>
+</table>
+<p>Der Sensor erkennt eine der folgenden Klassen:</p>
+<ul>
+<li>Fels</li>
+<li>Papier</li>
+<li>Schere</li>
+<li>kein Zeichen</li>
+</ul>
+<p>Der Raspberry Pi wählt zufällig ein Zeichen für den Computer aus und vergleicht es mit dem vom Sensor erfassten Ergebnis.</p>
+<p><img alt="Inspektor61x" class="image-small" src="../../images/inspectorp61x.png"></p>
+<p><img alt="Raspberry Pi" src="../../images/raspberrypi.jpg"></p>
+<hr>
+<h2 id="bevor-sie-beginnen">Bevor Sie beginnen</h2>
+<p>Richten Sie das Vision Starter Kit wie in der Anleitung <a href="../vision_getting_started/">Erste Schritte</a> beschrieben ein.</p>
+<div class="admonition info">
+<p class="admonition-title">Fortgeschrittenenprojekt</p>
+<p>Für dieses Projekt sind zusätzliche Hardware- und Software-Einrichtungen erforderlich.<br>
+Grundkenntnisse in Python, im Bereich Netzwerke und in der Konfiguration des Raspberry Pi sind von Vorteil.</p>
+</div>
+<hr>
+<h2 id="projektvorbereitung">Projektvorbereitung</h2>
+<h3 id="hardware-einrichtung">Hardware-Einrichtung</h3>
+<p><img alt="Hardware-Einrichtung" src="../../images/hardwaresetup.png"></p>
+<p>Für den Raspberry Pi Imager benötigen wir einen Computer mit Internetverbindung. Außerdem benötigen wir einen Computer für die SSH-Verbindung zum Raspberry Pi. Wenn Sie direkt über Maus, Tastatur und Monitor auf den Raspberry Pi zugreifen, benötigen Sie den Computer eigentlich nur für die Installation des Raspberry Pi OS. </p>
+<p>Der Raspberry Pi wird über einen USB-C-Anschluss mit Strom versorgt und benötigt WLAN, da der Ethernet-Anschluss für den InspectorP61x benötigt wird. </p>
+<p>Der InspectorP61x wird an die Stromversorgung angeschlossen und über ein Ethernet-Kabel mit dem Raspberry Pi verbunden. </p>
+<p><strong>Einrichtung des Sensors</strong></p>
+<p>Der Sensor lässt sich mithilfe der Halterung auf verschiedene Arten befestigen. So kann er beispielsweise auf einem Tisch montiert und die Hand unter den Sensor gehalten werden. Alternativ wäre es auch möglich, den Sensor vor einer Wand zu platzieren und die Hand vor die Wand zu halten.</p>
+<p>Die folgenden Faktoren sind wichtig:</p>
+<p>Ein einheitlicher Hintergrund
+Genug Platz, damit die gesamte Hand ins Bild passt. </p>
+<h3 id="software-einrichtung">Software-Einrichtung</h3>
+<p><strong>Raspberry Pi Imager</strong></p>
+<p>Als Betriebssystem für den Raspberry Pi verwenden wir Raspberry Pi OS. Dieses müssen wir auf eine SD-Karte übertragen, damit wir es anschließend auf dem Raspberry Pi installieren können.</p>
+<ol>
+<li>Zunächst müssen wir den Imager für das Betriebssystem installieren: <a href="https://www.raspberrypi.com/software/">Raspberry Pi Imager herunterladen</a>.). Öffnen Sie das Programm anschließend und wählen Sie Folgendes aus: das entsprechende Raspberry-Pi-Modell, das richtige Betriebssystem (in diesem Fall 64-Bit) und die SD-Karte, auf die der Imager geschrieben werden soll. </li>
+</ol>
+<p><img alt="Pi Imager" src="../../images/PI_Imager.PNG"></p>
+<ol>
+<li>Nun passen wir die Einstellungen an, indem wir auf „Einstellungen bearbeiten“ klicken. </li>
+</ol>
+<p><img alt="Einstellungen ändern" src="../../images/changesettings.PNG"></p>
+<ol>
+<li>Wir legen nun „pi“ als Benutzernamen und „raspberry“ als Passwort fest. Geben Sie in den WLAN-Einstellungen das WLAN-Netzwerk und das entsprechende Passwort ein. Legen Sie außerdem das WLAN-Land fest und nehmen Sie die Spracheinstellungen vor. Als Nächstes müssen wir SSH in den Diensten aktivieren und anklicken, um anzugeben, dass wir das Raspberry-Passwort für die Authentifizierung über SSH verwenden möchten. </li>
+</ol>
+<p><img alt="Allgemeines" src="../../images/allgemein.PNG"></p>
+<p><img alt="Dienstleistungen" src="../../images/dienste.PNG"></p>
+<p>Wir speichern die Einstellungen, kehren zum vorherigen Menü zurück und übernehmen die Einstellungen. Wenn eine Meldung erscheint, dass alle Daten auf der SD-Karte gelöscht werden, bestätigen wir dies. Der Installationsvorgang auf der SD-Karte sollte nun automatisch fortgesetzt werden. </p>
+<blockquote>
+<p><strong>Hinweis:</strong>
+Sollten Sie aus irgendeinem Grund die vorherigen Schritte wiederholen müssen, bleiben die Einstellungen weiterhin gespeichert. Das WLAN-Passwort ist dann jedoch der Hash und nicht mehr das Passwort selbst. Sie sollten dies daher noch einmal überprüfen!</p>
+</blockquote>
+<ol>
+<li>Im letzten Schritt nehmen wir die SD-Karte heraus und schließen sie an den Raspberry an. </li>
+</ol>
+<p><img alt="SD-Steckplatz" src="../../images/sdslot.png"></p>
+<p><strong>Zusätzliche Einstellungen in Raspbian</strong></p>
+<p>Um gleichzeitig eine Verbindung zum Raspberry Pi über SSH und zum Sensor über LAN herzustellen, müssen wir noch einige weitere Einstellungen vornehmen. Für diesen Schritt müssen wir zunächst den Raspberry Pi an einen Monitor, eine Maus und eine Tastatur anschließen. Hilfe dazu finden Sie hier: <a href="https://www.raspberrypi.com/documentation/computers/getting-started.html#keyboard">Erste Schritte mit dem Raspberry Pi</a></p>
+<p>Außerdem müssen wir den Sensor an den LAN-Anschluss des Raspberry Pi anschließen.</p>
+<ol>
+<li>Klicken Sie zunächst auf das WLAN-Symbol in der oberen Taskleiste. Klicken Sie im sich öffnenden Menü unter „Erweiterte Optionen“ auf „Verbindungen bearbeiten“. </li>
+</ol>
+<p><img alt="Offenes WLAN" src="../../images/openWlantab.png"></p>
+<ol>
+<li>Klicken Sie anschließend im soeben geöffneten Menü auf „Kabelverbindung 1“.  Es sollte etwa so aussehen.</li>
+</ol>
+<p><img alt="Offene Kabelverbindung" src="../../images/openwiredcon.png"></p>
+<ol>
+<li>Auf der Registerkarte „Gerät“ wählen wir nun „eth0“ mit der angegebenen MAC-Adresse aus. Als Nächstes wechseln wir zur Registerkarte „IPv6-Einstellungen“. Dort wählen wir unter „Methode“ die Option „Deaktivieren“ aus. Nun sollte alles so aussehen.</li>
+</ol>
+<p><img alt="ipv6settings" src="../../images/ipv6settings.png"></p>
+<ol>
+<li>Als Nächstes wechseln wir zur Registerkarte „IPv4-Einstellungen“, da wir dort ebenfalls einige Anpassungen vornehmen müssen. Zunächst wählen wir unter „Methode“ die Option „Manuell“ aus, damit wir unsere eigene IP-Adresse und „Netzmaske“ festlegen können. Dort geben wir nun 192.168.2.100 als „Adresse“ und 24 als „Netzmaske“ ein. Das Feld für das Gateway können wir leer lassen.</li>
+</ol>
+<p><img alt="ipv4settings" src="../../images/ipv4settings.png"></p>
+<p>Bevor wir jedoch alles speichern können, müssen wir unter „Routen…“ das Kontrollkästchen „Diese Verbindung nur für Ressourcen in diesem Netzwerk verwenden“ aktivieren. Siehe unten:
+<img alt="Routen" src="../../images/routes.png"></p>
+<p>Jetzt können wir alles unter „Speichern“ speichern. </p>
+<p><strong>Verbindung prüfen</strong></p>
+<p>Bevor wir fortfahren, sollten wir testen, ob wir nun von unserem Computer aus über SSH eine Verbindung zum Raspberry Pi und zum Sensor herstellen können. </p>
+<ol>
+<li>Dazu benötigen wir die IP-Adresse unseres Raspberry Pi. Diese können wir ganz einfach über die Befehlszeile ermitteln. Wir öffnen diese, indem wir auf dieses Symbol klicken.</li>
+</ol>
+<p><img alt="Desktop" src="../../images/desktop.png"></p>
+<ol>
+<li>In der sich nun öffnenden Befehlszeile geben wir den Befehl „ifconfig“ ein. Dadurch erhalten wir alle Informationen zu den derzeit verwendeten Netzwerkadaptern und deren IP-Adressen usw.</li>
+</ol>
+<p>Uns interessiert jedoch nur die unter „wlan0“ angegebene IP-Adresse. Im Beispiel wäre dies „192.168.0.179“, sie kann aber auch anders lauten. Es ist wichtig, dass wir uns diese IP-Adresse notieren.</p>
+<p><img alt="ifconf" src="../../images/ifconf.png"></p>
+<ol>
+<li>Nun öffnen wir die Eingabeaufforderung auf unserem Computer. Unter Windows müssen Sie die Windows-Taste drücken und anschließend „cmd“ eingeben. Wenn Sie die Eingabetaste drücken, sollte sich die Eingabeaufforderung öffnen. Nun geben wir Folgendes ein.</li>
+</ol>
+<p>„ssh pi@[IP]“ Die IP-Adresse ist diejenige, die wir im vorherigen Schritt notiert haben. </p>
+<p>Drücken Sie die Eingabetaste, um den Befehl zu senden. Wenn wir alles korrekt eingegeben haben, werden wir nun aufgefordert, das Raspberry-Pi-Passwort einzugeben. In diesem Fall ist das Passwort dasjenige, das wir bei der Konfiguration des Betriebssystems gewählt haben. In unserem Beispiel wäre dies „raspberry“. </p>
+<p><img alt="Passwortabfrage" src="../../images/passwordprompt.PNG"></p>
+<p>Wir können sehen, dass die Verbindung hergestellt ist, da in der Befehlszeile nun „pi@raspberrypi“ anstelle von „C:\Users\xxxx“ angezeigt wird.</p>
+<p>Wenn dies der Fall ist, haben wir nun erfolgreich eine SSH-Verbindung zu unserem Raspberry Pi hergestellt. Das bedeutet, dass wir nun auf das Micro-HDMI-Kabel und den Monitor verzichten und die nächsten Schritte ebenfalls über SSH auf unserem Computer ausführen können. </p>
+<ol>
+<li>Um zu prüfen, ob der Sensor angeschlossen ist, schalten wir ihn zunächst ein und geben den folgenden Befehl ein.</li>
+</ol>
+<blockquote>
+<p>„ping 192.168.2.20“</p>
+</blockquote>
+<p>Wenn wir bis hierhin alles richtig gemacht haben, sollte die folgende Ausgabe angezeigt werden.</p>
+<p><img alt="pingtim" src="../../images/pingtim.PNG"></p>
+<p>Der Raspberry Pi sendet nun ständig Pings an den Sensor. Um dies zu unterbrechen, können wir STRG + C drücken.</p>
+<blockquote>
+<p><strong>Hinweis:</strong>
+Falls Ihre Anzeige von der hier gezeigten abweicht, sollten Sie die IP-Adresse und die physische Verbindung Ihres Sensors noch einmal überprüfen. </p>
+</blockquote>
+<p><strong>Python</strong></p>
+<p>Da wir zur Umsetzung des Projekts nicht standardmäßige Python-Module benötigen, müssen wir diese zunächst installieren. Dazu können wir den in Raspbian integrierten Paketmanager verwenden. </p>
+<ol>
+<li>Zunächst sollten wir sicherstellen, dass unsere Systempakete auf dem neuesten Stand sind. Öffnen Sie dazu die Befehlszeile und geben Sie folgenden Befehl ein:</li>
+</ol>
+<blockquote>
+<p>„sudo apt update“ </p>
+</blockquote>
+<p>Dadurch werden alle verfügbaren Pakete und deren Versionen aufgelistet. Wenn wir Pakete aktualisieren können, können wir dies mit dem folgenden Befehl tun:</p>
+<blockquote>
+<p>„sudo apt upgrade“</p>
+</blockquote>
+<ol>
+<li>Als Nächstes müssen wir prüfen, ob Python und pip bereits installiert sind. Dazu verwenden wir</li>
+</ol>
+<blockquote>
+<p>„python3 --version“ </p>
+</blockquote>
+<p>oder</p>
+<blockquote>
+<p>„pip3 --version“</p>
+</blockquote>
+<p>Wenn keine Versionen angezeigt werden, müssen wir sie installieren:</p>
+<blockquote>
+<p>„sudo apt install python3“ <br>
+„sudo apt install python3-pip“</p>
+</blockquote>
+<p><br></p>
+<p><strong>Hinweis für Entwickler:</strong></p>
+<p>Wenn du dich weiterentwickeln möchtest, kannst du Visual Studio Code auf deinem Computer oder dem Raspberry Pi installieren. Der Befehl dafür lautet „sudo apt install code“. Für die SSH-Verbindung benötigst du eine Erweiterung für VS Code: <a href="https://code.visualstudio.com/docs/remote/ssh">Visual Studio Code-Tutorial für SSH</a>.</p>
+<h2 id="start">Start</h2>
+<h3 id="sick-web-benutzeroberflache">SICK-Web-Benutzeroberfläche</h3>
+<p>Nachdem wir Nova2D nun im Starter Kit eingerichtet haben, können wir weitere Einstellungen für unser Spiel vornehmen. </p>
+<p><strong>Dateneingabe</strong></p>
+<p>Um sicherzustellen, dass unsere Handzeichen erkannt werden, müssen wir nun ein KI-gestütztes Analyse-Tool finden. Gehen Sie dazu auf: Analyse → KI-Klassifizierung</p>
+<ol>
+<li>Auf dem Bild erscheint nun ein rotes Rechteck mit der Aufschrift „nicht trainiert“. Passen Sie dieses Rechteck an (in diesem Fall kann die gesamte Bildaufnahme verwendet werden). </li>
+</ol>
+<p><img alt="Beispiel für eine KI-Klassifizierung" src="../../images/AI_Classification_example.png"></p>
+<ol>
+<li>Nun können wir vier Klassen erstellen (Schere, Stein, Papier, kein Zeichen) und Bilder der Zeichen aufnehmen („Aktives Bild hinzufügen“). Nehmen Sie für jede Klasse mindestens 20 bis 30 Bilder auf, gehen Sie dann zu „Trainieren“ und warten Sie. Sobald das Training abgeschlossen ist, können Sie testen, wie genau die Erkennung ist. Siehe auch: Hardware-Einrichtung, um zu erfahren, wie der Sensor angebracht und die Hand positioniert werden sollte. </li>
+</ol>
+<p><img alt="Beispiel" src="../../images/Training_example.png"></p>
+<ol>
+<li>Sollte die Erkennung nach dem Training immer noch ungenau sein, können weitere Bilder aufgenommen werden, um den Datensatz zu erweitern.</li>
+</ol>
+<p>Die Einstellungen und der Datensatz können nun gespeichert und bei Bedarf exportiert werden. </p>
+<h3 id="web-benutzeroberflache">Web-Benutzeroberfläche</h3>
+<p>Unter „Demo“ findest du einen ZIP-Ordner mit allen Dateien, die du benötigst, um das Spiel „Stein, Papier, Schere“ zu starten. Bevor Sie dies tun können, müssen Sie alle erforderlichen Pakete installieren. Diese sind in einer Textdatei gespeichert. Kopieren Sie den Ordner auf Ihren Raspberry Pi und navigieren Sie im Terminal zum richtigen Verzeichnis (path/to steht für das Verzeichnis, in dem Sie den Ordner gespeichert haben):</p>
+<blockquote>
+<p>cd Pfad/zu/SchereStein/Python</p>
+</blockquote>
+<p>Mit dem folgenden Befehl können Sie alle Pakete aus dieser Datei installieren:</p>
+<blockquote>
+<p>pip install -r requirements.txt</p>
+</blockquote>
+<ol>
+<li>Falls Sie für den Sensor eine andere IP-Adresse als die in der Dokumentation angegebene festgelegt haben, müssen Sie diese in der Datei „client.py“ ändern. Das Gleiche gilt für den Port. </li>
+</ol>
+<p>Nun sollte alles bereit sein, damit du das Spiel starten kannst.</p>
+<h2 id="demo">Demo</h2>
+<p>Hier findest du alle wichtigen Dateien, die du zum Starten des Spiels benötigst:</p>
+<p>Im Python-Ordner findest du die Datei „start.sh“, mit der du das Spiel starten kannst. 
+Nachdem Sie alle erforderlichen Pakete installiert haben. 
+Verwenden Sie für die Installation die Datei „requirements.txt“.
+Viel Spaß!</p>
+<p><a href="../../files/Python.zip">ZIP-Datei</a></p>
+<p>Um das Spiel über die Website zu starten, können Sie die Datei „start-sh“ im Terminal mit dem folgenden Befehl ausführen:</p>
+<blockquote>
+<p>bash start.sh ./start.ps1</p>
+</blockquote>
+<p>Geben Sie die IP-Adresse Ihres Raspberry Pi gefolgt von Port 5001, auf dem die Webanwendung läuft, wie folgt in Ihren Browser ein:</p>
+<p>Beispiel: 192.168.0.179:5001/</p>
+<p>Die Website sollte nun angezeigt werden, sodass Sie mit dem Sensor „Stein, Papier, Schere“ spielen können. </p>
+<hr>
+<h2 id="erwartetes-ergebnis">Erwartetes Ergebnis</h2>
+<p>Nach Abschluss dieses Projekts sollte das System folgende Funktionen erfüllen:</p>
+<ul>
+<li>Mit dem Vision Starter Kit erkennen, ob „Stein, Papier, Schere“ oder kein Zeichen vorliegt</li>
+<li>die erkannte Klasse an den Raspberry Pi senden</li>
+<li>die Spiellogik in einer Python-Flask-Webanwendung ausführen</li>
+<li>Die Spieloberfläche in einem Browser anzeigen</li>
+<li>das vom Sensor erkannte Zeichen mit dem vom Computer ausgewählten Zeichen vergleichen</li>
+</ul>
+<hr>
+<h2 id="zusammenfassung">Zusammenfassung</h2>
+<p>In diesem Projekt für Fortgeschrittene hast du Bildverarbeitung, KI-Klassifizierung, Raspberry-Pi-Netzwerkfunktionen und eine Python-Flask-Webanwendung miteinander kombiniert.</p>
+<p>Sie haben gelernt, wie man:</p>
+<ul>
+<li>Handzeichenerkennung in SICK Nova konfigurieren</li>
+<li>Einen Raspberry Pi für die Kommunikation mit Sensoren einrichten</li>
+<li>Netzwerkeinstellungen für WLAN und Ethernet konfigurieren</li>
+<li>Erforderliche Python-Pakete installieren</li>
+<li>Ein Flask-basiertes Webspiel starten</li>
+<li>Sensorsignale mit der Anwendungslogik kombinieren</li>
+</ul>
+<p>Dieses Projekt veranschaulicht, wie das Vision Starter Kit als Teil einer größeren interaktiven Anwendung eingesetzt werden kann.</p>
+<hr>
+<h2 id="weitere-ressourcen">Weitere Ressourcen</h2>
+<p><a href="https://projecthub.arduino.cc/mad_mcu/how-to-play-rock-paper-scissor-with-a-time-of-flight-sensor-3d27ec">Stein, Papier, Schere mit Flugzeitsensor und Arduino</a></p>
+<p><strong>Für Entwickler:</strong> </p>
+<p><a href="https://flask.palletsprojects.com/en/stable/quickstart/#http-methods">Flasche</a></p>
+<p><a href="https://code.visualstudio.com/">Visual Studio Code</a> </p>
+<hr>
+<h2 id="nachste-schritte">Nächste Schritte</h2>
+<p>Fahren Sie mit einem weiteren Vision-Projekt fort oder öffnen Sie die vollständigen Projektdateien auf GitHub.com.</p>
+<div class="next-step-buttons">
+<p><a class="md-button button-small" href="../vision_example_projects/">Beispielprojekte</a></p>
+<p><a class="md-button button-small" href="https://github.com/SICKAG/SICK-Sensor-Starter-Kits" target="_blank">GitHub</a></p>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © SICK AG 2026
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/SICKAG" target="_blank" rel="noopener" title="SICK on GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://www.youtube.com/user/SICKSensors" target="_blank" rel="noopener" title="SICK on YouTube" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://www.linkedin.com/company/sicksensorintelligence/" target="_blank" rel="noopener" title="SICK on LinkedIn" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
