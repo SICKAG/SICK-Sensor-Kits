@@ -34,6 +34,9 @@ jobs:
       - name: Build German site  
         run: mkdocs build -f mkdocs.de.yaml
 
+      - name: Add root redirect          # ← NEU  
+        run: cp redirect/index.html site/index.html
+
       - name: Deploy to GitHub Pages  
         uses: peaceiris/actions-gh-pages@v4  
         with:  
