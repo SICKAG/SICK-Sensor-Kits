@@ -1,4 +1,4 @@
-# Beispielprojekte: IO-Link-Konnektivitäts-Starterkit
+# Beispielprojekte: IO-Link-Konnektivitäts-Starter-Kit
 
 Hier findest du einige Beispielprojekte, die du ganz einfach nachmachen und selbst umsetzen kannst.
 

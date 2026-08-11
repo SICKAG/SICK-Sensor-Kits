@@ -28,7 +28,7 @@ Sie können nun mit dem Vision Starter Kit loslegen. Befolgen Sie die nachstehen
 
       - Geben Sie gegebenenfalls die Administrator-Anmeldedaten ein.  
 
-      - Suchen Sie **Internetprotokoll Version 4 (TCP/IPv4)** und wählen Sie **Eigenschaften** aus oder klicken Sie mit der rechten Maustaste darauf.
+      - Suchen Sie **Internetprotokoll Version 4 (TCP/IPv4)** und wählen Sie **Eigenschaften** oder klicken Sie mit der rechten Maustaste darauf.
 
       ![Win + R: ncpa.cpl](../images/Network_adapter_3.png)  
 
@@ -73,7 +73,7 @@ Sie sollten nun die unten abgebildete Benutzeroberfläche sehen. Erstellen Sie e
     5. Schauen Sie im **FAQ-Bereich** nach: [FAQ](./vision_faq.md)
 
     6. Sollten Sie weiterhin Probleme mit dem Gerät haben:  
-         - Rufen Sie das **Support-Portal** auf, registrieren Sie sich und erstellen Sie einen Supportfall, um Hilfe zu erhalten.
+         - Rufen Sie das **Support-Portal** auf, registrieren Sie sich und erstellen Sie einen Fall, um Unterstützung zu erhalten.
 
 
 

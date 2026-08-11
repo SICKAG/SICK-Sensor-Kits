@@ -1,35 +1,3 @@
-<!-- # FAQ – LiDAR-Starter-Kit
-
-## Kurzbeschreibung
-
-Diese FAQ beantwortet häufig gestellte Fragen zum LiDAR-Starter-Kit, zur Praxistestphase und zur Sensorkommunikation.
-
-Bei allgemeinen Fragen zu den Starter-Kits besuchen Sie bitte den Bereich „Allgemeine FAQ“.
-
-../faq.md{ .md-button .button-small }
-
----
-
-??? question "Der LiDAR-Sensor ist nicht erreichbar. Was sollte ich überprüfen?"
-
-    Überprüfen Sie die Stromversorgung, die Ethernet-Verbindung und die IP-Adresse des Sensors.
-
----
-
-??? question "Die Feldauswertung liefert nicht das erwartete Ergebnis. Was kann ich tun?"
-
-    Überprüfen Sie, ob die Erfassungsfelder korrekt konfiguriert sind und ob sich das Objekt innerhalb des definierten Bereichs befindet.
-
----
-
-??? question "Wo finde ich Beispielprojekte für das LiDAR-Starter-Kit?"
-
-    Die LiDAR-Beispielprojekte sind auf der Seite „Beispielprojekte“ aufgeführt.
-
-    ./lidar_example_projects.md{ .md-button .button-small }
-
--->
-
 <div class="faq-page" markdown>
 
 # FAQ – LiDAR-Starter-Kit
@@ -106,7 +74,7 @@ Bei allgemeinen Fragen zu den Starter-Kits, Support-Ressourcen oder zusätzliche
     - Die Feldgröße entspricht dem zu erkennenden Objekt oder der zu erkennenden Person.
     - Die Parameter für die Objektgröße sind korrekt konfiguriert.
     - Das Objekt verbleibt lange genug innerhalb des Feldes
-    - Statische Objekte wurden bei Bedarf korrekt per Teach-In verarbeitet
+    - Statische Objekte wurden bei Bedarf korrekt per Teach-In verarbeitet.
 
     Sollte das Verhalten des Feldes weiterhin unerwartet sein, beginnen Sie mit einem großen Feld und einem gut sichtbaren Testobjekt.
 
@@ -160,7 +128,7 @@ Bei allgemeinen Fragen zu den Starter-Kits, Support-Ressourcen oder zusätzliche
     - Der Sensor befindet sich im korrekten Zustand.
     - Die angeforderten Daten sind verfügbar
 
-    Für erste Tests nutzen Sie die Seite „LiDAR-Code-Beispiele“.
+    Für erste Tests nutzen Sie bitte die Seite „LiDAR-Code-Beispiele“.
 
     [LiDAR-Code-Beispiele](./lidar_code_snippets.md){ .md-button .button-small}
 
@@ -212,7 +180,7 @@ Bei allgemeinen Fragen zu den Starter-Kits, Support-Ressourcen oder zusätzliche
     4. Der Boden ist Lava
     5. Menschliches Klavier / Luftklavier
 
-    „Feldbewertung“ ist die empfohlene erste Demo, da sie das Grundkonzept der Erkennungsfelder vorstellt.
+    „Feldbewertung“ ist die empfohlene erste Demo, da sie das Grundkonzept von Erkennungsfeldern vorstellt.
 
 ---
 

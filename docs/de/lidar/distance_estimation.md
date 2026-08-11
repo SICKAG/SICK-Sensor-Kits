@@ -1,47 +1,8 @@
-<!-- # Entfernungsschätzung
-
-<table style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr style="background-color: #005aff; color: white;">
-      <th style="padding: 8px; text-align: left;">Kurzbeschreibung</th>
-      <th style="padding: 8px; text-align: left;">Erforderliches Wissensniveau</th>
-      <th style="padding: 8px; text-align: left;">Voraussichtliche Dauer</th>
-      <th style="padding: 8px; text-align: left;">Zusätzliche Hardware- und Softwareanforderungen</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Schätzen Sie die Entfernung zu einem Objekt und messen Sie diese mit einem LiDAR-Sensor.</td>
-      <td>Grundlagen</td>
-      <td>1–2 Stunden</td>
-      <td>Beliebige Objekte</td>
-    </tr>
-  </tbody>
-</table>
-
-![Entfernungsschätzung](../images/distance_estimation.png)
-
-## Welches Problem muss gelöst werden?
-Die Einschätzung von Entfernungen durch Menschen und das räumliche Gedächtnis sollen anhand von 3D-Sensordaten in einem spielerischen Rahmen untersucht werden.
-
-Projektideen:
-
-* Präzise Entfernungsmessung mit 3D-Sensor
-* Spiel-Dashboard, das zufällig einen bestimmten Entfernungswert generiert
-* Abweichungsanalyse und Dashboard
-
-## Beispiel-Projektdatei
-
-[DistanceEstimation.Zip](../files/distance_estimation.zip)
-
--->
-
-
 # Entfernungsschätzung
 
 ## Kurzbeschreibung
 
-Im Mittelpunkt dieses Projektes steht das Schätzen und Messen von Entfernungen mit dem LiDAR-Starter-Kit.
+Im Mittelpunkt dieses Projektes steht die Schätzung und Messung von Entfernungen mit dem LiDAR-Starter-Kit.
 
 Das Ziel ist es, eine spielerische Situation zu schaffen, in der die Nutzer die Entfernung zu einem Objekt schätzen und ihre Schätzung mit der gemessenen LiDAR-Entfernung vergleichen.
 
@@ -115,30 +76,30 @@ Ihre Lösung sollte Folgendes umfassen:
 
 <div class="requirement-box">
 
-<h3>Core Requirements</h3>
+<h3>Grundlegende Anforderungen</h3>
 
 <ul>
-  <li>Use the LiDAR Starter Kit to measure the distance to an object.</li>
-  <li>Place a test object in front of the sensor.</li>
-  <li>Read or display the measured distance value.</li>
-  <li>Allow the user to estimate the distance.</li>
-  <li>Compare the estimated distance with the measured distance.</li>
-  <li>Calculate the deviation between estimation and measurement.</li>
+  <li>Verwenden Sie das LiDAR-Starter-Kit, um die Entfernung zu einem Objekt zu messen.</li>
+  <li>Platzieren Sie ein Testobjekt vor dem Sensor.</li>
+  <li>Lesen Sie den gemessenen Entfernungswert ab oder zeigen Sie ihn an.</li>
+  <li>Geben Sie dem Benutzer die Möglichkeit, die Entfernung zu schätzen.</li>
+  <li>Vergleichen Sie die geschätzte Entfernung mit der gemessenen Entfernung.</li>
+  <li>Berechnen Sie die Abweichung zwischen Schätzung und Messung.</li>
 </ul>
 
 </div>
 
 <div class="requirement-box optional">
 
-<h3>Optional Extensions</h3>
+<h3>Optionale Erweiterungen</h3>
 
 <ul>
-  <li>Create a dashboard for displaying the measured and estimated values.</li>
-  <li>Generate random target distances for a game mode.</li>
-  <li>Add a score based on estimation accuracy.</li>
-  <li>Track multiple rounds or multiple players.</li>
-  <li>Visualize the deviation as a bar, percentage or color indicator.</li>
-  <li>Use different objects and compare measurement behavior.</li>
+  <li>Erstellen Sie ein Dashboard zur Anzeige der gemessenen und geschätzten Werte.</li>
+  <li>Generieren Sie zufällige Zielentfernungen für einen Spielmodus.</li>
+  <li>Fügen Sie eine Wertung basierend auf der Schätzgenauigkeit hinzu.</li>
+  <li>Verfolgen Sie mehrere Runden oder mehrere Spieler.</li>
+  <li>Visualisieren Sie die Abweichung als Balken, Prozentangabe oder Farbindikator.</li>
+  <li>Verwenden Sie verschiedene Objekte und vergleichen Sie das Messverhalten.</li>
 </ul>
 
 </div>
@@ -167,27 +128,27 @@ Je nach den vorhandenen Voraussetzungen und Ihren Programmierkenntnissen können
 <div class="strategy-grid">
 
   <div class="strategy-card">
-    <h3>Simple Measurement</h3>
-    <p>Place an object in front of the LiDAR sensor and read the measured distance.</p>
-    <p>This is the easiest version and can be used to understand the basic measurement behavior.</p>
+    <h3>Einfache Messung</h3>
+    <p>Platzieren Sie ein Objekt vor dem LiDAR-Sensor und lesen Sie die gemessene Entfernung ab.</p>
+    <p>Dies ist die einfachste Variante und dient dazu, das grundlegende Messverhalten zu verstehen.</p>
   </div>
 
   <div class="strategy-card">
-    <h3>Estimation Game</h3>
-    <p>Let a user estimate the distance to an object before revealing the measured value.</p>
-    <p>The result can be scored based on how close the estimation was to the real measurement.</p>
+    <h3>Schätzspiel</h3>
+    <p>Lassen Sie einen Benutzer die Entfernung zu einem Objekt schätzen, bevor der gemessene Wert angezeigt wird.</p>
+    <p>Das Ergebnis kann je nachdem, wie nah die Schätzung am tatsächlichen Messwert lag, bewertet werden.</p>
   </div>
 
   <div class="strategy-card">
-    <h3>Random Target Distance</h3>
-    <p>Generate a random target distance and ask the user to place an object as close as possible to that distance.</p>
-    <p>The LiDAR sensor can then measure the actual distance and calculate the deviation.</p>
+    <h3>Zufällige Zielentfernung</h3>
+    <p>Generieren Sie eine zufällige Zielentfernung und bitten Sie den Nutzer, ein Objekt so nah wie möglich an dieser Entfernung zu platzieren.</p>
+    <p>Der LiDAR-Sensor kann dann die tatsächliche Entfernung messen und die Abweichung berechnen.</p>
   </div>
 
   <div class="strategy-card">
-    <h3>Dashboard Visualization</h3>
-    <p>Create a simple dashboard that shows estimated distance, measured distance and deviation.</p>
-    <p>This can make the project more interactive and easier to understand during demonstrations.</p>
+    <h3>Visualisierung im Dashboard</h3>
+    <p>Erstellen Sie ein einfaches Dashboard, das die geschätzte Entfernung, die gemessene Entfernung und die Abweichung anzeigt.</p>
+    <p>Dadurch wird das Projekt interaktiver und bei Vorführungen leichter verständlich.</p>
   </div>
 
 </div>

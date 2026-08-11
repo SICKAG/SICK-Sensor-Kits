@@ -1,27 +1,3 @@
-<!-- # Fortgeschrittene Anwendung des LiDAR-Starter-Kits
-Das LiDAR-Starter-Kit ist ein leistungsstarkes Werkzeug für Entwickler und Forscher, die fortschrittliche Sensorfunktionen in ihre Projekte integrieren möchten. Dieser Leitfaden enthält detaillierte Anleitungen und Code-Beispiele, die Ihnen helfen, die Funktionen des Kits optimal zu nutzen.
-
-Ausführlichere Informationen und Ressourcen zur Arbeit mit SICK-Geräten und deren Integration finden Sie im [Artikel „picoScan100: Protokolle und Integration“](https://support.sick.com/sick-knowledgebase/article/?code=KA-09481).
-
-
-## SICK-Treiber sick_scan_xd
-Für zusätzliche Funktionen und eine erweiterte Integration können Sie sich den [sick_perception_xd](https://github.com/SICKAG/sick_perception_sdk)-Treiber ansehen. Dieser Treiber bietet erweiterte Unterstützung für SICK-LiDAR-Geräte und kann eine wertvolle Ressource für Ihre Projekte sein.
-
-In der Welt von LiDAR sind präzise Messdaten nur so aussagekräftig wie die Software, die ihr Potenzial erschließt. Ein C++-SDK fungiert als unverzichtbares digitales Hilfsmittel, das Entwicklern direkten, leistungsstarken Zugriff auf Rohsensordaten und Konfigurationsoptionen für Echtzeitanwendungen ermöglicht.
-
-**Funktionen**
-
-- Empfang von Scan-, IMU- und Encoder-Daten im SICK-Datenformat „Compact“ über UDP oder TCP sowie Durchführung der Sensorkonfiguration über die REST-API
-- Thread-sichere und ereignisgesteuerte Datenerfassung von mehreren Sensoren.
-- Plattformübergreifendes Build-System mit CMake für Linux und Windows sowie Abhängigkeitsverwaltung über Conan 2 möglich.
-- Kompatibel mit den Architekturen x86_64 und ARM64 (z. B. Raspberry Pi).
-- Zahlreiche gebrauchsfertige Beispiele für schnelles Prototyping.
-- Integrierte Diagnose- und Protokollierungsfunktionen.
-- Umfassende Unit- und CI-Tests mit integrierten Testdaten aus der Praxis.
-- Entwickelt, um die Anforderungen des EU-Gesetzes zur Cyber-Resilienz zu erfüllen.
-
--->
-
 # Fortgeschrittene Anwendung des LiDAR-Starter-Kits
 
 ## Kurzbeschreibung
@@ -110,28 +86,28 @@ Zu den typischen Anwendungsfällen gehören:
 
 <div class="requirement-box">
 
-<h3>Core Capabilities</h3>
+<h3>Kernkompetenzen</h3>
 
 <ul>
-  <li>Receive scan, IMU and encoder data in SICK data format Compact over UDP or TCP.</li>
-  <li>Perform sensor configuration via REST API.</li>
-  <li>Acquire data from multiple sensors in an event-driven and thread-safe way.</li>
-  <li>Use a cross-platform build system based on CMake for Linux and Windows.</li>
-  <li>Use dependency management via Conan 2.</li>
+  <li>Empfang von Scan-, IMU- und Encoder-Daten im SICK-Datenformat „Compact“ über UDP oder TCP.</li>
+  <li>Führen Sie die Sensorkonfiguration über die REST-API durch.</li>
+  <li>Erfassung von Daten aus mehreren Sensoren auf ereignisgesteuerte und threadsichere Weise.</li>
+  <li>Verwenden Sie ein plattformübergreifendes Build-System auf Basis von CMake für Linux und Windows.</li>
+  <li>Verwenden Sie die Abhängigkeitsverwaltung über Conan 2.</li>
 </ul>
 
 </div>
 
 <div class="requirement-box optional">
 
-<h3>Additional Features</h3>
+<h3>Weitere Funktionen</h3>
 
 <ul>
-  <li>Compatible with x86_64 and ARM64 architectures, for example Raspberry Pi.</li>
-  <li>Includes ready-to-use examples for fast prototyping.</li>
-  <li>Provides diagnostic and logging capabilities.</li>
-  <li>Includes unit and CI tests with real-world test data.</li>
-  <li>Designed to support cybersecurity-related requirements such as the EU Cyber Resilience Act.</li>
+  <li>Kompatibel mit den Architekturen x86_64 und ARM64, zum Beispiel Raspberry Pi.</li>
+  <li>Enthält einsatzbereite Beispiele für schnelles Prototyping.</li>
+  <li>Bietet Diagnose- und Protokollierungsfunktionen.</li>
+  <li>Enthält Unit- und CI-Tests mit realistischen Testdaten.</li>
+  <li>Entwickelt zur Unterstützung von Anforderungen im Bereich Cybersicherheit, wie beispielsweise dem EU-Gesetz zur Cyberresilienz.</li>
 </ul>
 
 </div>
@@ -145,21 +121,21 @@ Verwenden Sie das SDK, wenn Sie Anwendungen entwickeln möchten, die einen erwei
 <div class="strategy-grid">
 
   <div class="strategy-card">
-    <h3>Use the Starter Kit UI</h3>
-    <p>Use the browser-based user interface if you want to configure the sensor, create fields or test basic functionality.</p>
-    <p>This is the best option for first demos and educational exercises.</p>
+    <h3>Verwenden Sie die Benutzeroberfläche des Starter-Kits</h3>
+    <p>Verwenden Sie die browserbasierte Benutzeroberfläche, wenn Sie den Sensor konfigurieren, Felder anlegen oder grundlegende Funktionen testen möchten.</p>
+    <p>Dies ist die beste Option für erste Demos und Schulungsübungen.</p>
   </div>
 
   <div class="strategy-card">
-    <h3>Use Code Examples</h3>
-    <p>Use the LiDAR code examples if you want to send simple SOPAS commands or read basic measurement data with Python.</p>
-    <p>This is useful for small scripts and first software experiments.</p>
+    <h3>Verwenden Sie die Code-Beispiele</h3>
+    <p>Verwenden Sie die LiDAR-Code-Beispiele, wenn Sie einfache SOPAS-Befehle senden oder grundlegende Messdaten mit Python auslesen möchten.</p>
+    <p>Dies ist nützlich für kleine Skripte und erste Software-Experimente.</p>
   </div>
 
   <div class="strategy-card">
-    <h3>Use the SDK</h3>
-    <p>Use the SDK if you want to build more robust, scalable or performance-oriented applications.</p>
-    <p>This is useful for advanced integration, sensor data processing and larger software projects.</p>
+    <h3>Verwenden Sie das SDK</h3>
+    <p>Verwenden Sie das SDK, wenn Sie robustere, skalierbare oder leistungsorientierte Anwendungen entwickeln möchten.</p>
+    <p>Dies eignet sich für fortgeschrittene Integrationen, die Verarbeitung von Sensordaten und größere Softwareprojekte.</p>
   </div>
 
 </div>
@@ -211,6 +187,16 @@ Nutzen Sie die Seite „Code-Beispiele“, wenn Sie Folgendes tun möchten:
 [LiDAR-Code-Beispiele](./lidar_code_snippets.md){ .md-button .button-small }
 
 Bei größeren Softwareprojekten ist das SDK möglicherweise der bessere Ausgangspunkt.
+
+---
+
+## Rohdaten des Sensors
+
+Wenn Sie auf die Rohdaten des Sensors zugreifen möchten, schauen Sie sich bitte die folgende Seite an:
+
+[ScanSegmentAPI](https://github.com/SICKAG/ScanSegmentAPI/blob/public/README.md){ .md-button .button-small }
+
+Darin wird beschrieben, wie der vom Sensor gestreamte Rohdatenstrom der Scan-Segmente empfangen und dekodiert wird.  
 
 ---
 

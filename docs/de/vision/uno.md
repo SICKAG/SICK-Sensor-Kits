@@ -1,45 +1,3 @@
-<!-- # UNO-Kartenspiel
-
-<table style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr style="background-color: #005aff; color: white;">
-      <th style="padding: 8px; text-align: left;">Kurzbeschreibung</th>
-      <th style="padding: 8px; text-align: left;">Erforderliches Wissensniveau</th>
-      <th style="padding: 8px; text-align: left;">Voraussichtliche Dauer</th>
-      <th style="padding: 8px; text-align: left;">Zusätzliche Hardware- und Softwareanforderungen</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Erkenne und klassifiziere UNO-Spielkarten und entwickle eine Strategie, um gegen den Computer zu spielen.</td>
-      <td>Fortgeschrittene/Experten</td>
-      <td>4–8 Stunden</td>
-      <td>UNO-Spielkarten</td>
-    </tr>
-  </tbody>
-</table>
-
-![UNO](../images/Uno.jpg)
-
-## Welches Problem muss gelöst werden?
-Spielkarten sollen automatisch erkannt werden, damit ein klassisches Kartenspiel wie UNO oder Mau-Mau gegen den Computer gespielt werden kann. Kartenfarbe, Wert und Sonderkarten müssen zuverlässig erkannt werden.
-<br>
-<br>
-Projektideen:
-
-* Zuverlässige Kartenerkennung, selbst wenn die Karten leicht gedreht sind
-* Regelbasierte Spielelogik für UNO oder Mau-Mau
-* Spiele gegen den Computer
-* Mehrspieler
-
-## Beispiel für eine Konfigurationsdatei
-
-[UNO-Konfiguration.zip](../files/configuration_nova_inspector_uno.ncfg)
-
-
--->
-
-
 # UNO-Kartenspiel
 
 ## Kurzbeschreibung
@@ -75,9 +33,9 @@ Das Ziel besteht darin, Kartenfarben, Zahlen und Sonderkarten zu erkennen und an
 
 ## Ziel
 
-Das Ziel dieses Projekts ist es, eine Anwendung zur Kartenerkennung zu entwickeln, die UNO-Spielkarten klassifizieren und die erkannten Karten in einer regelbasierten Spiellogik verwenden kann.
+Das Ziel dieses Projekts ist es, eine Anwendung zur Kartenerkennung zu entwickeln, die UNO-Spielkarten klassifizieren und die erkannten Karten in einer regelbasierten Spielelogik verwenden kann.
 
-Nach Abschluss dieses Projekts sollten Sie wissen, wie Sie:
+Nach Abschluss dieses Projekts sollten Sie wissen, wie man:
 
 - UNO-Karten mit dem Vision Starter Kit sortieren
 - Kartenfarben und -werte unterscheiden
@@ -140,31 +98,31 @@ Ihre Lösung sollte Folgendes umfassen:
 
 <div class="requirement-box">
 
-<h3>Core Requirements</h3>
+<h3>Grundlegende Anforderungen</h3>
 
 <ul>
-  <li>Use the <strong>AI Classification</strong> tool in SICK Nova.</li>
-  <li>Detect UNO cards reliably.</li>
-  <li>Classify at least a selected subset of cards.</li>
-  <li>Distinguish relevant card properties such as color, number or special card type.</li>
-  <li>Provide a useful output for the detected card.</li>
-  <li>Use the classification result in a simple game logic.</li>
+  <li>Verwenden Sie das <strong>KI</strong>-Klassifizierungstool in SICK Nova.</li>
+  <li>Erkennen Sie UNO-Karten zuverlässig.</li>
+  <li>Klassifizieren Sie mindestens eine ausgewählte Teilmenge der Karten.</li>
+  <li>Unterscheiden Sie relevante Karteneigenschaften wie Farbe, Zahl oder besonderen Kartentyp.</li>
+  <li>Stellen Sie eine aussagekräftige Ausgabe für die erkannte Karte bereit.</li>
+  <li>Verwenden Sie das Klassifizierungsergebnis in einer einfachen Spielelogik.</li>
 </ul>
 
 </div>
 
 <div class="requirement-box optional">
 
-<h3>Optional Extensions</h3>
+<h3>Optionale Erweiterungen</h3>
 
 <ul>
-  <li>Implement the full UNO rule logic.</li>
-  <li>Add a computer opponent.</li>
-  <li>Add a multiplayer mode.</li>
-  <li>Create a web-based interface.</li>
-  <li>Add score tracking.</li>
-  <li>Visualize playable cards.</li>
-  <li>Add probability or strategy suggestions.</li>
+  <li>Implementieren Sie die vollständige UNO-Regel-Logik.</li>
+  <li>Fügen Sie einen Computergegner hinzu.</li>
+  <li>Fügen Sie einen Mehrspieler-Modus hinzu.</li>
+  <li>Erstellen Sie eine webbasierte Benutzeroberfläche.</li>
+  <li>Fügen Sie eine Punkteverfolgung hinzu.</li>
+  <li>Visualisiere die spielbaren Karten.</li>
+  <li>Füge Wahrscheinlichkeits- oder Strategievorschläge hinzu.</li>
 </ul>
 
 </div>

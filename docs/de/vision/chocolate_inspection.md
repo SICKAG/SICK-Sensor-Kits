@@ -1,34 +1,3 @@
-<!-- # Schokoladenprüfung
-
-<table style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr style="background-color: #005aff; color: white;">
-      <th style="padding: 8px; text-align: left;">Kurzbeschreibung</th>
-      <th style="padding: 8px; text-align: left;">Erforderliches Wissensniveau</th>
-      <th style="padding: 8px; text-align: left;">Voraussichtliche Dauer</th>
-      <th style="padding: 8px; text-align: left;">Zusätzliche Hardware- und Softwareanforderungen</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Folgen Sie den SICK Nova-Tutorials auf YouTube und lernen Sie verschiedene KI- und Nicht-KI-Tools kennen, indem Sie einen Schokoriegel untersuchen.</td>
-      <td>Fortgeschritten</td>
-      <td>2 Stunden</td>
-      <td>Schokoladentafel<br>3D-Druckdateien <a href="https://sick.com/de/en/downloads/media/swp682086">sick.com/de/en/downloads/media/swp682086</a><br>ODER eine beliebige andere Schokoladentafel / ein beliebiges verpacktes Lebensmittel</td>
-    </tr>
-  </tbody>
-</table>
-
- ![Schokoladentafeln](../images/ai-generated-chocolate-bars-free-png.webp)
-
-Die komplette Tutorial-Reihe finden Sie hier:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Km3-CCW-0v0?si=6ksEwMWxyPNmiroJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-Befolgen Sie einfach die einzelnen Schritte in den Tutorials. Verwenden Sie anstelle des Inspector83x aus dem Video einfach den InspectorP61x aus dem Vision Starter Kit.
-
--->
-
 # Schokoladenprüfung
 
 ## Kurzbeschreibung
@@ -71,12 +40,12 @@ Wenn Sie die SICK Nova-Tutorialreihe durcharbeiten, lernen Sie, wie man eine Sch
 
 Dieses Projekt zeigt, wie sich mit dem Vision Starter Kit und SICK Nova ein Arbeitsablauf für die visuelle Prüfung erstellen lässt.
 
-Sie werden sehen, wie verschiedene Werkzeuge kombiniert werden können, um ein Objekt zu prüfen, optische Merkmale zu bewerten und typische Abläufe bei der Qualitätsprüfung nachzuvollziehen.
+Sie werden sehen, wie verschiedene Werkzeuge kombiniert werden können, um ein Objekt zu prüfen, optische Merkmale zu bewerten und typische Arbeitsabläufe bei der Qualitätsprüfung nachzuvollziehen.
 
 Dieses Beispiel kann Ihnen helfen, Folgendes zu verstehen:
 
 - Wie bildbasierte Prüfaufgaben strukturiert werden können
-- Wie KI- und Nicht-KI-Tools die visuelle Prüfung unterstützen können
+- Wie KI- und Nicht-KI-Tools die Sichtprüfung unterstützen können
 - Wie sich ein auf einem Tutorial basierendes Projekt an Ihr eigenes Objekt anpassen lässt
 - wie der InspectorP61x aus dem Vision Starter Kit anstelle des im Video gezeigten Sensors verwendet werden kann
 

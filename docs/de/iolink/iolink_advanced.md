@@ -18,7 +18,7 @@ Das IO-Link-Konnektivitäts-Starter-Kit lässt sich zudem mit zusätzlichem Zube
     <tr>
       <td>1</td>
       <td>
-        Signalturm <a href="https://www.sick.com/ag/en/catalog/products/accessories/signal-transmitters/optical-signal-transmitters/slt060-0b010j700/p/p663661?tab=detail" target="_blank">SLT</a> – optischer Signalsender zur Anzeige von z. B. Füllstand oder Entfernung
+        Signalturm <a href="https://www.sick.com/ag/en/catalog/products/accessories/signal-transmitters/optical-signal-transmitters/slt060-0b010j700/p/p663661?tab=detail" target="_blank">SLT</a> – optischer Signalsender zur Visualisierung von z. B. Füllstand oder Entfernung
       </td>
       <td>6075938</td>
     </tr>
@@ -54,7 +54,7 @@ Mit dem Engineering-Tool „SICK AppManager“ können Sie beispielsweise Ihre F
 
 **Firmware-Update:**
 
-1. Gehen Sie zu [SIG300 – REST-Firmware](https://www.sick.com/ag/en/catalog/products/network-and-connection-technology/network-devices/sig300/sig300-0a0gaa100/p/p678107?category=g569793&tab=downloads) (Produktseite > Downloads > Software)) und laden Sie die neueste Firmware herunter.
+1. Gehen Sie zu [SIG300 – REST-Firmware](https://www.sick.com/ag/en/catalog/products/network-and-connection-technology/network-devices/sig300/sig300-0a0gaa100/p/p678107?category=g569793&tab=downloads) (Produktseite > Downloads > Software) und laden Sie die neueste Firmware herunter
 2. Entpacken Sie die ZIP-Datei, um auf die SPK-Firmware-Datei zuzugreifen.
 3. Wählen Sie in der oberen rechten Ecke des AppManagers „Firmware“ aus.
 4. Klicken Sie auf das „+“

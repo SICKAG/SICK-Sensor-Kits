@@ -1,56 +1,10 @@
-<!-- # Black Jack
-
-<table style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr style="background-color: #005aff; color: white;">
-      <th style="padding: 8px; text-align: left;">Kurzbeschreibung</th>
-      <th style="padding: 8px; text-align: left;">Erforderliches Wissensniveau</th>
-      <th style="padding: 8px; text-align: left;">Voraussichtliche Dauer</th>
-      <th style="padding: 8px; text-align: left;">Zusätzliche Hardware- und Softwareanforderungen</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Erkenne und klassifiziere Spielkarten und entwickle eine Strategie, um gegen den Computer Blackjack zu spielen.</td>
-      <td>Fortgeschrittene/Experten</td>
-      <td>4–8 Stunden</td>
-      <td>Spielkarten</td>
-    </tr>
-  </tbody>
-</table>
-
-![Black Jack](../images/blackjack.jpg)
-
-## Welches Problem muss gelöst werden?
-Die Spielkarten müssen erkannt und automatisch addiert werden, um ein Blackjack-Spiel mit visueller Rückmeldung zu ermöglichen. Das System muss anzeigen, wenn der Wert 21 überschritten wird.
-
-Projektideen:
-
-* Zuverlässige Erkennung von Kartenwerten
-* Automatische Berechnung des aktuellen Blattwerts
-* Anzeigefeld zur Visualisierung und/oder Signalleuchte für binäre Rückmeldung
-* Berechnung der Wahrscheinlichkeit, dass der Wert 21 bei der nächsten Ziehung überschritten wird
-* Mehrspieler
-
-## Beispiel-Projektdatei
-
-[Blackjack.zip](../files/Blackjack.zip)
-
-## Beispiel für eine Konfigurationsdatei
-
-[Blackjack-Konfiguration.zip](../files/configuration_nova_inspector_blackjack.ncfg)
-
-
-
--->
-
 # Black Jack
 
 ## Kurzbeschreibung
 
-Im Mittelpunkt dieses fortgeschrittenen Projekts steht das Erkennen und Klassifizieren von Spielkarten mit dem Vision Starter Kit.
+Im Mittelpunkt dieses fortgeschrittenen Projekts steht die Erkennung und Klassifizierung von Spielkarten mithilfe des Vision Starter Kits.
 
-Das Ziel ist es, eine Blackjack-Anwendung zu entwickeln, die Spielkarten erkennt, den aktuellen Wert des Blattes berechnet und eine Rückmeldung gibt, wenn der Wert 21 überschritten wird.
+Das Ziel ist es, eine Blackjack-Anwendung zu entwickeln, die Spielkarten erkennt, den aktuellen Wert der Hand berechnet und eine Rückmeldung gibt, wenn der Wert 21 überschritten wird.
 
 ## Projektinformationen
 
@@ -79,7 +33,7 @@ Das Ziel ist es, eine Blackjack-Anwendung zu entwickeln, die Spielkarten erkennt
 
 ## Ziel
 
-Das Ziel dieses Projekts ist es, eine „Vision Starter Kit“-Anwendung zu entwickeln, die Spielkarten erkennen und die ermittelten Werte in einer einfachen Blackjack-Spielelogik verwenden kann.
+Das Ziel dieses Projekts ist es, eine „Vision Starter Kit“-Anwendung zu entwickeln, die Spielkarten erkennen und die ermittelten Werte in einer einfachen Blackjack-Spiellogik verwenden kann.
 
 Nach Abschluss dieses Projekts sollten Sie wissen, wie man:
 
@@ -137,30 +91,30 @@ Ihre Lösung sollte Folgendes umfassen:
 
 <div class="requirement-box">
 
-<h3>Core Requirements</h3>
+<h3>Grundlegende Anforderungen</h3>
 
 <ul>
-  <li>Use the <strong>AI Classification</strong> tool in SICK Nova.</li>
-  <li>Detect and classify playing cards reliably.</li>
-  <li>Assign a numerical value to each detected card.</li>
-  <li>Calculate the current hand value.</li>
-  <li>Identify when the value of 21 is exceeded.</li>
-  <li>Provide visual or logical feedback based on the result.</li>
+  <li>Verwenden Sie das <strong>KI</strong>-Klassifizierungstool in SICK Nova.</li>
+  <li>Erkennen und klassifizieren Sie Spielkarten zuverlässig.</li>
+  <li>Weisen Sie jeder erkannten Karte einen numerischen Wert zu.</li>
+  <li>Berechnen Sie den aktuellen Wert des Blattes.</li>
+  <li>Erkennen Sie, wenn der Wert 21 überschritten wird.</li>
+  <li>Geben Sie je nach Ergebnis visuelles oder logisches Feedback.</li>
 </ul>
 
 </div>
 
 <div class="requirement-box optional">
 
-<h3>Optional Extensions</h3>
+<h3>Optionale Erweiterungen</h3>
 
 <ul>
-  <li>Add a dashboard for visualization.</li>
-  <li>Use a signal lamp for binary feedback.</li>
-  <li>Calculate the probability of exceeding the value of 21 with the next draw.</li>
-  <li>Add a multiplayer mode.</li>
-  <li>Track cards automatically over multiple rounds.</li>
-  <li>Connect the classification result to an external application.</li>
+  <li>Fügen Sie ein Dashboard zur Visualisierung hinzu.</li>
+  <li>Verwenden Sie eine Signalleuchte für binäres Feedback.</li>
+  <li>Berechnen Sie die Wahrscheinlichkeit, dass der Wert 21 bei der nächsten Ziehung überschritten wird.</li>
+  <li>Fügen Sie einen Mehrspieler-Modus hinzu.</li>
+  <li>Verfolgen Sie die Karten automatisch über mehrere Runden hinweg.</li>
+  <li>Verbinden Sie das Klassifizierungsergebnis mit einer externen Anwendung.</li>
 </ul>
 
 </div>
@@ -237,8 +191,8 @@ Mögliche Rückmeldungen:
     Fang nicht mit einem vollständigen Kartenspiel an.  
     Wählen Sie einige Karten aus und prüfen Sie, ob die Klassifizierung zuverlässig ist.
 
-??? tip "Tipp 2: Halte die Position der Karte gleich"
-    Versuchen Sie, die Position der Karte, den Abstand und die Beleuchtung während des Trainings und der Tests so gleichbleibend wie möglich zu halten.
+??? tip "Tipp 2: Halte die Position der Karte einheitlich"
+    Versuchen Sie, die Position der Karte, den Abstand und die Beleuchtung während des Trainings und der Tests so gleichmäßig wie möglich zu halten.
 
 ??? tip "Tipp 3: Fügen Sie bei Bedarf weitere Bilder hinzu"
     Sollte die Kartenerkennung unzuverlässig sein, fügen Sie weitere Trainingsbilder mit unterschiedlichen Positionen und Drehungen hinzu.

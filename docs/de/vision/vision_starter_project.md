@@ -71,7 +71,7 @@ Befolgen Sie die folgenden Schritte, um das „Vision Starter“-Projekt abzusch
 ![Vision_4](../images/Vision_4.png)
 
 - Erstellen Sie Klassen unter **Dataset** auf der rechten Seite
-- Klicken Sie auf das Wiedergabesymbol unten in der Mitte, um Serienfotos aufzunehmen
+- Klicken Sie auf das Wiedergabesymbol unten in der Mitte, um Serienfotos aufzunehmen.
 - Erweitern Sie die erste Klasse und nehmen Sie Bilder mit **Aktives Bild hinzufügen** auf
 - Probieren Sie verschiedene Varianten aus (Position / Drehung)
 
@@ -141,7 +141,7 @@ Passen Sie die Trainingsparameter bei Bedarf an:
 ![Vision_14](../images/Vision_14.png)
 
 - Stellen Sie die Optionen auf **Live** und **Play** ein und probieren Sie verschiedene Positionen und Fremdkörper aus.
-- Passen Sie unten rechts unter **Ergebnisse** bei Bedarf den **Anomaliewert** und den **Darstellungsbereich** an. Dies beeinflusst die Empfindlichkeit bei der Erkennung von Anomalien und deren Darstellung mittels einer Heatmap.
+- Passen Sie unten rechts unter **Ergebnisse** bei Bedarf den **Anomalie-Score** und den **Visualisierungsbereich** an. Dies wirkt sich auf die Empfindlichkeit bei der Erkennung von Anomalien und deren Darstellung mittels einer Heatmap aus.
 !!! note "Abhängigkeit vom Objekt-Locator"
     Die Anomalieerkennung hängt vom Objekt-Locator ab.  
     Wenn der Object Locator fehlschlägt, schlägt auch die Anomalieerkennung fehl.
