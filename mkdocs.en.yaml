@@ -1,0 +1,116 @@
+site_name: SICK Sensor Starter Kits
+site_url: https://sickag.github.io/SICK-Sensor-Kits/en/
+
+repo_url: https://github.com/SICKAG/SICK-Sensor-Starter-Kits
+repo_name: SICKAG/SICK-Sensor-Starter-Kits
+
+docs_dir: docs/en
+site_dir: site/en
+
+theme:
+  language: en
+  name: material
+  palette:
+    primary: custom
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  logo: 'images/sick_logo.png'
+  features:
+    - content.code.copy
+  favicon: 'images/favicon.ico'
+extra_css:
+  - stylesheets/extra.css
+copyright: "© SICK AG 2026"
+plugins:
+  - mkdocs-video
+
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - def_list
+  - attr_list
+  - md_in_html
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra:
+  alternate:
+    - name: English
+      link: /SICK-Sensor-Starter-Kits/en/
+      lang: en
+    - name: Deutsch
+      link: /SICK-Sensor-Starter-Kits/de/
+      lang: de
+
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/SICKAG
+      name: SICK on GitHub
+
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/user/SICKSensors
+      name: SICK on YouTube
+
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/sicksensorintelligence/
+      name: SICK on LinkedIn
+
+
+nav:
+  - Home: index.md
+  - Vision Starter Kit:
+    - Overview: vision/vision_overview.md
+    - Getting Started: vision/vision_getting_started.md
+    - Vision Starter Project: vision/vision_starter_project.md
+    - Example Projects:
+        - Overview: vision/vision_example_projects.md
+        - Classify Hex Nuts/Screws: vision/classify_hex_nuts_screws.md
+        - Chocolate Inspection: vision/chocolate_inspection.md
+        - Sketch Demonstrator: vision/sketch_demonstrator.md
+        - Rock, Paper, Scissors: vision/rock_paper_scissors.md
+        - Recycling: vision/recycling.md
+        - Black Jack: vision/blackjack.md
+        - UNO Card Game: vision/uno.md
+        - Tic Tac Toe: vision/tic_tac_toe.md
+        - Darts: vision/darts.md
+    - Vision Code Examples: vision/vision_code_snippets.md
+    - Advanced Topics: vision/vision_advanced.md
+    - Training Material:
+        - Overview: vision/vision_training_material.md
+        - Mounting Frame Setup: mounting_frame.md
+    - FAQ - Vision: vision/vision_faq.md
+  - LiDAR Starter Kit:
+    - Overview: lidar/lidar_overview.md
+    - Getting Started: lidar/lidar_getting_started.md
+    - LiDAR Starter Project: lidar/lidar_field_evaluation.md
+    - Example Projects:
+        - Overview: lidar/lidar_example_projects.md
+        - Distance Estimation: lidar/distance_estimation.md
+        - The Floor is Lava: lidar/lidar_floor_is_lava.md
+        - Human Piano / Air Piano: lidar/lidar_human_piano_air_piano.md
+    - LiDAR Code Examples: lidar/lidar_code_snippets.md
+    - Advanced Topics: lidar/lidar_advanced.md
+    - Training Material: lidar/lidar_training_material.md
+    - FAQ - LiDAR: lidar/lidar_faq.md
+  - IO-Link Connectivity Starter Kit: 
+    - Overview: iolink/iolink_overview.md
+    - Getting Started: iolink/iolink_getting_started.md
+    - Code Snippets: iolink/iolink_code_snippets.md
+    - Advanced: iolink/iolink_advanced.md
+    - Example Projects:
+      - Overview: iolink/iolink_example_projects.md
+      - SensorFusion: iolink/sensor_fusion.md
+      - Smart Train Loop: iolink/iolink_train.md
+    - Training Material: iolink/iolink_training_material.md
+    - FAQ: iolink/iolink_faq.md
+  - FAQ: faq.md
+  - Imprint: https://www.sick.com/de/de/s/imprint
