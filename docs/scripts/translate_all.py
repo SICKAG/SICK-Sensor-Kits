@@ -4,7 +4,7 @@ import sys
 
 project_root = Path(__file__).resolve().parents[2]
 
-translator = project_root / "docs" / "scripts" / "translate_markdown_test.py"
+translator = project_root / "docs" / "scripts" / "translate_markdown.py"
 
 source_base = project_root / "docs" / "en"
 target_base = project_root / "docs" / "de"
