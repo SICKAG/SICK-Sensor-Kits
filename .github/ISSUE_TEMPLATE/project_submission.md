@@ -1,9 +1,10 @@
----  
-name: 🎓 Project Submission Proposal  
-about: Propose a university or community project before creating a Pull Request  
-title: "[Project]: "  
-labels: ["community", "submission"]  
-assignees: []  
+---
+name: "\U0001F393 Project Submission Proposal"
+about: Propose a university or community project before creating a Pull Request
+title: "[Project]: "
+labels: ''
+assignees: ''
+
 ---
 
 <!--  
@@ -55,4 +56,4 @@ Any open questions or notes for the SICK team before submitting a Pull Request.
   delete sections you don't need.  
 - You can ignore the Assignee, Project and Milestone fields at the bottom.  
   Please leave them empty — the SICK team reviews new proposals and assigns  
-  them to the right person.  
+  them to the right person.

@@ -1,9 +1,10 @@
----  
-name: 💡 Feature Request / Project Idea  
-about: Suggest a new example project or an improvement  
-title: "[Idea]: "  
-labels: ["enhancement"]  
-assignees: []  
+---
+name: "\U0001F4A1 Feature Request / Project Idea"
+about: Suggest a new example project or an improvement
+title: "[Idea]: "
+labels: enhancement
+assignees: ''
+
 ---
 
 <!--  
@@ -48,4 +49,4 @@ Links, references, sketches, or any other helpful information.
   delete sections you don't need.  
 - You can ignore the Assignee, Project and Milestone fields at the bottom.  
   Please leave them empty — the SICK team reviews new ideas and assigns  
-  them to the right person.  
+  them to the right person.

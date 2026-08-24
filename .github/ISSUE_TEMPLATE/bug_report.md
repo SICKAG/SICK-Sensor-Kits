@@ -1,9 +1,10 @@
----  
-name: 🐛 Bug Report  
-about: Report a bug in an example project or documentation  
-title: "[Bug]: "  
-labels: ["bug"]  
-assignees: []  
+---
+name: "\U0001F41B Bug Report"
+about: Report a bug in an example project or documentation
+title: "[Bug]: "
+labels: bug
+assignees: ''
+
 ---
 
 <!--  
@@ -66,4 +67,4 @@ Any other information that might help.
   delete sections you don't need.  
 - You can ignore the Assignee, Project and Milestone fields at the bottom.  
   Please leave them empty — the SICK team reviews new reports and assigns  
-  them to the right person.  
+  them to the right person.
