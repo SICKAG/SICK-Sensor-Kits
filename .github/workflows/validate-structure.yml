@@ -1,0 +1,38 @@
+name: Validate Project Structure
+
+on:  
+  pull_request:  
+    paths:  
+            - 'projects/**'  
+            - 'community/**'
+
+jobs:  
+  validate:  
+    runs-on: ubuntu-latest  
+    steps:  
+      - name: Checkout code  
+        uses: actions/checkout@v4
+
+      - name: Check required files  
+        run: |  
+          echo "Pruefe projects/ (nur README.md erforderlich)..."  
+          for dir in $(find projects -mindepth 2 -maxdepth 2 -type d); do  
+            if [ ! -f "$dir/README.md" ]; then  
+              echo "::error::README.md fehlt in $dir"  
+              exit 1  
+            fi  
+            echo "$dir OK"  
+          done
+
+          echo "Pruefe community/ (vollstaendige Struktur erforderlich)..."  
+          for dir in $(find community -mindepth 2 -maxdepth 2 -type d -not -path "community/contributing*"); do  
+            missing=0  
+            if [ ! -f "$dir/README.md" ]; then echo "README.md fehlt in $dir"; missing=1; fi  
+            if [ ! -f "$dir/project-info.yml" ]; then echo "project-info.yml fehlt in $dir"; missing=1; fi  
+            if [ ! -d "$dir/src" ]; then echo "src fehlt in $dir"; missing=1; fi  
+            if [ "$missing" -eq 1 ]; then  
+              echo "::error::Projekt $dir ist unvollstaendig."  
+              exit 1  
+            fi  
+            echo "$dir vollstaendig"  
+          done  

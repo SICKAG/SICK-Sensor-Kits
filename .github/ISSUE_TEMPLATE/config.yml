@@ -1,0 +1,20 @@
+# Verhindert leere Issues ohne Template.  
+# Nutzer müssen eines der drei Templates wählen  
+# oder einen der Kontakt-Links unten verwenden.  
+blank_issues_enabled: false
+
+# Externe Verweise unterhalb der drei Templates.  
+# Diese leiten Nutzer mit Fragen oder allgemeinen Anliegen  
+# gezielt an den richtigen Ort - statt in die Issue-Liste.  
+contact_links:  
+    - name: 📖 Documentation (Getting Started, Tutorials, FAQ)  
+      url: https://sickag.github.io/SICK-Sensor-Starter-Kits/en/  
+      about: Read the full documentation before opening an issue - many questions are answered here.
+
+    - name: 💬 Q&A and General Discussion  
+      url: https://github.com/SICKAG/SICK-Sensor-Starter-Kits/discussions  
+      about: Have a question or want to share an idea? Please use Discussions instead of an issue.
+
+    - name: 🙌 Show and Tell (Community Projects)  
+      url: https://github.com/SICKAG/SICK-Sensor-Starter-Kits/discussions/categories/show-and-tell  
+      about: Want to show a finished project? Share it with the community here.  

@@ -57,25 +57,6 @@ The following pages can be used as training resources until dedicated LiDAR trai
 
 ---
 
-## Future Training Material
-
-Additional LiDAR training material can be added here in the future.
-
-Possible future content could include:
-
-- tutorial videos
-- downloadable training exercises
-- workshop material
-- classroom exercises
-- field evaluation examples
-- distance measurement exercises
-- LiDAR integration exercises
-
-!!! info "Placeholder"
-    This section is reserved for future LiDAR training resources.  
-    Until additional material is available, use the related pages and example projects listed above.
-
----
 
 ## Summary
 
