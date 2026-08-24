@@ -49,7 +49,7 @@ Use GitHub Issues to report reproducible problems with:
 - repository structure
 - project templates
 
-https://github.com/SICKAG/SICK-Starter-Kits/issues/new/choose
+https://github.com/SICKAG/SICK-Sensor-Starter-Kits/issues
 
 Please use the appropriate Issue template and provide as much relevant information as possible.
 
@@ -64,7 +64,7 @@ Use GitHub Discussions for:
 - community exchange
 - sharing completed projects
 
-https://github.com/SICKAG/SICK-Starter-Kits/discussions
+https://github.com/SICKAG/SICK-Sensor-Starter-Kits/discussions
 
 Questions should normally be posted in Discussions rather than submitted as Issues.
 
