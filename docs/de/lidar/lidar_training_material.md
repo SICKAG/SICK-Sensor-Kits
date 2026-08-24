@@ -57,26 +57,6 @@ Die folgenden Seiten können als Schulungsmaterialien genutzt werden, bis spezie
 
 ---
 
-## Zukünftige Schulungsunterlagen
-
-In Zukunft können hier weitere Schulungsunterlagen zum Thema LiDAR hinzugefügt werden.
-
-Mögliche zukünftige Inhalte könnten Folgendes umfassen:
-
-- Anleitungsvideos
-- Übungen zum Herunterladen
-- Workshop-Material
-- Übungen im Unterricht
-- Beispiele für die Feldauswertung
-- Übungen zur Entfernungsmessung
-- Übungen zur LiDAR-Integration
-
-!!! info "Platzhalter"
-    Dieser Abschnitt ist für künftige Schulungsmaterialien zum Thema LiDAR vorgesehen.  
-    Bis weiteres Material verfügbar ist, nutzen Sie bitte die oben aufgeführten verwandten Seiten und Beispielprojekte.
-
----
-
 ## Zusammenfassung
 
 Diese Seite dient derzeit als Ausgangspunkt für Lernmaterialien zum Thema LiDAR.

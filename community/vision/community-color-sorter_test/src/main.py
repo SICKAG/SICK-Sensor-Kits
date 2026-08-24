@@ -1,0 +1,1 @@
+print("Community Color Sorter placeholder")

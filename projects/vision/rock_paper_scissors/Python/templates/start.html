@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../static/bootstrap.min.css" rel="stylesheet">
+    <script src="../static/bootstrap.bundle.min.js"></script>
+
+    <style>
+        @font-face {
+            font-family: "Open Sans";
+
+            src: url(/static/fonts/OpenSans-Regular.woff2) format("woff2"),
+                url(/static/fonts/OpenSans-Regular.woff) format("woff"),
+                url(/static/fonts/OpenSans-Regular.ttf) format("truetype");
+            font-weight: 400;
+            font-style: normal;        }
+        html, body {
+            background-color: #f6f7f7;
+            font-size: 1rem;
+            font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3); 
+            color: #f6f7f7;
+            margin: 0;
+            padding: 0;
+            height: 100%; 
+            overflow: hidden;
+        }
+        body {    
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            flex-direction: column; 
+            min-height: 100vh;
+        }
+        .container_img {
+            position: relative;
+            text-align: center;
+        }
+        .centered {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-55%, -50%);
+            font-size: 1.75vw;
+            line-height: 1.2;
+            font-weight: bold;
+        }
+       .container_start {
+            background-color: #007cc1;
+            width: 100%;
+            height: 100%;
+            min-height: 400px;
+            margin:auto;
+            height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            }
+        .header {
+            border-bottom: 3px solid gray;
+            background-color: #f6f7f7;
+            height: 12vh;
+            position: fixed;
+            z-index: 10; 
+            text-align: left;
+            top: 0;                    /* Der Header soll immer am oberen Rand bleiben */
+            left: 0;                   /* Der Header soll am linken Rand bleiben */
+            width: 100%;
+        }
+        .responsive {
+            max-width: 100%;
+            max-height: 100%;
+            height: auto;
+        }
+        .insp {
+            max-width: 50%;
+            height: auto;
+        }
+        .logo {
+            padding: 2%;
+            max-width: 15%;
+            height: auto;
+            margin: auto;
+            max-height: 120%;
+        }
+        .col {
+            font-size: 1.25rem;
+            height: auto;
+            display: flex; 
+            justify-content: center;
+            align-items: center; 
+            text-align: center;
+        }
+        .row1 {
+            min-height: 30%;
+            flex-grow: 1;
+            display: flex; 
+            justify-content: center;
+            align-items: center; 
+            padding-top: 10%;
+            padding-bottom: 0%;
+            height: 40%;
+        }
+        .row2 {
+            min-height: 30%;
+            flex-grow: 1;
+            display: flex; 
+            justify-content: center;
+            align-items: center; 
+            height: 40%;
+        }
+        .btn {
+            background-color: #f6f7f7;
+            font-size: 2.5vw;
+            width: auto;
+            color: #005b8e;
+            font-weight: bold;
+            border-color: #005b8e;
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 120px;
+        }
+        @media screen and (min-width: 1500px) {
+            .centered {
+                font-size: 1.5vw;
+            }
+            .btn {
+                font-size: 1.5vw;
+            }
+            .logo {
+                max-width: 25%;
+                max-height: 130%;
+            }
+            .insp {
+                max-width: 30%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Start Screen -->
+<div class="container_start border" id="start">
+    <div class="header">
+        <object 
+        data="../static/img/SICK_Logo_Claim_RGB.svg"
+        type="image/svg+xml"
+        class="logo">
+    </object>
+    </div>
+        <div class="row1">
+            <div class="col">
+                <div class="container_img">
+                    <img src="../static/img/SprechblaseLinks.svg" alt="Sprechblase" class="responsive">
+                    <div class="centered">Willkommen zu Schere, Stein, Papier mit dem Vision Sensor!</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="center">
+                <a id="play" href="/play" class="btn btn-outline-dark" >Start</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="container_img">
+                    <img src="../static/img/SprechblaseRechts.svg" alt="Sprechblase" class="responsive">
+                    <div class="centered">Du spielst gegen den Computer. Bereit?</div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="col">
+            </div>
+            <div class="col">
+                <div class="container_img">
+                    <img src="../static/img/Inspector.webp" alt="Vision Sensor" class="insp"></img>
+                </div>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+</div>
+</body>
+</html>

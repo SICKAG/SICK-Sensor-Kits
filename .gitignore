@@ -8,6 +8,9 @@
 !.gitignore
 !.github
 !redirect/
+!projects/
+!CONTRIBUTING.md
+!community/
 
 # Innerhalb von docs/ nur en/, de/ und scripts/ behalten  
 docs/*  

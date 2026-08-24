@@ -1,4 +1,4 @@
-# Getting started
+<!-- # Getting started
 
 You are now ready to get started with the IO-Link Connectivity Starter Kit. Follow along the instruction below or scroll down to the tutorial video.
 
@@ -93,3 +93,117 @@ Make sure to follow these steps:
 
 ## Tutorial
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YG7Tm6EzI0A?si=JODw6tMatWkURfNq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+-->
+
+# Getting Started with the IO-Link Connectivity Starter Kit
+
+You are now ready to get started with the IO-Link Connectivity Starter Kit.
+
+Follow the instructions below to connect the SIG300 and the included IO-Link sensors. You can also watch the tutorial video for additional information about the network device, its ports and the Logic Editor.
+
+## Setup Sensors
+
+1. Connect the SIG300 using the USB-C cable and the power supply.
+2. Choose the correct plug adapter and connect the power supply to an outlet.
+3. Connect the USB-C cable to the computer.
+4. Open a browser and enter the default IP address:
+
+```text
+http://169.254.0.1
+```
+
+5. Connect the W10, UC12 and IMC30 sensors to the SIG300 using the IO-Link cables, for example to ports S1 to S3.
+6. The devices are now ready to use.
+7. If the optional Mounting Kit is available, mount the sensors on the assembled frame using the corresponding mounting brackets.
+
+![Setup_iolink](../images/Setup_iolink.png)
+
+## Optional Mounting Frame
+
+The mounting frame is only included when using the separate Mounting Kit.
+
+Use the shared Mounting Frame Setup page for the complete assembly instructions:
+
+[Mounting Frame](../mounting_frame.md){ .md-button .button-small }
+
+
+
+## Tutorial
+
+The following tutorial provides additional information about the network device, its ports and the Logic Editor.
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube-nocookie.com/embed/YG7Tm6EzI0A?si=JODw6tMatWkURfNq"
+  title="IO-Link Connectivity Starter Kit tutorial"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen>
+</iframe>
+
+## Troubleshooting
+
+??? info "Connection and Setup Problems"
+
+    !!! failure "The SIG300 user interface does not open"
+        Make sure that the computer is disconnected from any active VPN connection, as this may block access to the network device.
+
+        Open the default IP address again:
+
+        ```text
+        http://169.254.0.1
+        ```
+
+    !!! failure "The Ready LED is not green"
+        Check whether the power supply and the USB-C cable are connected correctly.
+
+        Wait up to two minutes for the SIG300 to complete its startup process.
+
+    !!! failure "The SIG300 still cannot be reached"
+        Use SICK AppManager to identify the current device IP address.
+
+        [Open SICK AppManager product page](https://www.sick.com/ag/en/catalog/products/digital-ols/sick-appmanager/sick-appmanager/p/p532784){ .md-button .button-small }
+
+        Additional information about SICK AppManager can be found on the [Advanced](./iolink_advanced.md) Topics page:
+
+        
+    !!! failure "Additional support is required"
+        Check the IO-Link Starter Kit FAQ for further troubleshooting information:
+
+        [IO-Link FAQ](./iolink_faq.md){ .md-button .button-small }
+
+        If the device still has issues, open the SICK Support Portal, register and create a support case.
+
+??? info "Operating Instructions"
+
+    Additional product information, operating instructions and downloads are available on the corresponding product pages:
+
+    - [SIG300](https://www.sick.com/ag/en/catalog/products/network-and-connection-technology/network-devices/sig300/sig300-0a0gaa100/p/p678107?tab=downloads)
+    - [W10](https://www.sick.com/ag/en/catalog/products/detection-sensors/photoelectric-sensors/w10/wtm10l-241611d0a00zvzzzzzzzzz1/p/p678567?tab=downloads)
+    - [UC12](https://www.sick.com/ag/en/catalog/products/distance-sensors/ultrasonic-distance-sensors/uc12/uc12-1123e/p/p665119?tab=downloads)
+    - [IMC30](https://www.sick.com/ag/en/catalog/products/detection-sensors/inductive-proximity-sensors/imc/imc30-20nppvc0sa00/p/p483964?tab=downloads)
+
+## Summary
+
+The SIG300 is now connected to the computer and the W10, UC12 and IMC30 sensors are connected through IO-Link.
+
+If the optional Mounting Kit is available, the sensors can also be mounted on the assembled frame.
+
+## Next Steps
+
+You can now continue with an example project, explore the code examples or open the available training material.
+
+<div class="next-step-buttons" markdown>
+
+[Example Projects](./iolink_example_projects.md){ .md-button }
+
+[IO-Link Code Examples](./iolink_code_snippets.md){ .md-button }
+
+[Training material](training_material.md){ .md-button }
+
+[Advanced](./iolink_advanced.md){ .md-button }
+
+</div>
