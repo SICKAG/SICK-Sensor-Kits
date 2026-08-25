@@ -4,6 +4,8 @@ Provide a short introduction to the project.
 
 Explain what the project does, which problem it solves and how the SICK Sensor Starter Kit is used.
 
+![Project Previewg
+
 ## Project Information
 
 - **Starter Kit:** Vision / LiDAR / IO-Link
@@ -88,7 +90,7 @@ Include important information such as:
 Add setup images when helpful:
 
 ```markdown
-![Hardware Setup](images/hardware-setup.png)
+![Hardware Setup](images/hardware-setup.png)figuration
 
 Explain how to configure the sensor.
 
@@ -174,6 +176,7 @@ When a configured field is infringed, the application displays the
 field number and plays the corresponding sound.
 ```
 
+images/result.png
 
 ## Configuration Options
 
