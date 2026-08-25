@@ -132,7 +132,7 @@ The IO-Link Connectivity Starter Kit helps you get started with IO-Link communic
 IO-Link transforms sensors and actuators into smart, bidirectional communication devices. This enables access to process data, device parameters and diagnostic information and provides a practical introduction to modern industrial connectivity.
 
 
-![IO-Link Connectivity Starter Kit](../images\iolink.jpg)
+![IO-Link Connectivity Starter Kit](../images/iolink.jpg)
 
 ## Key Features
 
