@@ -251,6 +251,6 @@ Fahren Sie mit einem weiteren Vision-Projekt fort oder öffnen Sie die vollstän
 
 [Beispielprojekte](./vision_example_projects.md){ .md-button .button-small }
 
-[GitHub](https://github.com/SICKAG/SICK-Sensor-Starter-Kits){:target="_blank" .md-button .button-small}
+[GitHub](https://github.com/SICKAG/SICK-Sensor-Starter-Kits/tree/main/projects/vision/tictactoe){:target="_blank" .md-button .button-small}
 
 </div>

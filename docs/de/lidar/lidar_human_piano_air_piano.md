@@ -508,6 +508,6 @@ Fahren Sie mit einem weiteren LiDAR-Projekt fort oder öffnen Sie die vollständ
 
 [Beispielprojekte](./lidar_example_projects.md){ .md-button }
 
-[GitHub](https://github.com/SICKAG/SICK-Sensor-Starter-Kits){:target="_blank" .md-button}
+[GitHub](https://github.com/SICKAG/SICK-Sensor-Starter-Kits/tree/main/projects/lidar/air_paino){:target="_blank" .md-button}
 
 </div>
