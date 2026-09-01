@@ -1,3 +1,3 @@
-# Code-Schnipsel IO-Link
+# Codeausschnitte IO-Link
 
-**In Kürze verfügbar**
+**in Kürze**
