@@ -351,6 +351,6 @@ Continue with another Vision project or open the complete project files on GitHu
 
 [Example Projects](./vision_example_projects.md){ .md-button .button-small }
 
-[GitHub](https://github.com/SICKAG/SICK-Sensor-Starter-Kits){:target="_blank" .md-button .button-small}
+[GitHub](https://github.com/SICKAG/SICK-Sensor-Starter-Kits/tree/main/projects/vision/rock_paper_scissors){:target="_blank" .md-button .button-small}
 
 </div>
