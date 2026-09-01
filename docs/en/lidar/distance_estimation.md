@@ -224,6 +224,6 @@ Continue with another LiDAR project or open the complete project files on GitHub
 
 [Example Projects](./lidar_example_projects.md){ .md-button }
 
-[GitHub](https://github.com/SICKAG/SICK-Sensor-Starter-Kits){:target="_blank" .md-button}
+[GitHub](https://github.com/SICKAG/SICK-Sensor-Starter-Kits/tree/main/projects/lidar/distance_estimation){:target="_blank" .md-button}
 
 </div>
