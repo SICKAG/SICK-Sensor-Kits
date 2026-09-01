@@ -1,38 +1,96 @@
 name: Validate Project Structure
 
-on:  
-  pull_request:  
-    paths:  
-            - 'projects/**'  
-            - 'community/**'
+on:
+  pull_request:
 
-jobs:  
-  validate:  
-    runs-on: ubuntu-latest  
-    steps:  
-      - name: Checkout code  
+jobs:
+  validate:
+    name: Validate Project Structure
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Check required files  
-        run: |  
-          echo "Pruefe projects/ (nur README.md erforderlich)..."  
-          for dir in $(find projects -mindepth 2 -maxdepth 2 -type d); do  
-            if [ ! -f "$dir/README.md" ]; then  
-              echo "::error::README.md fehlt in $dir"  
-              exit 1  
-            fi  
-            echo "$dir OK"  
+      - name: Check for relevant changes
+        id: changes
+        shell: bash
+        run: |
+          changed_files="$(git diff --name-only \
+            "${{ github.event.pull_request.base.sha }}" \
+            "${{ github.event.pull_request.head.sha }}")"
+
+          echo "Changed files:"
+          echo "$changed_files"
+
+          if echo "$changed_files" | grep -Eq '^(projects|community)/'; then
+            echo "relevant=true" >> "$GITHUB_OUTPUT"
+            echo "Changes in projects/ or community/ detected."
+          else
+            echo "relevant=false" >> "$GITHUB_OUTPUT"
+            echo "No changes in projects/ or community/ detected."
+          fi
+
+      - name: Check required files
+        if: steps.changes.outputs.relevant == 'true'
+        shell: bash
+        run: |
+          echo "Checking projects/..."
+
+          for dir in projects/*/*; do
+            if [ ! -d "$dir" ]; then
+              continue
+            fi
+
+            if [ ! -f "$dir/README.md" ]; then
+              echo "::error::README.md is missing in $dir"
+              exit 1
+            fi
+
+            echo "$dir OK"
           done
 
-          echo "Pruefe community/ (vollstaendige Struktur erforderlich)..."  
-          for dir in $(find community -mindepth 2 -maxdepth 2 -type d -not -path "community/contributing*"); do  
-            missing=0  
-            if [ ! -f "$dir/README.md" ]; then echo "README.md fehlt in $dir"; missing=1; fi  
-            if [ ! -f "$dir/project-info.yml" ]; then echo "project-info.yml fehlt in $dir"; missing=1; fi  
-            if [ ! -d "$dir/src" ]; then echo "src fehlt in $dir"; missing=1; fi  
-            if [ "$missing" -eq 1 ]; then  
-              echo "::error::Projekt $dir ist unvollstaendig."  
-              exit 1  
-            fi  
-            echo "$dir vollstaendig"  
-          done  
+          echo "Checking community projects..."
+
+          for dir in community/*/*; do
+            if [ ! -d "$dir" ]; then
+              continue
+            fi
+
+            if [[ "$dir" == community/contributing/* ]]; then
+              continue
+            fi
+
+            missing=0
+
+            if [ ! -f "$dir/README.md" ]; then
+              echo "::error::README.md is missing in $dir"
+              missing=1
+            fi
+
+            if [ ! -f "$dir/project-info.yml" ]; then
+              echo "::error::project-info.yml is missing in $dir"
+              missing=1
+            fi
+
+            if [ ! -d "$dir/src" ]; then
+              echo "::error::src/ is missing in $dir"
+              missing=1
+            fi
+
+            if [ "$missing" -eq 1 ]; then
+              echo "::error::Community project $dir is incomplete."
+              exit 1
+            fi
+
+            echo "$dir complete"
+          done
+
+      - name: Structure validation not required
+        if: steps.changes.outputs.relevant != 'true'
+        shell: bash
+        run: |
+          echo "::notice::No files in projects/ or community/ were changed."
+          echo "Project structure validation was skipped for this Pull Request."
