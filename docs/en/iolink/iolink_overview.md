@@ -162,8 +162,6 @@ The IO-Link Connectivity Starter Kit can be combined with a separate mounting ki
 
 The mounting kit provides a suitable mounting frame and brackets for assembling a stable demonstration and training setup.
 
-[Mounting Kit](https://www.sick.com/ag/en/edu-teq-mounting-kit/p/pn1154060?tab=detail){:target="_blank".md-button .button-small}
-
 For assembly instructions, use the [Mounting Frame](../mounting_frame.md) Setup page.
 
 

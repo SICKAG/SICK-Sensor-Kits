@@ -162,8 +162,6 @@ Das IO-Link-Konnektivitäts-Starter-Kit kann mit einem separaten Montagesatz kom
 
 Der Montagesatz enthält einen geeigneten Montagerahmen und Halterungen für den Aufbau einer stabilen Vorführ- und Schulungsanlage.
 
-[Montagesatz](https://www.sick.com/ag/en/edu-teq-mounting-kit/p/pn1154060?tab=detail){:target="_blank".md-button .button-small}
-
 Eine Montageanleitung finden Sie auf der Seite [Montagerahmen](../mounting_frame.md).
 
 

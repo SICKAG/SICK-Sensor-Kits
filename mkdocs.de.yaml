@@ -100,16 +100,18 @@ nav:
         - Weiterführende Themen: lidar/lidar_advanced.md  
         - Schulungsmaterial: lidar/lidar_training_material.md  
         - FAQ - LiDAR: lidar/lidar_faq.md  
-    - IO-Link Connectivity Starter Kit:  
-        - Übersicht: iolink/iolink_overview.md  
-        - Erste Schritte: iolink/iolink_getting_started.md  
-        - Code-Beispiele: iolink/iolink_code_snippets.md  
-        - Weiterführende Themen: iolink/iolink_advanced.md  
-        - Beispielprojekte:  
-            - Übersicht: iolink/iolink_example_projects.md  
-            - SensorFusion: iolink/sensor_fusion.md  
-            - Smarte Zugfahrt: iolink/iolink_train.md  
-        - Schulungsmaterial: iolink/iolink_training_material.md  
-        - FAQ: iolink/iolink_faq.md  
+    - IO-Link Connectivity Starter Kit:
+        - Übersicht: iolink/iolink_overview.md
+        - Erste Schritte: iolink/iolink_getting_started.md
+        - Beispielprojekte:
+                - Übersicht: iolink/iolink_example_projects.md
+                - SensorFusion: iolink/sensor_fusion.md
+                - Smart Train Loop: iolink/iolink_train.md
+        - IO-Link-Codebeispiele: iolink/iolink_code_snippets.md
+        - Fortgeschrittene Themen: iolink/iolink_advanced.md
+        - Trainingsmaterial:
+                - Übersicht: iolink/iolink_training_material.md
+                - Montagerahmen aufstellen: mounting_frame.md
+    - FAQ - IO-Link: iolink/iolink_faq.md 
     - FAQ: faq.md  
     - Impressum: https://www.sick.com/de/de/s/imprint  
