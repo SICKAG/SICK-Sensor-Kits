@@ -131,7 +131,6 @@ Use GitHub Issues for:
 
 ## Quick Links
 
-- Submission Guide: how-to-submit-a-project.md
-- Community Project Guidelines: community_project_guidelines.md
-- Project Template: project_template/
+- Submission Guide: https://github.com/SICKAG/SICK-Sensor-Starter-Kits/blob/main/community/contributing/how-to-submit-a-project.md
+- Project Template: https://github.com/SICKAG/SICK-Sensor-Starter-Kits/tree/main/community/contributing/project_template
 - Starter Kit Documentation: https://sickag.github.io/SICK-Sensor-Starter-Kits/en/
