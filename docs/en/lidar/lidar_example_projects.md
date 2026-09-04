@@ -42,7 +42,7 @@ You can follow guided projects step by step, use showcase projects as inspiratio
 
 <div class="grid cards project-card-grid" markdown>
 
--   ../images/lidar.jpg
+-   ![Field Evaluation](../images/lidar.jpg)
 
     **Field Evaluation**
 

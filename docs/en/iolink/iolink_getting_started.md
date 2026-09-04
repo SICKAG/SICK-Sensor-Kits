@@ -202,7 +202,7 @@ You can now continue with an example project, explore the code examples or open 
 
 [IO-Link Code Examples](./iolink_code_snippets.md){ .md-button }
 
-[Training material](training_material.md){ .md-button }
+[Training material](./iolink_training_material.md){ .md-button }
 
 [Advanced](./iolink_advanced.md){ .md-button }
 
